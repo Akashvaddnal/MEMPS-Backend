@@ -2367,3 +2367,111 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:43:25.758
 !MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:46:22.578
+!MESSAGE [Info]	[fetchChat] Request d55c6185-1840-4f00-bcb1-fc80ed3f40bc at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2982.714799999725ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:46:31.004
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:46:31.632
+!MESSAGE [Info]	[fetchChat] Request 90dce588-3f20-47ea-90a2-907b23e25d30 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 566.7692999998108ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:46:31.814
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:47:08.226
+!MESSAGE [Info]	[fetchChat] Request 6c26e90d-4fdb-413f-8f59-c924a985d704 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1825.218700000085ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:47:11.149
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:47:11.222
+!MESSAGE [Info]	[fetchChat] Request 7f5bd92d-7d4f-4022-b423-9a6bca099414 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 546.2936999998055ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:47:11.370
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:51:59.805
+!MESSAGE [Info]	[fetchChat] Request 04a61e8d-8f24-4780-a098-668c954f620d at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 3628.9699999997392ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:52:02.728
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:52:02.729
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:52:02.729
+!MESSAGE [Info]	[fetchChat] Request eb83b58b-a7f3-472d-ae94-41401a14d094 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 531.1997999995947ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:54:22.461
+!MESSAGE [Info]	[fetchChat] Request bdcba6f4-52a0-45c5-bf30-eb557ebe96b3 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2622.464900000021ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:54:28.269
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:54:28.270
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:54:28.271
+!MESSAGE [Info]	[fetchChat] Request 895c6483-2a89-4c7b-afee-aacdb863c365 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 565.1661999998614ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:01:17.375
+!MESSAGE [Info]	[fetchChat] Request 3a1d0847-b441-4313-83a6-3638905b9356 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1631.5676999995485ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:01:23.229
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:01:23.230
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:01:23.230
+!MESSAGE [Info]	[fetchChat] Request 3c8f904b-f3b5-42c5-a6c0-761ec1a3c641 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 538.1107999999076ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:03:50.968
+!MESSAGE [Info]	[fetchChat] Request ff46b056-c5f8-4d86-8a35-58b890cc89ec at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 5625.299499999732ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:03:58.168
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:03:58.168
+!MESSAGE [Info]	[fetchChat] Request f48210de-fe44-46ca-be61-b82b1fc54bc1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 532.2630000002682ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:03:58.169
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:06:48.131
+!MESSAGE [Info]	[fetchChat] Request 1037b6a8-7bd1-4baa-9885-07712dd27604 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1971.2752000000328ms
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.629
+!MESSAGE [Info] Document is null for editor: SystemAdminMsApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.630
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/java/com/mepms/SystemAdminMsApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.664
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.665
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.681
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.681
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Eureka-Server-CPS/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.795
+!MESSAGE [Info] Document is null for editor: EurekaServerCpsApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 13:06:49.796
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Eureka-Server-CPS/src/main/java/training/iqgateway/EurekaServerCpsApplication.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:06:58.313
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:06:58.313
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 13:06:58.314
+!MESSAGE [Info]	[fetchChat] Request 8fd3903a-b539-4157-8b99-f0baecfad6cf at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 677.9662000006065ms
