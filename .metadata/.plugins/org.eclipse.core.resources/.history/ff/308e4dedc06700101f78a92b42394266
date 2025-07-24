@@ -1,0 +1,5 @@
+package com.mepms.repository;
+
+public interface AuditLogRepository {
+
+}

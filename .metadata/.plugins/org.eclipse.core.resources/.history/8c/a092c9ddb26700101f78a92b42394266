@@ -1,0 +1,17 @@
+package com.mepms.entity;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
+
+@Document(collection = "users")
+@Data
+public class UserEO {
+	private String username;
+	private String password;
+	private String email;
+	private String department;
+	private String role_id;
+	private String createdAt;
+	private String updatedAt;
+}

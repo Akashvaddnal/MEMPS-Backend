@@ -1,0 +1,53 @@
+package com.mepms.service.impl;
+
+import com.mepms.entity.RoleEO;
+import com.mepms.repository.RoleRepository;
+import com.mepms.repository.UserRepository;
+import com.mepms.service.RoleService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class RoleServiceImpl implements RoleService {
+
+    private final RoleRepository roleRepository;
+    
+
+    @Autowired
+    public RoleServiceImpl(RoleRepository roleRepository) {
+        this.roleRepository = roleRepository;
+        
+    }
+
+    @Override
+    public RoleEO createRole(RoleEO role) {
+        return roleRepository.save(role);
+    }
+
+    @Override
+    public List<RoleEO> getAllRoles() {
+        return roleRepository.findAll();
+    }
+
+    @Override
+    public Optional<RoleEO> getRoleById(String id) {
+        return roleRepository.findById(id);
+    }
+
+    @Override
+    public RoleEO updateRole(String id, RoleEO updatedRole) {
+        return roleRepository.findById(id).map(role -> {
+            role.setRole_name(updatedRole.getRole_name());
+            return roleRepository.save(role);
+        }).orElseThrow(() -> new RuntimeException("Role not found with id: " + id));
+    }
+    
+    @Override
+    public RoleEO deleteRole(String id) {
+    	return roleRepository.deleteById(id);
+    }
+
+}

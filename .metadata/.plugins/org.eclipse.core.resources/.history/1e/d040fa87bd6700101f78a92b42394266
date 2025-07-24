@@ -1,0 +1,12 @@
+package com.mepms.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mepms.entity.RoleEO;
+
+@Repository
+public interface RoleRepository extends MongoRepository<RoleEO, String> {
+	RoleEO findByRole_name(String role_name);  // ✅ match the field name exactly
+
+}

@@ -1,0 +1,5 @@
+package com.mepms.service.impl;
+
+public class AuditLogServiceImpl {
+
+}

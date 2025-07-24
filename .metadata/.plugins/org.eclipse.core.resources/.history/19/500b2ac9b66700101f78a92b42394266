@@ -1,0 +1,41 @@
+package com.mepms.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.mepms.entity.UserEO;
+import com.mepms.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public UserEO createUser(UserEO user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserEO> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<UserEO> getUserById(String id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public UserEO updateUser(String id, UserEO user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteUser(String id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

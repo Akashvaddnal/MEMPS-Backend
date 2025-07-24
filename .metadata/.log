@@ -1,0 +1,2357 @@
+!SESSION 2025-07-23 16:00:23.869 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-23 16:00:46.383
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-23 16:00:46.632
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-23 16:02:13.177
+!MESSAGE Logback config file: D:\MEPMS-Capstone Project\MEPMS_Backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-23 16:02:13.980
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-23 16:02:13.980
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-23 16:02:14.539
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-23 16:02:14.539
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-07-23 16:02:18.950
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-07-23 16:02:20.602
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\akash.vl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-07-23 16:05:26.659
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.3.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.3.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.3.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-07-23 16:05:26.660
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.3.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-07-23 16:05:26.660
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.3.0
+
+!ENTRY org.eclipse.jface 2 0 2025-07-23 16:05:53.211
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-07-23 16:05:53.211
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-23 16:18:46.683
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-07-23 16:27:57.894
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.3.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.3.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.3.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-07-23 16:27:57.894
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.3.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-07-23 16:27:57.894
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.3.0
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-23 16:31:37.480
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-23 16:40:22.549
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-07-23 17:48:06.924
+!MESSAGE Error occurred while deleting: /Eureka-Server-CPS/target/classes/META-INF
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/Eureka-Server-CPS/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:417)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:362)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:814)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: OK
+Contains: Problems encountered while deleting files.
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\MEPMS-Capstone Project\MEPMS_Backend\Eureka-Server-CPS\target\classes\META-INF\maven\com.iqgateway\eurekaServer.
+java.nio.file.AccessDeniedException: D:\MEPMS-Capstone Project\MEPMS_Backend\Eureka-Server-CPS\target\classes\META-INF\maven\com.iqgateway\eurekaServer
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1351)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:422)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:991)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:336)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2025-07-23 17:48:06.924
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2025-07-23 17:48:06.924
+!MESSAGE Could not delete '/Eureka-Server-CPS/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:417)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:362)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:814)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: OK
+Contains: Problems encountered while deleting files.
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\MEPMS-Capstone Project\MEPMS_Backend\Eureka-Server-CPS\target\classes\META-INF\maven\com.iqgateway\eurekaServer.
+java.nio.file.AccessDeniedException: D:\MEPMS-Capstone Project\MEPMS_Backend\Eureka-Server-CPS\target\classes\META-INF\maven\com.iqgateway\eurekaServer
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1351)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:422)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:991)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:336)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2025-07-23 17:48:06.924
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2025-07-23 17:48:06.924
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 unknown 0 0 2025-07-23 17:48:06.924
+!MESSAGE OK
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2025-07-23 17:48:06.924
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 6 org.eclipse.core.filesystem 4 273 2025-07-23 17:48:06.924
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 7 org.eclipse.core.filesystem 4 273 2025-07-23 17:48:06.924
+!MESSAGE Could not delete: D:\MEPMS-Capstone Project\MEPMS_Backend\Eureka-Server-CPS\target\classes\META-INF\maven\com.iqgateway\eurekaServer.
+!STACK 0
+java.nio.file.AccessDeniedException: D:\MEPMS-Capstone Project\MEPMS_Backend\Eureka-Server-CPS\target\classes\META-INF\maven\com.iqgateway\eurekaServer
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1351)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:422)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:991)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:336)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-07-23 17:52:54.669
+!MESSAGE Error occurred while deleting: /zuul-demo/target/classes/META-INF
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/zuul-demo/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:417)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:362)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:814)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: OK
+Contains: Problems encountered while deleting files.
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\target\classes\META-INF\maven\com.iqgateway\zuul-demo.
+java.nio.file.AccessDeniedException: D:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\target\classes\META-INF\maven\com.iqgateway\zuul-demo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1351)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:422)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:991)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:336)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2025-07-23 17:52:54.671
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2025-07-23 17:52:54.671
+!MESSAGE Could not delete '/zuul-demo/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:417)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:362)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:814)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: OK
+Contains: Problems encountered while deleting files.
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\target\classes\META-INF\maven\com.iqgateway\zuul-demo.
+java.nio.file.AccessDeniedException: D:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\target\classes\META-INF\maven\com.iqgateway\zuul-demo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1351)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:422)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:991)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:336)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2025-07-23 17:52:54.671
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2025-07-23 17:52:54.671
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 unknown 0 0 2025-07-23 17:52:54.671
+!MESSAGE OK
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2025-07-23 17:52:54.671
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 6 org.eclipse.core.filesystem 4 273 2025-07-23 17:52:54.671
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 7 org.eclipse.core.filesystem 4 273 2025-07-23 17:52:54.671
+!MESSAGE Could not delete: D:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\target\classes\META-INF\maven\com.iqgateway\zuul-demo.
+!STACK 0
+java.nio.file.AccessDeniedException: D:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\target\classes\META-INF\maven\com.iqgateway\zuul-demo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1351)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:422)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:991)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:336)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.lambda$3(LocalFile.java:326)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1456)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-23 17:54:17.370
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.epp.mpc.ui 2 0 2025-07-24 11:35:38.952
+!MESSAGE Unable to load image https://marketplace.eclipse.org/sites/default/files/styles/badge_logo/public/marketplace_1.png?itok=P82tNMFv
+!STACK 0
+org.eclipse.swt.SWTException: Unsupported or unrecognized format
+	at org.eclipse.swt.SWT.error(SWT.java:4945)
+	at org.eclipse.swt.SWT.error(SWT.java:4860)
+	at org.eclipse.swt.SWT.error(SWT.java:4831)
+	at org.eclipse.swt.internal.image.FileFormat.lambda$11(FileFormat.java:132)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.eclipse.swt.internal.image.FileFormat.load(FileFormat.java:131)
+	at org.eclipse.swt.internal.NativeImageLoader.load(NativeImageLoader.java:26)
+	at org.eclipse.jface.resource.URLImageDescriptor.loadImageFromStream(URLImageDescriptor.java:152)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:137)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:109)
+	at org.eclipse.jface.resource.URLImageDescriptor.lambda$2(URLImageDescriptor.java:74)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:609)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:310)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:271)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:95)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDiscoveryResources.safeCreateImage(MarketplaceDiscoveryResources.java:177)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDiscoveryResources.setImage(MarketplaceDiscoveryResources.java:123)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.provideIconImage(AbstractMarketplaceDiscoveryItem.java:497)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createIconControl(AbstractMarketplaceDiscoveryItem.java:425)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createContent(AbstractMarketplaceDiscoveryItem.java:239)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createContent(AbstractMarketplaceDiscoveryItem.java:203)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.<init>(AbstractMarketplaceDiscoveryItem.java:168)
+	at org.eclipse.epp.internal.mpc.ui.wizards.DiscoveryItem.<init>(DiscoveryItem.java:86)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.createDiscoveryItem(MarketplaceViewer.java:462)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.doCreateViewerItem(MarketplaceViewer.java:412)
+	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer$3.doCreateItem(CatalogViewer.java:342)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.ControlListViewer.createNewItem(ControlListViewer.java:241)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.ControlListViewer.refreshAll(ControlListViewer.java:483)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.ControlListViewer.inputChanged(ControlListViewer.java:355)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:279)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1635)
+	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer.catalogUpdated(CatalogViewer.java:248)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.access$3(MarketplaceViewer.java:1)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$1(MarketplaceViewer.java:354)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.runUpdate(MarketplaceViewer.java:712)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.catalogUpdated(MarketplaceViewer.java:353)
+	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer.updateCatalog(CatalogViewer.java:588)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.updateCatalog(MarketplaceViewer.java:989)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplacePage.safeUpdateCatalog(MarketplacePage.java:798)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplacePage.lambda$4(MarketplacePage.java:786)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4111)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3727)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.openWizardDialog(AbstractMarketplaceWizardCommand.java:146)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:73)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:475)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:497)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4136)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3724)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-07-24 11:38:13.000
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.ui,0.9.2.202507230506 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-07-24 11:38:13.001
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.microsoft.copilot.eclipse.feature,0.9.2.202507230506 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-07-24 11:38:13.002
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.core,0.9.2.202507230506 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+!SESSION 2025-07-24 11:40:25.187 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-24 11:40:30.310
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-24 11:40:30.572
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-24 11:40:40.838
+!MESSAGE Logback config file: D:\MEPMS-Capstone Project\MEPMS_Backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-24 11:40:41.587
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-24 11:40:41.587
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-24 11:40:42.190
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-24 11:40:42.190
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-07-24 11:40:49.579
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 11:40:53.040
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-07-24 11:40:53.245
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\akash.vl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 11:40:58.835
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:41:04.218
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.347.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:41:05.751
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2025-07-24 11:51:11.889
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2025-07-24 11:51:11.890
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-07-24 11:51:11.890
+!MESSAGE "Apache Commons Codec" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.890
+!MESSAGE "Apache Ant" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.890
+!MESSAGE "slf4j-api" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.890
+!MESSAGE "OSGi System Bundle" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.890
+!MESSAGE "jna" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10007 2025-07-24 11:51:11.890
+!MESSAGE "Apache Commons Codec" cannot be fully uninstalled because other installed software requires it.  The parts that are not required will be uninstalled.
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2025-07-24 11:51:11.914
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2025-07-24 11:51:11.914
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-07-24 11:51:11.914
+!MESSAGE "Apache Commons Codec" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.914
+!MESSAGE "Apache Ant" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.914
+!MESSAGE "slf4j-api" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.914
+!MESSAGE "OSGi System Bundle" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-07-24 11:51:11.914
+!MESSAGE "jna" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10007 2025-07-24 11:51:11.914
+!MESSAGE "Apache Commons Codec" cannot be fully uninstalled because other installed software requires it.  The parts that are not required will be uninstalled.
+
+!ENTRY org.eclipse.jface 2 0 2025-07-24 11:52:55.265
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-07-24 11:52:55.265
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 11:55:34.188
+!MESSAGE [Info] Document is null for editor: RoleEO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 11:55:34.189
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/java/com/mepms/entity/RoleEO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 11:55:41.077
+!MESSAGE [Info] Document is null for editor: UserEO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 11:55:41.078
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/java/com/mepms/entity/UserEO.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:03.579
+!MESSAGE [Info]	[fetchChat] Request b1d75a7e-b0e3-4cfb-b691-419fbe2deff4 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 869.4344999999739ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:14.388
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:15.401
+!MESSAGE [Info]	[fetchChat] Request c46836a6-bf3f-4ee0-8f90-338f09666077 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 934.1286000000546ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:16.636
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:17.104
+!MESSAGE [Info]	[fetchChat] Request 9ed15fa3-4844-4f3e-ae5d-ab22901b30e7 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 472.1453999999212ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:17.450
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:30.385
+!MESSAGE [Info]	[fetchChat] Request 230da95b-9a05-4d01-88a2-6dc8a2a8a55b at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 736.6478000000352ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:38.588
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:39.397
+!MESSAGE [Info]	[fetchChat] Request ec8cf883-b7e3-4fb6-8336-363fadc9ba9c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 746.2840000001015ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:40.751
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:41.326
+!MESSAGE [Info]	[fetchChat] Request 07aa784b-1156-4711-b550-b141fe475034 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 500.1378000000259ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:42.195
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:43.340
+!MESSAGE [Info]	[fetchChat] Request 091a56a2-5280-4b64-96bd-41e3a4229632 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 480.90460000000894ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 11:57:43.596
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:00:08.396
+!MESSAGE [Info]	[fetchChat] Request 892b36ae-d95e-4299-b6e2-1230fa8c88ae at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1548.1165000000037ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:00:17.339
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:00:18.069
+!MESSAGE [Info]	[fetchChat] Request cb2a517b-fabf-45e9-91e3-46cbdc22b8d1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 664.122199999867ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:00:19.486
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:00:21.215
+!MESSAGE [Info]	[fetchChat] Request 9b2fa49b-2a5d-4b79-a3d0-9361b2a78166 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 481.0630999999121ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:00:21.435
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:01:04.437
+!MESSAGE [Info]	[fetchChat] Request 9c18c505-2f6b-4bd2-b335-f20fb0aca7ef at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1164.9179000000004ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:01:07.193
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:01:07.810
+!MESSAGE [Info]	[fetchChat] Request 51e68189-6bd3-4af4-af13-2e1f856a0ae9 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 552.0443000001833ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:01:09.180
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:01:09.938
+!MESSAGE [Info]	[fetchChat] Request 89efc67a-fd5b-4df9-ac3d-d676e19fe4af at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 768.9294000000227ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:01:10.682
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:02:13.270
+!MESSAGE [Info]	[fetchChat] Request d20ba93c-e4e4-45ef-b840-f58735c4193e at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 787.1411999999546ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:02:15.834
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:02:16.342
+!MESSAGE [Info]	[fetchChat] Request 0f98a113-bf64-462c-a62e-951b7f2daf4e at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 531.5910000000149ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:02:16.550
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:04:30.190
+!MESSAGE [Info]	[fetchChat] Request 02c05397-b001-4f01-b16f-6f124c55bf1a at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1608.2611000000034ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:04:30.888
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:04:31.380
+!MESSAGE [Info]	[fetchChat] Request 21944ef0-850b-4e3c-bb88-df3ad33bb97c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 496.7517999999691ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:04:31.616
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:06:15.664
+!MESSAGE [Info]	[fetchChat] Request 5919acac-b7af-4766-91be-153db64ce38c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 690.1785999999847ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:06:18.434
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:06:19.130
+!MESSAGE [Info]	[fetchChat] Request 0d85ecd1-0199-4037-8cca-a42e2db03730 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 625.903599999845ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:06:20.320
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:06:20.923
+!MESSAGE [Info]	[fetchChat] Request 877c6710-2335-459a-95ae-2bc2bfcebc31 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 556.7430000000168ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:06:21.096
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:27.568
+!MESSAGE [Info]	[fetchChat] Request e3b6bd09-0928-4354-b180-554b17938a1b at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1217.5176999999676ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:29.274
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-24 12:07:29.275
+!MESSAGE [Error]	[toolCallingLoop] Error while invoking tool cls_1753337460047: Error: Invalid input path: Login-Auth-MS/src/main/resources/application.properties. Be sure to use an absolute path.
+    at resolvePathInput (C:\snapshot\copilot-client\lib\src\toolCall\tools\toolUtils.ts:21:15)
+    at sre.prepareInvocation (C:\snapshot\copilot-client\lib\src\toolCall\tools\editFileTool.ts:245:21)
+    at sd.prepareInvocation (C:\snapshot\copilot-client\lib\src\toolCall\services\toolsService.ts:102:21)
+    at t.handleSingleToolCall (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:364:61)
+    at t.handleToolCalls (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:327:24)
+    at t.processChatFetchResult (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:281:35)
+    at t.runOne (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:172:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at t.run (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:94:28)
+    at Gne.processWithModelAndToolCall (C:\snapshot\copilot-client\lib\src\conversation\editAgent\agenticTurnProcessor.ts:113:13) Error: Invalid input path: Login-Auth-MS/src/main/resources/application.properties. Be sure to use an absolute path.
+    at resolvePathInput (C:\snapshot\copilot-client\lib\src\toolCall\tools\toolUtils.ts:21:15)
+    at sre.prepareInvocation (C:\snapshot\copilot-client\lib\src\toolCall\tools\editFileTool.ts:245:21)
+    at sd.prepareInvocation (C:\snapshot\copilot-client\lib\src\toolCall\services\toolsService.ts:102:21)
+    at t.handleSingleToolCall (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:364:61)
+    at t.handleToolCalls (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:327:24)
+    at t.processChatFetchResult (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:281:35)
+    at t.runOne (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:172:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at t.run (C:\snapshot\copilot-client\lib\src\toolCall\toolCallingLoop.ts:94:28)
+    at Gne.processWithModelAndToolCall (C:\snapshot\copilot-client\lib\src\conversation\editAgent\agenticTurnProcessor.ts:113:13)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-24 12:07:29.275
+!MESSAGE [Error]	[chat] Tool call cls_1753337460047 not found for the agent round 1 in conversation 7f1f8e07-12fc-4e97-997d-e694b964c99e and turn 504060a3-11ff-47cd-a5fc-23167b682450
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:29.811
+!MESSAGE [Info]	[fetchChat] Request a2cf1a96-7423-47f4-909b-c0c5659c8c43 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 548.5505999999586ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:34.873
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:35.652
+!MESSAGE [Info]	[fetchChat] Request 4826aee9-cfcb-4279-a6c0-de6ab74d21fc at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 813.0017999999691ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:36.043
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:37.306
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:37.307
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:37.617
+!MESSAGE [Info]	[fetchChat] Request f474de7f-bc58-43cb-b092-0f3c93b63194 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 547.5424000001512ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:38.906
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:39.878
+!MESSAGE [Info]	[fetchChat] Request 167af27a-c7ad-4d3a-91fc-354cb1d5e235 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 493.17680000001565ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:07:40.068
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:07.095
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:07.096
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:19.086
+!MESSAGE [Info]	[fetchChat] Request ffc6ad7a-108c-40ce-81f4-18ca13e53ae3 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 974.2591999999713ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:21.230
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:22.008
+!MESSAGE [Info]	[fetchChat] Request a23a37d5-9d66-4bcc-b603-e272bb4bafdf at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 701.0719000000972ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:22.871
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:23.412
+!MESSAGE [Info]	[fetchChat] Request 6fe61c4e-589b-456f-a9c8-4df9982591fd at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 522.5969000000041ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:08:23.597
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:03.023
+!MESSAGE [Info]	[fetchChat] Request 9a42a666-43a6-4393-8748-900fd79c53ca at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 689.31520000007ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:03.569
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:04.034
+!MESSAGE [Info]	[fetchChat] Request 7f1798b4-536e-41a3-aa13-f260a1e7cbb8 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 479.5570000000298ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:04.214
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:37.102
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:37.104
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:49.883
+!MESSAGE [Info]	[fetchChat] Request 2d1e9776-fa6f-40ad-9246-ac2671c1ad0d at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 975.2095000001136ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:53.267
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:54.724
+!MESSAGE [Info]	[fetchChat] Request 97a6514b-97f5-40bd-8f15-3505789ead77 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 627.9279000000097ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:55.505
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:56.131
+!MESSAGE [Info]	[fetchChat] Request 9e713e85-f74a-4f8f-8078-4ac3f8c14863 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 658.2371999998577ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:09:56.307
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:10:37.982
+!MESSAGE [Info]	[fetchChat] Request 6f0937d9-c3ae-4b32-a165-9d893c319388 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 814.2998000001535ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:10:40.549
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:10:41.901
+!MESSAGE [Info]	[fetchChat] Request 385dc066-ed84-4d03-b0fc-20877ead4bb7 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 560.6857000000309ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:10:43.039
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:10:44.523
+!MESSAGE [Info]	[fetchChat] Request 486da5cd-0a43-4c7f-a7ea-3fd5c9e9991d at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 747.2687999999616ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:10:44.721
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:11:48.101
+!MESSAGE [Info]	[fetchChat] Request b9c6b711-cb43-464a-827c-00d926caf52e at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 750.6784999999218ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:11:49.721
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:11:51.254
+!MESSAGE [Info]	[fetchChat] Request 46da5566-9c76-4764-886d-e8a22cc90c57 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 782.7294999998994ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:11:52.598
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:11:53.079
+!MESSAGE [Info]	[fetchChat] Request 074efd10-0fcb-4eab-a94b-293ce86e1662 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 495.31790000014007ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:11:53.839
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:08.420
+!MESSAGE [Info]	[fetchChat] Request e40a9b70-6afe-4307-a7cf-c7efccb54221 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 776.5543000001926ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:09.521
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:11.203
+!MESSAGE [Info]	[fetchChat] Request 1f7ee2db-7f18-4eb5-a296-8c8eb346a1f1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 758.7117999999318ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:16.434
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:18.747
+!MESSAGE [Info]	[fetchChat] Request ec662796-2f97-42a3-a370-c006cb82c175 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1522.4772000000812ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:19.724
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:20.187
+!MESSAGE [Info]	[fetchChat] Request 3432386d-e3d8-4d94-8031-678de03179a0 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 478.7579999999143ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:20.372
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:37.103
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:12:37.105
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:13:03.390
+!MESSAGE [Info]	[fetchChat] Request 8195d99b-e3c8-4b10-b4ad-6944a3a210f8 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 814.4928999999538ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:13:07.487
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:13:08.954
+!MESSAGE [Info]	[fetchChat] Request 6ce43077-44b3-4581-bc9a-8824aff0e144 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 730.1580999998841ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:13:10.499
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:13:11.374
+!MESSAGE [Info]	[fetchChat] Request 5be291c9-5805-440b-8691-6cce0a91d22c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 910.2738000000827ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:13:11.548
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-24 12:13:59.856
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:11.591
+!MESSAGE [Info]	[fetchChat] Request fcd224d3-005b-4140-94a5-6f3875c09cac at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 958.5548999998719ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:12.123
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:12.842
+!MESSAGE [Info]	[fetchChat] Request 10e0fc31-bb77-4fdc-8f85-dab56a351782 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 619.4632999999449ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:14.865
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:15.515
+!MESSAGE [Info]	[fetchChat] Request 942229d0-3216-49a8-9624-673c2a2cd30d at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 711.4828999999445ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:17.604
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:18.874
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:18.875
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:19.470
+!MESSAGE [Info]	[fetchChat] Request 8203b50c-39eb-41c9-91b7-bdaca44bf85c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1016.8299999998417ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:20.553
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:20.958
+!MESSAGE [Info]	[fetchChat] Request 2b8f1499-d315-4055-bf87-3fe01d149c1f at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 496.4311000001617ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:21.148
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:48.450
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:14:48.453
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:16:18.452
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:16:18.454
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\.git\\HEAD'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.073
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.074
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.119
+!MESSAGE [Info] Document is null for editor: AuthController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.120
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/controller/AuthController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.160
+!MESSAGE [Info] Document is null for editor: UserRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.161
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/repository/UserRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.185
+!MESSAGE [Info] Document is null for editor: User.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.186
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity/User.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.205
+!MESSAGE [Info] Document is null for editor: AuthService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.206
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service/AuthService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.225
+!MESSAGE [Info] Document is null for editor: JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.226
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util/JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.246
+!MESSAGE [Info] Document is null for editor: LoginAuthMsApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.246
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/LoginAuthMsApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.328
+!MESSAGE [Info] Document is null for editor: AuthServiceImpl.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:17:00.329
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service/AuthServiceImpl.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:17:37.106
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:17:37.108
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:18:49.015
+!MESSAGE [Info]	[fetchChat] Request fcbef603-2ee4-4ed5-8aef-749da135fcf6 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1698.1732000000775ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:18:59.337
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:18:59.819
+!MESSAGE [Info]	[fetchChat] Request 5b3d1d06-a653-4b05-a8f9-8e427f87f4b1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 509.4388999999501ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:19:00.003
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:19:18.442
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:19:18.445
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\.git\\HEAD'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:23:07.622
+!MESSAGE [Info] Document is null for editor: RoleController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:23:07.623
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/java/com/mepms/controller/RoleController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:08.861
+!MESSAGE [Info]	[fetchChat] Request fa24d789-708e-421d-aebf-bc25f40557f1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1694.3813999998383ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:15.027
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:15.654
+!MESSAGE [Info]	[fetchChat] Request 233738eb-4f08-4938-bea7-6707a6e5e409 at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 706.1363999997266ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:16.641
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:17.941
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:17.942
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:18.439
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:18.440
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:18.863
+!MESSAGE [Info]	[fetchChat] Request ecb2c5f3-ea01-4fbb-8882-e829869310d0 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 895.7649000003003ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:20.553
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:21.025
+!MESSAGE [Info]	[fetchChat] Request a8d3cec7-7e62-4076-b2b5-bf3e70c90a25 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 547.1432000002824ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:21.231
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:47.467
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:24:47.468
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:14.313
+!MESSAGE [Info]	[fetchChat] Request 2bbaecf3-5fc1-4668-8ae7-f945130c5cc0 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 805.5330000002868ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:15.417
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:17.545
+!MESSAGE [Info]	[fetchChat] Request ac4a6621-de3c-4038-b062-55deb9163906 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1311.156799999997ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:17.928
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:18.842
+!MESSAGE [Info]	[fetchChat] Request 49638312-7420-4c64-a0ec-7b75119722d8 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 621.9235000000335ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:20.381
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:21.429
+!MESSAGE [Info]	[fetchChat] Request 6fdd0137-0c44-4a89-a537-f57a1dd1c511 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1108.000500000082ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:25.133
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:25:56.243
+!MESSAGE [Info]	[fetchChat] Request c1da679a-6551-4208-ad23-1c93ea7a96d1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 760.8914999999106ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:03.139
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:03.468
+!MESSAGE [Info]	[fetchChat] Request 558d6dcd-fb48-4a62-96c3-58bc6156d105 at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 408.7397000002675ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:07.004
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:08.263
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:08.263
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:09.575
+!MESSAGE [Info]	[fetchChat] Request ff6e6333-2704-4b9e-aed3-1185b6c3334d at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1555.9564999998547ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:11.251
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:12.480
+!MESSAGE [Info]	[fetchChat] Request 916bbbd5-108f-427a-a706-4d972ae6b760 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 649.0189999998547ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:17.462
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:17.464
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:17.984
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:18.494
+!MESSAGE [Info]	[fetchChat] Request ee4faa48-5785-4d9f-913b-121820383954 at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 585.3651000000536ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:20.327
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:21.409
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:21.410
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\service\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:22.424
+!MESSAGE [Info]	[fetchChat] Request 629678dd-4f50-443c-9d49-3e8a48e87c53 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1353.3324000001885ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:23.956
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:24.532
+!MESSAGE [Info]	[fetchChat] Request dfe0d5af-bc37-43ff-ba3f-8b1409c7fa0d at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 624.5680999998003ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:28.909
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:29.151
+!MESSAGE [Info]	[fetchChat] Request 4d4361d0-61bc-4288-ac65-b8a8af0ccf0e at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 329.964999999851ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:29.527
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:30.850
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/zuul-demo/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\zuul-demo\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:30.851
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:31.390
+!MESSAGE [Info]	[fetchChat] Request 1e8d148f-1a6c-4dfd-b678-595d4b511799 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 965.1001999997534ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:33.515
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:34.759
+!MESSAGE [Info]	[fetchChat] Request 24e92ebc-bf61-4a69-8c95-6acb36c89cbb at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 545.5604999996722ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:34.956
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:38.012
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:38.012
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:51.044
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:26:51.046
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\service\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:00.408
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:00.409
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/zuul-demo/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\zuul-demo\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:33.473
+!MESSAGE [Info]	[fetchChat] Request cda44cac-207c-4a0b-a941-ff108c693523 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 946.6370000001043ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:34.235
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:35.200
+!MESSAGE [Info]	[fetchChat] Request 882f9c52-7b31-4e41-8abe-e286dff74a20 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 815.2685999996029ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:37.961
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [tool_calls]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:38.274
+!MESSAGE [Info]	[fetchChat] Request 16609414-1043-4a4c-88be-35ef7d658c4c at <https://proxy.individual.githubcopilot.com/chat/completions> finished with 200 status after 401.5538000003435ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:39.648
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:40.920
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:40.921
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.captureInitialBranchInfo (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:159:39) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\util\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:41.328
+!MESSAGE [Info]	[fetchChat] Request 02e39a56-376c-468e-9111-839eca931343 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 716.5480000004172ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:42.462
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:43.583
+!MESSAGE [Info]	[fetchChat] Request c152b930-ce56-48a8-a77c-a960bd097529 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 548.2208999996074ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:27:43.746
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:08.005
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:08.007
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:10.600
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:10.602
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\util\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:21.054
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:21.055
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\service\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:30.406
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:28:30.407
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/zuul-demo/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\zuul-demo\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:29:17.467
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:29:17.472
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:29:40.598
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:29:40.600
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\util\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:08.017
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:08.022
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:21.057
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:21.058
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\service\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:30.408
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:30.410
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/zuul-demo/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\zuul-demo\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:47.217
+!MESSAGE [Info]	[fetchChat] Request ab48f3e3-d7e7-46b4-8878-d8b0a45707c6 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1644.3655000003055ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:50.491
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:51.227
+!MESSAGE [Info]	[fetchChat] Request c0a8261d-21c2-4813-8847-457fdd2bf4ad at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 542.2129000001587ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:31:51.499
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:32:40.599
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:32:40.600
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\util\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:34:17.453
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:34:17.455
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:36:08.007
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:36:08.008
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\entity\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\entity\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:36:21.052
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:36:21.053
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\service\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\service\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:36:30.409
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:36:30.410
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/zuul-demo/src/main/resources: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\zuul-demo\src\main\resources\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\zuul-demo\\src\\main\\resources\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:37:18.837
+!MESSAGE [Info]	[fetchChat] Request 1c57a26b-39bb-459d-b9f1-74ed6463a573 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1649.0162000004202ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:37:22.624
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:37:22.625
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:37:22.625
+!MESSAGE [Info]	[fetchChat] Request b37f2e02-ecfa-486e-b329-15473f6df540 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 555.0492000002414ms
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.049
+!MESSAGE [Info] Document is null for editor: UserEO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.063
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/System-Admin-MS/src/main/java/com/mepms/entity/UserEO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.089
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.100
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/zuul-demo/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.137
+!MESSAGE [Info] Document is null for editor: JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.148
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util/JwtUtil.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.175
+!MESSAGE [Info] Document is null for editor: UserRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.179
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/repository/UserRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.204
+!MESSAGE [Info] Document is null for editor: User.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.205
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/entity/User.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.296
+!MESSAGE [Info] Document is null for editor: AuthServiceImpl.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-24 12:37:23.296
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/service/AuthServiceImpl.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:37:40.596
+!MESSAGE [Info]	[repository] Failed to run command 'git' in d:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util: Error: spawn git ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn git',
+  path: 'git',
+  spawnargs: [ '-c', 'safe.directory=*', 'branch', '--show-current' ],
+  cmd: 'git -c safe.directory=* branch --show-current'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:37:40.597
+!MESSAGE [Info]	[repository] Failed to parse git HEAD file in file:///d%3A/MEPMS-Capstone%20Project/MEPMS_Backend/Login-Auth-MS/src/main/java/com/mepms/util: Error: ENOENT: no such file or directory, open 'd:\MEPMS-Capstone Project\MEPMS_Backend\Login-Auth-MS\src\main\java\com\mepms\util\.git\HEAD'
+    at open (node:internal/fs/promises:639:25)
+    at Object.readFile (node:internal/fs/promises:1246:14)
+    at _N.readFileString (C:\snapshot\copilot-client\lib\src\localFileSystem.ts:8:17)
+    at rre.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitParsingBranchLoader.ts:13:33)
+    at gee.getBranchInfo (C:\snapshot\copilot-client\lib\src\repository\gitBranchResolver.ts:45:32)
+    at Cee.checkBranchChange (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:174:39)
+    at Cee.createEditSurvivalResult (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:212:33)
+    at Cee.report (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:107:24)
+    at Cee.updateAndReport (C:\snapshot\copilot-client\lib\src\editSurvivalTracking\editSurvivalReporter.ts:635:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'd:\\MEPMS-Capstone Project\\MEPMS_Backend\\Login-Auth-MS\\src\\main\\java\\com\\mepms\\util\\.git\\HEAD'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:39:06.361
+!MESSAGE [Info]	[fetchChat] Request 400d0fe8-9de7-476e-94e7-bdac8c63d978 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1014.74869999988ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:39:10.917
+!MESSAGE [Info]	[fetchChat] Request 68e5bf5d-6b26-4cf3-b851-5bc3c129309e at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 556.3185000000522ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:39:10.918
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-24 12:39:10.919
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]

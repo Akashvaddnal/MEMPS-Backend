@@ -1,0 +1,2 @@
+spring.application.name=System-Admin-MS
+server.port=7071

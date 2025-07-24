@@ -1,0 +1,5 @@
+package com.mepms.entity;
+
+public class UserEO {
+
+}

@@ -1,0 +1,54 @@
+package com.mepms.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mepms.entity.UserEO;
+import com.mepms.repository.UserRepository;
+import com.mepms.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	private final UserRepository userRepository;
+
+    @Autowired
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    @Override
+    public UserEO createUser(UserEO user) {
+        return userRepository.save(user);
+    }
+
+    @Override
+    public List<UserEO> getAllUsers() {
+        return userRepository.findAll();
+    }
+
+    @Override
+    public Optional<UserEO> getUserById(String id) {
+        return userRepository.findById(id);
+    }
+
+    @Override
+    public UserEO updateUser(String id, UserEO newUserData) {
+        return userRepository.findById(id).map(existingUser -> {
+            existingUser.setUsername(newUserData.getUsername());
+            existingUser.setPassword(newUserData.getPassword());
+            existingUser.setEmail(newUserData.getEmail());
+            existingUser.setDepartment(newUserData.getDepartment());
+            existingUser.setRole_id(newUserData.getRole_id());
+            existingUser.setUpdatedAt(newUserData.getUpdatedAt());
+            return userRepository.save(existingUser);
+        }).orElseThrow(() -> new RuntimeException("User not found with id: " + id));
+    }
+
+    @Override
+    public void deleteUser(String id) {
+        userRepository.deleteById(id);
+    }
+
+}

@@ -1,0 +1,9 @@
+package com.mepms.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.mepms.entity.RoleEO;
+
+public interface RoleRepository extends MongoRepository<RoleEO, String> {
+	
+}

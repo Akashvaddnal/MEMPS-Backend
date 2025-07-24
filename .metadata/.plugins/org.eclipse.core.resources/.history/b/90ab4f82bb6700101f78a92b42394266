@@ -1,0 +1,5 @@
+package com.mepms.config;
+
+public class MongoValidationConfig {
+
+}

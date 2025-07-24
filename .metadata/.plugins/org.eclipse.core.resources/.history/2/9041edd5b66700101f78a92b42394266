@@ -1,0 +1,5 @@
+package com.mepms.service;
+
+public interface UserService {
+
+}

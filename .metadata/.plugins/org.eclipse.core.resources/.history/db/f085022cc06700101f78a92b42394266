@@ -1,0 +1,26 @@
+# Basic Zuul Config
+spring.application.name=zuul-demo
+server.port=9090
+
+# Eureka Config
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.instance.prefer-ip-address=true
+
+# Zuul Routes Config
+zuul.routes.customer-service.url=http://localhost:8090/
+zuul.routes.InsuranceAdminStrator.url=http://localhost:9098/
+zuul.routes.PolicyDetails.url=http://localhost:9092/
+zuul.routes.claim-details-service.url=http://localhost:9097/
+zuul.routes.Network-Hospital-Micro-Service-CPS.url=http://localhost:9095/
+zuul.routes.Customer-Micro-Service-CPS.url=http://localhost:9096/
+zuul.routes.Field-Doctor-Micro-Service-CPS.url=http://localhost:9099/
+zuul.routes.Authentication.url=http://localhost:9091/
+zuul.routes.Customer-Dashboard-Micro-Service-CPS.url=http://localhost:7070/
+zuul.routes.Admin-Micro-Service-CPS.url=http://localhost:9094/
+
+
+# CORS Specific Configuration
+zuul.sensitive-headers=Cookie,Set-Cookie
+zuul.ignored-headers=Access-Control-Allow-Origin,Access-Control-Allow-Methods
+zuul.add-proxy-headers=true
+

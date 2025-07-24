@@ -1,0 +1,17 @@
+spring.application.name=System-Admin-MS
+
+server.port=7071
+
+
+spring.data.mongodb.uri=mongodb://localhost:27017/MEPMS_DB
+
+
+#
+#eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+#eureka.instance.prefer-ip-address=true
+
+# Validation Logging
+logging.level.org.springframework.web=DEBUG
+
+# General Logging
+logging.level.root=INFO

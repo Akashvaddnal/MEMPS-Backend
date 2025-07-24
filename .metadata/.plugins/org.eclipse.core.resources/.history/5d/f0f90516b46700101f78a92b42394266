@@ -1,0 +1,28 @@
+package com.mepms.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@Document(collection = "users")
+@Data
+public class UserEO {
+	@Id
+	private String id;
+	private String username;
+	private String password;
+	@NotNull(message = "Email is required")
+    @Email(message = "Email should be valid")
+    @Indexed(unique = true)
+	private String email;
+	private String department;
+	private String role_id;
+	private String createdAt;
+	private String updatedAt;
+}
