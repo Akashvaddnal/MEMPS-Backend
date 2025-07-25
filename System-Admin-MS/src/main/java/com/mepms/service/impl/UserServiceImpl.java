@@ -23,8 +23,12 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public UserEO createUser(UserEO user) {
-	    if (userRepository.findByEmail(user.getEmail()) != null) {
-	        throw new RuntimeException("Email already exists");
+		UserEO existingUser=userRepository.findByEmail(user.getEmail()).orElse(null);
+	    if (existingUser != null) {
+	    	if(existingUser.getEmail().equals(user.getEmail())) {
+	    		throw new RuntimeException("Email already exists");
+	    	}
+	        
 	    }
 	    // Generate next sequence value for employeeId
 	    long nextEmpNumber = sequenceGeneratorService.getNextSequence("employeeId");
@@ -51,16 +55,26 @@ public class UserServiceImpl implements UserService {
         userOpt.ifPresent(u -> u.setPassword(null)); // Hide password on get
         return userOpt;
     }
+    
+    @Override
+    public Optional<UserEO> getUserByEmail(String email) {
+    	Optional<UserEO> userOpt = userRepository.findByEmail(email);
+    	userOpt.ifPresent(u -> u.setPassword(null)); // Hide password on get
+    	return userOpt;
+    }
 
     @Override
     public UserEO updateUser(String id, UserEO newUserData) {
         return userRepository.findById(id).map(existingUser -> {
             existingUser.setUsername(newUserData.getUsername());
-            existingUser.setPassword(passwordEncoder.encode(newUserData.getPassword()));
+            if(!(newUserData.getPassword().equals(existingUser.getPassword()))) {
+            	existingUser.setPassword(passwordEncoder.encode(newUserData.getPassword()));
+			}
             existingUser.setEmail(newUserData.getEmail());
             existingUser.setDepartment(newUserData.getDepartment());
             existingUser.setRoleName(newUserData.getRoleName());
             existingUser.setUpdatedAt(new java.util.Date());
+            existingUser.setProfilePic(newUserData.getProfilePic());
             return userRepository.save(existingUser);
         }).orElseThrow(() -> new RuntimeException("User not found with id: " + id));
     }

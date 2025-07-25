@@ -1,16 +1,19 @@
 package com.mepms.service;
 
-import com.mepms.entity.User;
-import com.mepms.repository.UserRepository;
-import com.mepms.util.JwtUtil;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.beans.factory.annotation.Value;
 
-import java.util.Date;
+import com.mepms.entity.User;
+import com.mepms.repository.UserRepository;
+import com.mepms.util.JwtUtil;
 
 @Service
 public class AuthServiceImpl implements AuthService {
@@ -24,8 +27,8 @@ public class AuthServiceImpl implements AuthService {
     @Autowired
     private RestTemplate restTemplate;
 
-    @Value("${systemadminms.auditlog.url:http://localhost:8082/audit-logs}")
-    private String auditLogUrl;
+    
+    private String auditLogUrl="http://localhost:9090/System-Admin-MS/api/audit-logs";
 
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
@@ -52,6 +55,9 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public ResponseEntity<?> login(String email, String password) {
         User user = userRepository.findByEmail(email);
+        System.out.println("User found: " + user);
+        boolean var=passwordEncoder.matches(password, user.getPassword());
+        System.out.println("password :"+password+" user password: " + user.getPassword() + " match: " + var);
         if (user == null || !passwordEncoder.matches(password, user.getPassword())) {
             return ResponseEntity.status(401).body("Invalid email or password");
         }
@@ -62,7 +68,12 @@ public class AuthServiceImpl implements AuthService {
         auditLog.setAction("LOGIN");
         auditLog.setTimestamp(java.time.Instant.now());
         auditLog.setDetails("User " + user.getUsername() + " logged in");
-        restTemplate.postForEntity(auditLogUrl, auditLog, Void.class);
+        try {
+			restTemplate.postForEntity(new URI(auditLogUrl), auditLog, Void.class);
+		} catch (RestClientException | URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return ResponseEntity.ok(token);
     }
 

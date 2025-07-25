@@ -11,6 +11,7 @@ public interface UserService {
     List<UserEO> getAllUsers();
 
     Optional<UserEO> getUserById(String id);
+    Optional<UserEO> getUserByEmail(String email);
 
     UserEO updateUser(String id, UserEO user);
 

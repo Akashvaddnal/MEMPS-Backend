@@ -43,9 +43,14 @@ public class UserEO {
     @NotBlank(message = "Role Name is required")
     private String roleName;
 
-    @NotNull(message = "Created date is required")
+    
     private java.util.Date createdAt;
 
-    @NotNull(message = "Updated date is required")
+   
     private java.util.Date updatedAt;
+    
+    private boolean isActive = false;
+    
+    private String profilePic;
+    
 }
