@@ -21,6 +21,9 @@ public class User {
     @Id
     private String id;
 
+    @NotBlank(message = "Employee ID is required")
+    private String employeeId;
+
     @NotBlank(message = "Username is required")
     @Size(min = 3, max = 30, message = "Username must be between 3 and 30 characters")
     private String username;
@@ -37,12 +40,12 @@ public class User {
     @NotBlank(message = "Department is required")
     private String department;
 
-    @NotBlank(message = "Role ID is required")
-    private String roleId;
+    @NotBlank(message = "Role Name is required")
+    private String roleName;
 
-    @NotBlank(message = "Created date is required")
-    private String createdAt;
+    @NotNull(message = "Created date is required")
+    private java.util.Date createdAt;
 
-    @NotBlank(message = "Updated date is required")
-    private String updatedAt;
+    @NotNull(message = "Updated date is required")
+    private java.util.Date updatedAt;
 }

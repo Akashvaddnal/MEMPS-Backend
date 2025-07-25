@@ -38,6 +38,7 @@ public class RoleServiceImpl implements RoleService {
     public RoleEO updateRole(String id, RoleEO updatedRole) {
         return roleRepository.findById(id).map(role -> {
             role.setRoleName(updatedRole.getRoleName());
+            role.setDescription(updatedRole.getDescription());
             return roleRepository.save(role);
         }).orElseThrow(() -> new RuntimeException("Role not found with id: " + id));
     }

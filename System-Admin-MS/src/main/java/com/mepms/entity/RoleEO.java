@@ -23,4 +23,8 @@ public class RoleEO {
 	@NotBlank(message = "Role Name is Required")
 	@Size(min = 3, max = 30, message = "RoleName must be between 4 and 30 characters")
 	private String roleName;
+	
+	@NotBlank(message = "Role Description is Required")
+	@Size(min = 5, max = 100, message = "Role Description must be between 5 and 100 characters")
+	private String description;
 }
