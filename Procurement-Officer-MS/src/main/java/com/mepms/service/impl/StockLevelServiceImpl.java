@@ -56,6 +56,7 @@ public class StockLevelServiceImpl implements StockLevelService {
             .filter(stock -> {
                 Integer current = stock.getCurrentQuantity();
                 Integer minimum = stock.getMinRequired();
+                System.out.println("Current: " + current + ", Minimum: " + minimum);
                 return current != null && minimum != null && current < minimum;
             })
             .collect(Collectors.toList());
