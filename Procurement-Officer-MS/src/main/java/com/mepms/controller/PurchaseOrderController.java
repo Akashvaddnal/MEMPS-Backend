@@ -130,6 +130,9 @@ public class PurchaseOrderController {
 
     @PutMapping("/{id}")
     public PurchaseOrder update(@PathVariable String id, @RequestBody PurchaseOrder po) {
+    	if(getById(id).isEmpty()) {
+			return create(po);
+		}
         return purchaseOrderService.updatePurchaseOrder(id, po);
     }
 
@@ -141,6 +144,10 @@ public class PurchaseOrderController {
     // Example report endpoint
     @GetMapping("/reports/total-amount/vendor/{vendorId}")
     public Double getTotalAmountByVendor(@PathVariable String vendorId) {
+    	
+    	
+    	
+    	
         return purchaseOrderService.getTotalAmountByVendor(vendorId);
     }
 }
