@@ -92,4 +92,13 @@ public class AuthServiceImpl implements AuthService {
         public String getDetails() { return details; }
         public void setDetails(String details) { this.details = details; }
     }
+
+	@Override
+	public User findByEmail(String email) {
+		// TODO Auto-generated method stub
+		User user = userRepository.findByEmail(email);
+		return user;
+	}
+    
+    
 }

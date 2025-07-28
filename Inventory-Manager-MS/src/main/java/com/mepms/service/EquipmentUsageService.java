@@ -12,4 +12,5 @@ public interface EquipmentUsageService {
     List<EquipmentUsage> findByUsedBy(String usedBy);
     List<EquipmentUsage> findByReservedBy(String reservedBy);
     void deleteById(String id);
+    EquipmentUsage updateEquipmentUsage(String id, EquipmentUsage updatedUsage);
 }

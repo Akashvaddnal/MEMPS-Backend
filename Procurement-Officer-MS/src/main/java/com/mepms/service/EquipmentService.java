@@ -15,6 +15,6 @@ public interface EquipmentService {
     Equipment createEquipment(Equipment equipment);
     Equipment updateEquipment(String id, Equipment equipment);
     void deleteEquipment(String id);
-
+    List<Equipment> getEquipmentsByIds(List<String> equipmentIds);
     // Additional reporting methods if needed
 }

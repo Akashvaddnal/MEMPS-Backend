@@ -16,29 +16,33 @@ public class StockLevelsController {
 
     @PostMapping
     public ResponseEntity<StockLevels> create(@RequestBody StockLevels stockLevels) {
-        return ResponseEntity.ok(service.save(stockLevels));
+        return ResponseEntity.ok(service.create(stockLevels));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<StockLevels> getById(@PathVariable String id) {
-        return service.findById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok(service.getById(id));
+				
     }
 
     @GetMapping
     public List<StockLevels> getAll() {
-        return service.findAll();
+        return service.getAll();
     }
 
     @GetMapping("/equipment/{equipmentId}")
     public List<StockLevels> getByEquipmentId(@PathVariable String equipmentId) {
-        return service.findByEquipmentId(equipmentId);
+        return service.getByEquipmentId(equipmentId);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable String id) {
-        service.deleteById(id);
+        service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+    
+    @PutMapping("/stock-levels/{id}")
+    public StockLevels updateStockLevels(@PathVariable String id, @RequestBody StockLevels stock) {
+        return service.update(id, stock);
     }
 }

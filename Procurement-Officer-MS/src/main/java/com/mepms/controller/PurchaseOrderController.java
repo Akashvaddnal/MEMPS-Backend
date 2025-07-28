@@ -112,7 +112,7 @@ public class PurchaseOrderController {
                 if (item.getId() == null || item.getId().equals("undefined")) {
                     item.setId(new ObjectId().toString());
                 }
-                savedItems.add(purchaseOrderItemRepository.save(item));
+                savedItems.add(item);
             }
             savedOrder.setItems(savedItems);
         }

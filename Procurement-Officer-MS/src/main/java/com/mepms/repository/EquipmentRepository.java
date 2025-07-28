@@ -11,4 +11,5 @@ public interface EquipmentRepository extends MongoRepository<Equipment, String> 
     List<Equipment> findByCategory(String category);
     List<Equipment> findByStatus(String status);
     List<Equipment> findByVendorId(String vendorId);
+    List<Equipment> findBy_idIn(List<String> equipmentIds);
 }

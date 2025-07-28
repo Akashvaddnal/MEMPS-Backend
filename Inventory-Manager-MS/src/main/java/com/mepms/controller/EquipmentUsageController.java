@@ -51,4 +51,9 @@ public class EquipmentUsageController {
         service.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+    @PutMapping("/equipment-usage/{id}")
+    public EquipmentUsage updateEquipmentUsage(@PathVariable String id, @RequestBody EquipmentUsage usage) {
+        return service.updateEquipmentUsage(id, usage);
+    }
+    
 }

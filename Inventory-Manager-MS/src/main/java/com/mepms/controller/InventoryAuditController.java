@@ -16,19 +16,17 @@ public class InventoryAuditController {
 
     @PostMapping
     public ResponseEntity<InventoryAudit> create(@RequestBody InventoryAudit inventoryAudit) {
-        return ResponseEntity.ok(service.save(inventoryAudit));
+        return ResponseEntity.ok(service.create(inventoryAudit));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<InventoryAudit> getById(@PathVariable String id) {
-        return service.findById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok(service.getById(id));
     }
 
     @GetMapping
     public List<InventoryAudit> getAll() {
-        return service.findAll();
+        return service.getAll();
     }
 
     @GetMapping("/performedby/{performedBy}")
@@ -38,7 +36,12 @@ public class InventoryAuditController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable String id) {
-        service.deleteById(id);
+        service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+    
+    @PutMapping("/inventory-audit/{id}")
+    public InventoryAudit updateInventoryAudit(@PathVariable String id, @RequestBody InventoryAudit audit) {
+        return service.update(id, audit);
     }
 }

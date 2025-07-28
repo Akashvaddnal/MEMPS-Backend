@@ -9,5 +9,7 @@ public interface EquipmentLifeCycleService {
     Optional<EquipmentLifeCycle> findById(String id);
     List<EquipmentLifeCycle> findAll();
     List<EquipmentLifeCycle> findByEquipmentId(String equipmentId);
-    void deleteById(String id);
+    void deleteById(String id);  
+    EquipmentLifeCycle update(String id, EquipmentLifeCycle lifecycle);
+   
 }

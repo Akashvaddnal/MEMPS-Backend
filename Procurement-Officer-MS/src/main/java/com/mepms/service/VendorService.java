@@ -3,6 +3,7 @@ package com.mepms.service;
 import java.util.List;
 import java.util.Optional;
 
+import com.mepms.entity.Equipment;
 import com.mepms.entity.Vendor;
 
 public interface VendorService {
@@ -16,4 +17,8 @@ public interface VendorService {
 
     // Reporting functions
     long countVendors();
+    
+    Vendor addEquipmentToVendor(String vendorId, String equipmentId);
+    Vendor removeEquipmentFromVendor(String vendorId, String equipmentId);
+    List<Equipment> getVendorEquipment(String vendorId);
 }

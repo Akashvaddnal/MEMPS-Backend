@@ -3,17 +3,24 @@ package com.mepms.service.impl;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mepms.entity.Equipment;
+import com.mepms.entity.Vendor;
 import com.mepms.repository.EquipmentRepository;
+import com.mepms.repository.VendorRepository;
 import com.mepms.service.EquipmentService;
 
 @Service
 public class EquipmentServiceImpl implements EquipmentService {
 
     private final EquipmentRepository equipmentRepository;
+    
+    @Autowired
+    private VendorRepository vendorRepository;
 
+    
     public EquipmentServiceImpl(EquipmentRepository equipmentRepository) {
         this.equipmentRepository = equipmentRepository;
     }
@@ -43,9 +50,23 @@ public class EquipmentServiceImpl implements EquipmentService {
         return equipmentRepository.findByStatus(status);
     }
 
+//    @Override
+//    public List<Equipment> getEquipmentsByVendorId(String vendorId) {
+//        return equipmentRepository.findByVendorId(vendorId);
+//    }
+    
     @Override
     public List<Equipment> getEquipmentsByVendorId(String vendorId) {
-        return equipmentRepository.findByVendorId(vendorId);
+        Optional<Vendor> vendor = vendorRepository.findById(vendorId);
+        if (vendor.isPresent() && vendor.get().getEquipmentProvided() != null) {
+            return equipmentRepository.findBy_idIn(vendor.get().getEquipmentProvided());
+        }
+        return List.of();
+    }
+    
+    @Override
+    public List<Equipment> getEquipmentsByIds(List<String> equipmentIds) {
+        return equipmentRepository.findBy_idIn(equipmentIds);
     }
 
     @Override
@@ -55,12 +76,26 @@ public class EquipmentServiceImpl implements EquipmentService {
 
     @Override
     public Equipment updateEquipment(String id, Equipment equipment) {
-        equipment.setId(id);
+        equipment.set_id(id);
         return equipmentRepository.save(equipment);
     }
 
+//    @Override
+//    public void deleteEquipment(String id) {
+//        equipmentRepository.deleteById(id);
+//    }
+    
+    
     @Override
     public void deleteEquipment(String id) {
         equipmentRepository.deleteById(id);
+        // Remove this equipment from all vendors
+        List<Vendor> vendors = vendorRepository.findAll();
+        vendors.forEach(vendor -> {
+            if (vendor.getEquipmentProvided() != null && vendor.getEquipmentProvided().contains(id)) {
+                vendor.getEquipmentProvided().remove(id);
+                vendorRepository.save(vendor);
+            }
+        });
     }
 }

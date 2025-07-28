@@ -34,6 +34,12 @@ public class EquipmentLifeCycleServiceImpl implements EquipmentLifeCycleService 
     public List<EquipmentLifeCycle> findByEquipmentId(String equipmentId) {
         return repository.findByEquipmentId(equipmentId);
     }
+    
+    @Override
+    public EquipmentLifeCycle update(String id, EquipmentLifeCycle lifecycle) {
+        lifecycle.setId(id);
+        return repository.save(lifecycle);
+    }
 
     @Override
     public void deleteById(String id) {

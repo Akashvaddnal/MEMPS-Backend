@@ -66,7 +66,7 @@
 //}
 
 
-package com.mepms.controller;
+
 
 import com.mepms.entity.Equipment;
 import com.mepms.entity.Vendor;

@@ -48,4 +48,10 @@ public class User {
 
     @NotNull(message = "Updated date is required")
     private java.util.Date updatedAt;
+    
+    
+    
+    private boolean isActive = false;
+    
+    private String profilePic;
 }

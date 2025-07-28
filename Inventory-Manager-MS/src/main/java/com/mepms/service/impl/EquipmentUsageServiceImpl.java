@@ -49,4 +49,11 @@ public class EquipmentUsageServiceImpl implements EquipmentUsageService {
     public void deleteById(String id) {
         repository.deleteById(id);
     }
+    @Override
+    public EquipmentUsage updateEquipmentUsage(String id, EquipmentUsage updatedUsage) {
+        EquipmentUsage usage = repository.findById(id).orElseThrow(() -> new RuntimeException("EquipmentUsage not found with id: " + id));
+        updatedUsage.setId(id);
+        return repository.save(updatedUsage);
+    }
+
 }

@@ -16,9 +16,12 @@ public class Equipment {
     private String purchaseDate;
     private String warrantyEndDate;
     private String status;
+    private int quantity;
     private String location;
     private String vendorId;
     private int expectedLife;
     private String createdAt;
     private String updatedAt;
+    private String image;
+    
 }

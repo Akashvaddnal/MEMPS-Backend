@@ -41,4 +41,9 @@ public class EquipmentLifeCycleController {
         service.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+    
+    @PutMapping("/lifecycle/{id}")
+    public EquipmentLifeCycle updateLifecycle(@PathVariable String id, @RequestBody EquipmentLifeCycle lifecycle) {
+        return service.update(id, lifecycle);
+    }
 }

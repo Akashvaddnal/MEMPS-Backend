@@ -7,7 +7,9 @@ import java.util.List;
 
 @Repository
 public interface EquipmentRepository extends MongoRepository<Equipment, String> {
-    List<Equipment> findBySerialNumber(String serialNumber);
+    Equipment findBySerialNumber(String serialNumber);
     List<Equipment> findByVendorId(String vendorId);
     List<Equipment> findByCategory(String category);
+    List<Equipment> findByStatus(String status);
+    List<Equipment> findByIdIn(List<String> equipmentIds);
 }
