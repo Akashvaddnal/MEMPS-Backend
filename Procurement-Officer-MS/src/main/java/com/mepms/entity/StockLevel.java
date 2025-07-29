@@ -17,12 +17,16 @@ public class StockLevel {
     
     @Field("equipment_id")
     private String equipmentId;
+    private String equipmentName;
+    
     @NotNull(message = "CurrentQuantity value is required")
-    @Field("current_quantity")
-    private Integer currentQuantity;
+    private Integer currentStock;
+    
     @NotNull(message = "minimun  quantity value is required")
-    @Field("min_required")
     private Integer minRequired;
-    @Field("last_checked")
+    
+    
     private Date lastChecked;
+    
+    private String status;
 }

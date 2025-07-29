@@ -56,9 +56,9 @@ public class Equipment {
     private String location;
     
     @Field("createdAt")
-    private Date createdAt;
+    private String createdAt;
     
     @Field("updatedAt")
-    private Date updatedAt;
+    private String updatedAt;
     
 }

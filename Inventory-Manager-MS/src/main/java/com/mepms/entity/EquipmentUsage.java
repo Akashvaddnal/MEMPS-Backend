@@ -25,4 +25,5 @@ public class EquipmentUsage {
     private Date usageEnd;
     private String purpose;
     private String status;
+    private String department;
 }

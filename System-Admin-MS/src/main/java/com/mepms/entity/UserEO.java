@@ -49,7 +49,7 @@ public class UserEO {
    
     private java.util.Date updatedAt;
     
-    private boolean isActive = false;
+    private boolean active = false;
     
     private String profilePic;
     
