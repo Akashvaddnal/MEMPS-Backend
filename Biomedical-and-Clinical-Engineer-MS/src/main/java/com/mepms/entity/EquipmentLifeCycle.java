@@ -28,4 +28,8 @@ public class EquipmentLifeCycle {
     private java.util.Date lastMaintenanceDate;
     
     private java.util.Date nextMaintenanceDate;
+    
+    private String mainteneceDoneBy;
+    
+    private String status;
 }

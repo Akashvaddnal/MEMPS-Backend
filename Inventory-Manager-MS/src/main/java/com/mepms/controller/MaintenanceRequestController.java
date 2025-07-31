@@ -24,6 +24,8 @@ public class MaintenanceRequestController {
 	// Maintenance Requests endpoints
     @PostMapping("/maintenance")
     public MaintenanceRequest createMaintenance(@RequestBody MaintenanceRequest request) {
+    	System.err.println("post mapping");
+    	System.err.println(request);
         return maintenanceRequestService.create(request);
     }
 
@@ -39,7 +41,9 @@ public class MaintenanceRequestController {
 
     @PutMapping("/maintenance/{id}")
     public MaintenanceRequest updateMaintenance(@PathVariable String id, @RequestBody MaintenanceRequest request) {
-        return maintenanceRequestService.update(id, request);
+    	System.err.println("put mapping");
+    	System.err.println(request);
+    	return maintenanceRequestService.update(id, request);
     }
 
     @DeleteMapping("/maintenance/{id}")

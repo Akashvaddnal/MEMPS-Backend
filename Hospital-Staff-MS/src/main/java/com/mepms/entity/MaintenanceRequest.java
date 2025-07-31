@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import lombok.Data;
 
@@ -22,6 +23,8 @@ public class MaintenanceRequest {
     private Date resolvedAt;
     private String maintenanceType; // Preventive, Corrective
     private String maintenanceNotes;
+    @Field("accepted")
+    private Boolean accepted; 
 
     // Getters and setters
 }

@@ -1,5 +1,0 @@
-package com.mepms.service;
-
-public interface AuditLogService {
-
-}
