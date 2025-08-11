@@ -1,0 +1,96 @@
+package com.mepms.controller;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mepms.entity.StockLevels;
+import com.mepms.service.StockLevelsService;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import java.time.Instant;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.hamcrest.Matchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(StockLevelsController.class)
+public class StockLevelsControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private StockLevelsService service;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    private StockLevels createMockStockLevel(String id, String equipmentId) {
+        StockLevels stock = new StockLevels();
+        stock.setId(id);
+        stock.setEquipmentId(equipmentId);
+        stock.setUnitId("unit" + id);
+        stock.setEquipmentName("Equipment " + equipmentId);
+        stock.setCurrentStock(50);
+        stock.setMinRequired(20);
+        stock.setLastChecked(Instant.now());
+        stock.setStatus("OK");
+        return stock;
+    }
+
+    @Test
+    public void createStockLevel_ShouldReturnCreatedStockLevel() throws Exception {
+        StockLevels stock = createMockStockLevel("1", "equip1");
+        Mockito.when(service.create(Mockito.any(StockLevels.class))).thenReturn(stock);
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/stock-levels")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(stock)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.equipmentId", is(stock.getEquipmentId())));
+    }
+
+    @Test
+    public void getStockLevelById_ShouldReturnStockLevel() throws Exception {
+        StockLevels stock = createMockStockLevel("1", "equip1");
+        Mockito.when(service.getById("1")).thenReturn(stock);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/stock-levels/1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(stock.getId())));
+    }
+
+    @Test
+    public void getAllStockLevels_ShouldReturnAllStockLevels() throws Exception {
+        StockLevels stock1 = createMockStockLevel("1", "equip1");
+        StockLevels stock2 = createMockStockLevel("2", "equip2");
+        List<StockLevels> stocks = Arrays.asList(stock1, stock2);
+
+        Mockito.when(service.getAll()).thenReturn(stocks);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/stock-levels")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].equipmentId", is(stock1.getEquipmentId())))
+                .andExpect(jsonPath("$[1].equipmentId", is(stock2.getEquipmentId())));
+    }
+
+    @Test
+    public void updateStockLevel_ShouldReturnUpdatedStockLevel() throws Exception {
+        StockLevels stock = createMockStockLevel("1", "equip1");
+        Mockito.when(service.update("1", stock)).thenReturn(stock);
+
+        mockMvc.perform(MockMvcRequestBuilders.put("/api/stock-levels/stock-levels/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(stock)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(stock.getId())));
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SystemAdminMsApplicationTests" project="System-Admin-MS" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.service.mepms.SystemAdminMsApplicationTests" time="1.243" displayname="SystemAdminMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.service.mepms.SystemAdminMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.service.mepms.SystemAdminMsApplicationTests" time="1.243" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.service.mepms.SystemAdminMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

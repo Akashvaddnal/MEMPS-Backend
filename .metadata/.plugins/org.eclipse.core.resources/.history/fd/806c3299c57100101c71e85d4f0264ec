@@ -1,0 +1,23 @@
+package com.mepms.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.Date;
+
+@Document(collection = "equipmentUnits")
+public class EquipmentUnit {
+
+    @Id
+    private String equipmentUnitId;
+
+    private String equipmentName;
+    private String departmentId;
+    private String departmentName;
+    private String location;
+    private String status;
+
+    private Date purchaseDate;
+
+    // Getters and Setters
+    // Empty constructor + all-args constructor (optional)
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Login-Auth-MS" project="Login-Auth-MS" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="com.mepms.AuthControllerTest" time="5.228" displayname="AuthControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]">
+    <testcase name="verifyOtp" classname="com.mepms.AuthControllerTest" time="4.637" displayname="verifyOtp()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:verifyOtp()]"/>
+    <testcase name="forgotPasswordInitiateEmailNotFound" classname="com.mepms.AuthControllerTest" time="0.036" displayname="forgotPasswordInitiateEmailNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:forgotPasswordInitiateEmailNotFound()]"/>
+    <testcase name="forgotPasswordInitiate" classname="com.mepms.AuthControllerTest" time="0.056" displayname="forgotPasswordInitiate()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:forgotPasswordInitiate()]"/>
+    <testcase name="getCurrentUserNotFound" classname="com.mepms.AuthControllerTest" time="0.135" displayname="getCurrentUserNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:getCurrentUserNotFound()]"/>
+    <testcase name="getCurrentUser" classname="com.mepms.AuthControllerTest" time="0.104" displayname="getCurrentUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:getCurrentUser()]"/>
+    <testcase name="resetPassword" classname="com.mepms.AuthControllerTest" time="0.184" displayname="resetPassword()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:resetPassword()]"/>
+    <testcase name="login" classname="com.mepms.AuthControllerTest" time="0.04" displayname="login()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:login()]"/>
+    <testcase name="verifyOtpInvalid" classname="com.mepms.AuthControllerTest" time="0.032" displayname="verifyOtpInvalid()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.AuthControllerTest]/[method:verifyOtpInvalid()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.LoginAuthMsApplicationTests" time="0.031" displayname="LoginAuthMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mepms.LoginAuthMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.mepms.LoginAuthMsApplicationTests" time="0.031" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.LoginAuthMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

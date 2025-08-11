@@ -1,0 +1,49 @@
+package com.mepms.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mepms.entity.EquipmentUnit;
+import com.mepms.repository.EquipmentUnitRepository;
+import com.mepms.service.EquipmentUnitService;
+
+@Service
+public class EquipmentUnitServiceImpl implements EquipmentUnitService {
+
+    @Autowired
+    private EquipmentUnitRepository repository;
+
+    @Override
+    public EquipmentUnit createEquipmentUnit(EquipmentUnit equipmentUnit) {
+        return repository.save(equipmentUnit);
+    }
+
+    @Override
+    public Optional<EquipmentUnit> getEquipmentUnitById(String id) {
+        return repository.findById(id);
+    }
+
+    @Override
+    public List<EquipmentUnit> getAllEquipmentUnits() {
+        return repository.findAll();
+    }
+
+    @Override
+    public EquipmentUnit updateEquipmentUnit(String id, EquipmentUnit equipmentUnit) {
+        equipmentUnit.setId(id);
+        return repository.save(equipmentUnit);
+    }
+
+    @Override
+    public void deleteEquipmentUnit(String id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public List<EquipmentUnit> findByEquipmentUnitIdAndDepartmentId(String equipmentUnitId, String departmentId) {
+        return repository.findByEquipmentUnitIdAndDepartmentId(equipmentUnitId, departmentId);
+    }
+}

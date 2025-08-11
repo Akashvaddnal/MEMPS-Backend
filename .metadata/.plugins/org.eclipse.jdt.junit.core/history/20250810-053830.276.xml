@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Biomedical-and-Clinical-Engineer-MS" project="Biomedical-and-Clinical-Engineer-MS" tests="33" started="33" failures="1" errors="0" ignored="0">
+  <testsuite name="com.mepms.controller.DepartmentControllerTest" time="2.105" displayname="DepartmentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]">
+    <testcase name="createDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="1.982" displayname="createDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:createDepartment()]"/>
+    <testcase name="getEquipmentsByDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.026" displayname="getEquipmentsByDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getEquipmentsByDepartment()]"/>
+    <testcase name="deleteDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.015" displayname="deleteDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:deleteDepartment()]"/>
+    <testcase name="assignEquipmentToDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.015" displayname="assignEquipmentToDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:assignEquipmentToDepartment()]"/>
+    <testcase name="getDepartmentById" classname="com.mepms.controller.DepartmentControllerTest" time="0.02" displayname="getDepartmentById()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getDepartmentById()]"/>
+    <testcase name="getAllDepartments" classname="com.mepms.controller.DepartmentControllerTest" time="0.018" displayname="getAllDepartments()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getAllDepartments()]">
+      <failure>java.lang.AssertionError: No value at JSON path "$[0].name"&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:351)&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:148)&#13;
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:112)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.mepms.controller.DepartmentControllerTest.getAllDepartments(DepartmentControllerTest.java:67)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: com.jayway.jsonpath.PathNotFoundException: No results for path: $[0]['name']&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="updateDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.013" displayname="updateDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:updateDepartment()]"/>
+    <testcase name="getDepartmentByIdNotFound" classname="com.mepms.controller.DepartmentControllerTest" time="0.012" displayname="getDepartmentByIdNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getDepartmentByIdNotFound()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.129" displayname="EquipmentLifeCycleControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]">
+    <testcase name="create" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.058" displayname="create()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:create()]"/>
+    <testcase name="getAll" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.015" displayname="getAll()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getAll()]"/>
+    <testcase name="getByUnitId" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.012" displayname="getByUnitId()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getByUnitId()]"/>
+    <testcase name="getByEquipmentId" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.018" displayname="getByEquipmentId()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getByEquipmentId()]"/>
+    <testcase name="getById" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.01" displayname="getById()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getById()]"/>
+    <testcase name="updateLifecycle" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.013" displayname="updateLifecycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:updateLifecycle()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.MaintenanceRequestControllerTest" time="0.077" displayname="MaintenanceRequestControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]">
+    <testcase name="updateMaintenance" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.035" displayname="updateMaintenance()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:updateMaintenance()]"/>
+    <testcase name="getMaintenance" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.011" displayname="getMaintenance()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:getMaintenance()]"/>
+    <testcase name="deleteMaintenance" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.009" displayname="deleteMaintenance()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:deleteMaintenance()]"/>
+    <testcase name="getAllMaintenances" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.011" displayname="getAllMaintenances()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:getAllMaintenances()]"/>
+    <testcase name="createMaintenance" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.011" displayname="createMaintenance()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:createMaintenance()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.EquipmentUsageControllerTest" time="0.118" displayname="EquipmentUsageControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]">
+    <testcase name="create" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.044" displayname="create()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:create()]"/>
+    <testcase name="getAll" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.01" displayname="getAll()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getAll()]"/>
+    <testcase name="getByUnitId" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.015" displayname="getByUnitId()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getByUnitId()]"/>
+    <testcase name="getByUsedBy" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.011" displayname="getByUsedBy()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getByUsedBy()]"/>
+    <testcase name="getByEquipmentId" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.015" displayname="getByEquipmentId()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getByEquipmentId()]"/>
+    <testcase name="getById" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.009" displayname="getById()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getById()]"/>
+    <testcase name="updateEquipmentUsage" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.01" displayname="updateEquipmentUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:updateEquipmentUsage()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.EquipmentControllerTest" time="0.098" displayname="EquipmentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]">
+    <testcase name="getByCategory" classname="com.mepms.controller.EquipmentControllerTest" time="0.041" displayname="getByCategory()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]/[method:getByCategory()]"/>
+    <testcase name="create" classname="com.mepms.controller.EquipmentControllerTest" time="0.016" displayname="create()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]/[method:create()]"/>
+    <testcase name="getAll" classname="com.mepms.controller.EquipmentControllerTest" time="0.009" displayname="getAll()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]/[method:getAll()]"/>
+    <testcase name="update" classname="com.mepms.controller.EquipmentControllerTest" time="0.009" displayname="update()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]/[method:update()]"/>
+    <testcase name="getById" classname="com.mepms.controller.EquipmentControllerTest" time="0.011" displayname="getById()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]/[method:getById()]"/>
+    <testcase name="getBySerialNumber" classname="com.mepms.controller.EquipmentControllerTest" time="0.009" displayname="getBySerialNumber()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentControllerTest]/[method:getBySerialNumber()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.BiomedicalAndClinicalEngineerMsApplicationTests" time="0.023" displayname="BiomedicalAndClinicalEngineerMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mepms.BiomedicalAndClinicalEngineerMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.mepms.BiomedicalAndClinicalEngineerMsApplicationTests" time="0.023" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.BiomedicalAndClinicalEngineerMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

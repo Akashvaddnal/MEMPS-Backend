@@ -1,0 +1,150 @@
+package com.mepms.controller;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mepms.entity.Equipment;
+import com.mepms.entity.Vendor;
+import com.mepms.service.EquipmentService;
+import com.mepms.service.VendorService;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(VendorController.class)
+public class VendorControllerTest extends BaseControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private VendorService vendorService;
+
+    @MockBean
+    private EquipmentService equipmentService;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    @Override
+    protected Object getController() {
+        return new VendorController(equipmentService, vendorService);
+    }
+
+    private Vendor createMockVendor(String id, String name) {
+        Vendor vendor = new Vendor();
+        vendor.set_id(id);
+        vendor.setName(name);
+        vendor.setContactPerson("John Doe");
+        vendor.setEmail(name.toLowerCase() + "@example.com");
+        vendor.setPhone("1234567890");
+        vendor.setAddress("123 Main St");
+        return vendor;
+    }
+
+    private Equipment createMockEquipment(String id, String vendorId) {
+        Equipment equipment = new Equipment();
+        equipment.set_id(id);
+        equipment.setVendorId(vendorId);
+        equipment.setName("Equipment " + id);
+        equipment.setModel("Model X");
+        equipment.setSerialNumber("SN" + id);
+        return equipment;
+    }
+
+    @Test
+    public void getAllVendors_ShouldReturnAllVendors() throws Exception {
+        Vendor vendor1 = createMockVendor("1", "Vendor 1");
+        Vendor vendor2 = createMockVendor("2", "Vendor 2");
+        List<Vendor> vendors = Arrays.asList(vendor1, vendor2);
+
+        Mockito.when(vendorService.getAllVendors()).thenReturn(vendors);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/vendors")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].name", is(vendor1.getName())))
+                .andExpect(jsonPath("$[1].name", is(vendor2.getName())));
+    }
+
+    @Test
+    public void getVendorById_ShouldReturnVendor() throws Exception {
+        Vendor vendor = createMockVendor("1", "Vendor 1");
+        Mockito.when(vendorService.getVendorById("1")).thenReturn(Optional.of(vendor));
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/vendors/1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(vendor.getName())));
+    }
+
+    @Test
+    public void createVendor_ShouldReturnCreatedVendor() throws Exception {
+        Vendor vendor = createMockVendor("1", "New Vendor");
+        Mockito.when(vendorService.createVendor(Mockito.any(Vendor.class))).thenReturn(vendor);
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/vendors")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(vendor)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(vendor.getName())));
+    }
+
+    @Test
+    public void updateVendor_ShouldReturnUpdatedVendor() throws Exception {
+        Vendor vendor = createMockVendor("1", "Updated Vendor");
+        Mockito.when(vendorService.updateVendor(Mockito.anyString(), Mockito.any(Vendor.class))).thenReturn(vendor);
+
+        mockMvc.perform(MockMvcRequestBuilders.put("/api/vendors/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(vendor)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(vendor.getName())));
+    }
+
+    @Test
+    public void getVendorEquipment_ShouldReturnEquipment() throws Exception {
+        Equipment equipment1 = createMockEquipment("1", "vendor1");
+        Equipment equipment2 = createMockEquipment("2", "vendor1");
+        List<Equipment> equipmentList = Arrays.asList(equipment1, equipment2);
+
+        Mockito.when(equipmentService.getEquipmentsByVendorId("vendor1")).thenReturn(equipmentList);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/vendors/vendor1/equipment")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].vendorId", is("vendor1")))
+                .andExpect(jsonPath("$[1].vendorId", is("vendor1")));
+    }
+
+    @Test
+    public void getVendorWithEquipmentDetails_ShouldReturnCombinedData() throws Exception {
+        Vendor vendor = createMockVendor("1", "Vendor 1");
+        Equipment equipment1 = createMockEquipment("1", "1");
+        Equipment equipment2 = createMockEquipment("2", "1");
+        List<Equipment> equipmentList = Arrays.asList(equipment1, equipment2);
+
+        Mockito.when(vendorService.getVendorById("1")).thenReturn(Optional.of(vendor));
+        Mockito.when(equipmentService.getEquipmentsByVendorId("1")).thenReturn(equipmentList);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/vendors/1/equipment-details")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.vendor.name", is(vendor.getName())))
+                .andExpect(jsonPath("$.equipment", hasSize(2)));
+    }
+}

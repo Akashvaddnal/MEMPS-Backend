@@ -1,0 +1,70 @@
+package com.mepms.controller;
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.mepms.entity.EquipmentUnit;
+import com.mepms.service.EquipmentUnitService;
+
+@RestController
+@RequestMapping("/api/equipment-units")
+public class EquipmentUnitController {
+
+    @Autowired
+    private EquipmentUnitService service;
+
+    @PostMapping
+    public EquipmentUnit create(@RequestBody EquipmentUnit equipmentUnit) {
+        return service.createEquipmentUnit(equipmentUnit);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<EquipmentUnit> getById(@PathVariable String id) {
+        Optional<EquipmentUnit> equipmentUnit = service.getEquipmentUnitById(id);
+        return equipmentUnit.map(ResponseEntity::ok)
+                            .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping
+    public List<EquipmentUnit> getAll() {
+        return service.getAllEquipmentUnits();
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<EquipmentUnit> update(@PathVariable String id, @RequestBody EquipmentUnit equipmentUnit) {
+        if (!service.getEquipmentUnitById(id).isPresent()) {
+            return ResponseEntity.notFound().build();
+        }
+        EquipmentUnit updated = service.updateEquipmentUnit(id, equipmentUnit);
+        return ResponseEntity.ok(updated);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable String id) {
+        if (!service.getEquipmentUnitById(id).isPresent()) {
+            return ResponseEntity.notFound().build();
+        }
+        service.deleteEquipmentUnit(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/search/equipement-Dept")
+    public List<EquipmentUnit> findByEquipmentAndDepartment(@RequestParam String equipmentUnitId,
+                                                           @RequestParam String departmentId) {
+        return service.findByEquipmentUnitIdAndDepartmentId(equipmentUnitId, departmentId);
+    }
+    @GetMapping("/search/equipmentId")
+    public List<EquipmentUnit> findByEquipment(@RequestParam String equipmentUnitId) {
+    	return service.findByEquipmentUnitId(equipmentUnitId);
+    }
+    @GetMapping("/search")
+    public List<EquipmentUnit> findByEquipmentAndDepartment(@RequestParam String equipmentUnitId,
+    		@RequestParam String departmentId) {
+    	return service.findByEquipmentUnitIdAndDepartmentId(equipmentUnitId, departmentId);
+    }
+}

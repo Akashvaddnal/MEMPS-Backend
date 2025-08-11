@@ -1,0 +1,131 @@
+package com.mepms;
+
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mepms.controllers.PurchaseOrderController;
+import com.mepms.entity.PurchaseOrder;
+import com.mepms.service.PurchaseOrderService;
+
+@WebMvcTest(PurchaseOrderController.class)
+public class PurchaseOrderControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private PurchaseOrderService purchaseOrderService;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    private PurchaseOrder createMockPurchaseOrder(String id) {
+        PurchaseOrder po = new PurchaseOrder();
+        po.setId(id);
+        po.setPoNumber("PO-123");
+        po.setDateIssued(LocalDateTime.now());
+        po.setStatus("PENDING");
+        po.setVendorId("vendor1");
+        po.setRequestedBy("user1");
+        po.setTotalAmount(1000.0);
+        return po;
+    }
+
+    @Test
+    public void createPurchaseOrder_ShouldReturnCreatedPO() throws Exception {
+        PurchaseOrder po = createMockPurchaseOrder("1");
+        Mockito.when(purchaseOrderService.create(Mockito.any(PurchaseOrder.class))).thenReturn(po);
+
+        mockMvc.perform(post("/api/purchase-orders")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(po)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.poNumber", is(po.getPoNumber())));
+    }
+
+    @Test
+    public void getAllPurchaseOrders_ShouldReturnAllPOs() throws Exception {
+        PurchaseOrder po1 = createMockPurchaseOrder("1");
+        PurchaseOrder po2 = createMockPurchaseOrder("2");
+        List<PurchaseOrder> pos = Arrays.asList(po1, po2);
+
+        Mockito.when(purchaseOrderService.getAll()).thenReturn(pos);
+
+        mockMvc.perform(get("/api/purchase-orders"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].id", is(po1.getId())))
+                .andExpect(jsonPath("$[1].id", is(po2.getId())));
+    }
+
+    @Test
+    public void getPurchaseOrderById_ShouldReturnPO() throws Exception {
+        PurchaseOrder po = createMockPurchaseOrder("1");
+        Mockito.when(purchaseOrderService.getById("1")).thenReturn(po);
+
+        mockMvc.perform(get("/api/purchase-orders/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(po.getId())));
+    }
+
+    @Test
+    public void getPurchaseOrdersByStatus_ShouldReturnPOs() throws Exception {
+        PurchaseOrder po1 = createMockPurchaseOrder("1");
+        PurchaseOrder po2 = createMockPurchaseOrder("2");
+        List<PurchaseOrder> pos = Arrays.asList(po1, po2);
+
+        Mockito.when(purchaseOrderService.getByStatus("PENDING")).thenReturn(pos);
+
+        mockMvc.perform(get("/api/purchase-orders/status/PENDING"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].status", is("PENDING")));
+    }
+
+    @Test
+    public void updatePurchaseOrder_ShouldReturnUpdatedPO() throws Exception {
+        PurchaseOrder po = createMockPurchaseOrder("1");
+        Mockito.when(purchaseOrderService.update(Mockito.any(PurchaseOrder.class))).thenReturn(po);
+
+        mockMvc.perform(put("/api/purchase-orders/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(po)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(po.getId())));
+    }
+
+    @Test
+    public void addItemToPurchaseOrder_ShouldReturnUpdatedPO() throws Exception {
+        PurchaseOrder po = createMockPurchaseOrder("1");
+        PurchaseOrder.POItem item = new PurchaseOrder.POItem();
+        item.setEquipmentId("equip1");
+        item.setQuantity(2);
+        item.setUnitPrice(500.0);
+        item.setTotal(1000.0);
+
+        Mockito.when(purchaseOrderService.addItemToPurchaseOrder("1", item)).thenReturn(po);
+
+        mockMvc.perform(post("/api/purchase-orders/1/items")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(item)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(po.getId())));
+    }
+}

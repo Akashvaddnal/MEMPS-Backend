@@ -1,0 +1,87 @@
+package com.mepms.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mepms.entity.EquipmentUnit;
+import com.mepms.repository.EquipmentUnitRepository;
+import com.mepms.service.EquipmentUnitService;
+
+@Service
+public class EquipmentUnitServiceImpl implements EquipmentUnitService {
+
+    @Autowired
+    private EquipmentUnitRepository repository;
+
+    @Override
+    public EquipmentUnit createEquipmentUnit(EquipmentUnit equipmentUnit) {
+        return repository.save(equipmentUnit);
+    }
+
+    @Override
+    public Optional<EquipmentUnit> getEquipmentUnitById(String id) {
+        return repository.findById(id);
+    }
+
+    @Override
+    public List<EquipmentUnit> getAllEquipmentUnits() {
+        return repository.findAll();
+    }
+
+    @Override
+    public EquipmentUnit updateEquipmentUnit(String id, EquipmentUnit equipmentUnit) {
+    	EquipmentUnit existingUnit=getEquipmentUnitById(id).orElse(null);
+    	if(equipmentUnit.getId()!=null) {
+    		existingUnit.setId(equipmentUnit.getId());
+    	}
+    	if(equipmentUnit.getEquipmentUnitId()!=null) {
+    		existingUnit.setEquipmentUnitId(equipmentUnit.getEquipmentUnitId());
+    	}
+    	if(equipmentUnit.getDepartmentId()!=null) {
+    		existingUnit.setDepartmentId(equipmentUnit.getDepartmentId());
+    	}
+    	
+    	if(equipmentUnit.isLifeCycle()!=false) {
+    		existingUnit.setLifeCycle(true);
+    	}
+    	if(equipmentUnit.getLocation()!=null) {
+    		existingUnit.setLocation(equipmentUnit.getLocation());
+    	}
+    	if(equipmentUnit.getPurchaseDate()!=null) {
+    		existingUnit.setPurchaseDate(equipmentUnit.getPurchaseDate());
+    	}
+    	if(equipmentUnit.getStatus()!=null) {
+    		existingUnit.setStatus(equipmentUnit.getStatus());
+    	}
+        
+        return repository.save(existingUnit);
+    }
+
+    @Override
+    public void deleteEquipmentUnit(String id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public List<EquipmentUnit> findByEquipmentUnitIdAndDepartmentId(String equipmentUnitId, String departmentId) {
+        return repository.findByEquipmentUnitIdAndDepartmentId(equipmentUnitId, departmentId);
+    }
+
+	@Override
+	public List<EquipmentUnit> findByEquipmentUnitId(String equipmentUnitId) {
+		// TODO Auto-generated method stub
+		return repository.findByEquipmentUnitId(equipmentUnitId);
+	}
+
+	@Override
+	public List<EquipmentUnit> findByDepartmentId(String departmentId) {
+		// TODO Auto-generated method stub
+		return repository.findByDepartmentId(departmentId);
+	}
+    
+    
+    
+}

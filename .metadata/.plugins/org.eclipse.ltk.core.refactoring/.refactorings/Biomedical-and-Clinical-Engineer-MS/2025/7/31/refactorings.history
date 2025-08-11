@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.mepms.config&apos; to &apos;Financial-and-Accounting-Team-MS/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Biomedical-and-Clinical-Engineer-MS&apos;&#x0D;&#x0A;- Destination element: &apos;Financial-and-Accounting-Team-MS/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Biomedical-and-Clinical-Engineer-MS/src/main/java/com.mepms.config&apos;" description="Copy package" destination="=Financial-and-Accounting-Team-MS/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mepms.config" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1753982302895" version="1.0"/>
+</session>

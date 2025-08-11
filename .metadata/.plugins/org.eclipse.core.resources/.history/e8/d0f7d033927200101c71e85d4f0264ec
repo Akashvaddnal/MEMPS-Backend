@@ -1,0 +1,143 @@
+package com.mepms.controller;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Arrays;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import com.mepms.entity.EquipmentUsage;
+import com.mepms.service.EquipmentUsageService;
+
+class EquipmentUsageControllerTest {
+
+    private MockMvc mockMvc;
+
+    @Mock
+    private EquipmentUsageService service;
+
+    @InjectMocks
+    private EquipmentUsageController controller;
+
+    private EquipmentUsage usage;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
+
+        usage = new EquipmentUsage();
+        usage.setId("1");
+        usage.setEquipmentId("equip1");
+        usage.setUsedBy("user1");
+    }
+
+    @Test
+    void create() throws Exception {
+        when(service.save(any(EquipmentUsage.class))).thenReturn(usage);
+
+        mockMvc.perform(post("/api/equipment-usage")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"equipmentId\":\"equip1\",\"usedBy\":\"user1\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.usedBy").value("user1"));
+
+        verify(service, times(1)).save(any(EquipmentUsage.class));
+    }
+
+    @Test
+    void getById() throws Exception {
+        when(service.findById("1")).thenReturn(java.util.Optional.of(usage));
+
+        mockMvc.perform(get("/api/equipment-usage/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.equipmentId").value("equip1"));
+
+        verify(service, times(1)).findById("1");
+    }
+
+    @Test
+    void getAll() throws Exception {
+        when(service.findAll()).thenReturn(Arrays.asList(usage));
+
+        mockMvc.perform(get("/api/equipment-usage"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].equipmentId").value("equip1"));
+
+        verify(service, times(1)).findAll();
+    }
+
+    @Test
+    void getByEquipmentId() throws Exception {
+        when(service.findByEquipmentId("equip1")).thenReturn(Arrays.asList(usage));
+
+        mockMvc.perform(get("/api/equipment-usage/equipment/equip1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].equipmentId").value("equip1"));
+
+        verify(service, times(1)).findByEquipmentId("equip1");
+    }
+
+    @Test
+    void getByUnitId() throws Exception {
+        when(service.findByUnitId("unit1")).thenReturn(Arrays.asList(usage));
+
+        mockMvc.perform(get("/api/equipment-usage/unitid/unit1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].equipmentId").value("equip1"));
+
+        verify(service, times(1)).findByUnitId("unit1");
+    }
+
+    @Test
+    void getByUsedBy() throws Exception {
+        when(service.findByUsedBy("user1")).thenReturn(Arrays.asList(usage));
+
+        mockMvc.perform(get("/api/equipment-usage/usedby/user1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].usedBy").value("user1"));
+
+        verify(service, times(1)).findByUsedBy("user1");
+    }
+
+    @Test
+    void delete() throws Exception {
+        doNothing().when(service).deleteById("1");
+
+        mockMvc.perform(delete("/api/equipment-usage/1"))
+                .andExpect(status().isNoContent());
+
+        verify(service, times(1)).deleteById("1");
+    }
+
+    @Test
+    void updateEquipmentUsage() throws Exception {
+        when(service.updateEquipmentUsage(anyString(), any(EquipmentUsage.class))).thenReturn(usage);
+
+        mockMvc.perform(put("/api/equipment-usage/equipment-usage/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"equipmentId\":\"equip1\",\"usedBy\":\"user1\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.usedBy").value("user1"));
+
+        verify(service, times(1)).updateEquipmentUsage(eq("1"), any(EquipmentUsage.class));
+    }
+}

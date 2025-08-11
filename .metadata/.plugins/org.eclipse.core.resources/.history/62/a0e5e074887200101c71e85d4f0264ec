@@ -1,0 +1,113 @@
+package com.mepms.controller;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mepms.entity.NotificationRecord;
+import com.mepms.service.NotificationService;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(NotificationController.class)
+public class NotificationControllerTest extends BaseControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private NotificationService notificationService;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    @Override
+    protected Object getController() {
+        return new NotificationController(notificationService);
+    }
+
+    private NotificationRecord createMockNotification(String id, String userId) {
+        NotificationRecord notification = new NotificationRecord();
+        notification.setId(id);
+        notification.setUserId(userId);
+        notification.setTitle("Test Notification");
+        notification.setMessage("This is a test notification");
+        notification.setRead(false);
+        notification.setType("ALERT");
+        notification.setCreatedAt(LocalDateTime.now());
+        return notification;
+    }
+
+    @Test
+    public void getAllNotifications_ShouldReturnAllNotifications() throws Exception {
+        NotificationRecord notification1 = createMockNotification("1", "user1");
+        NotificationRecord notification2 = createMockNotification("2", "user2");
+        List<NotificationRecord> notifications = Arrays.asList(notification1, notification2);
+
+        Mockito.when(notificationService.getAll()).thenReturn(notifications);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/notifications")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].userId", is(notification1.getUserId())))
+                .andExpect(jsonPath("$[1].userId", is(notification2.getUserId())));
+    }
+
+    @Test
+    public void createNotification_ShouldReturnCreatedNotification() throws Exception {
+        NotificationRecord notification = createMockNotification("1", "user1");
+        Mockito.when(notificationService.create(Mockito.any(NotificationRecord.class))).thenReturn(notification);
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/notifications")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(notification)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.userId", is(notification.getUserId())));
+    }
+
+    @Test
+    public void getNotificationById_ShouldReturnNotification() throws Exception {
+        NotificationRecord notification = createMockNotification("1", "user1");
+        Mockito.when(notificationService.getById("1")).thenReturn(notification);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/notifications/1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(notification.getId())));
+    }
+
+    @Test
+    public void getNotificationsByUserId_ShouldReturnUserNotifications() throws Exception {
+        NotificationRecord notification1 = createMockNotification("1", "user1");
+        NotificationRecord notification2 = createMockNotification("2", "user1");
+        List<NotificationRecord> notifications = Arrays.asList(notification1, notification2);
+
+        Mockito.when(notificationService.getByUserId("user1")).thenReturn(notifications);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/notifications/user/user1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].userId", is("user1")))
+                .andExpect(jsonPath("$[1].userId", is("user1")));
+    }
+
+    @Test
+    public void markNotificationAsRead_ShouldReturnOk() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/notifications/1/read"))
+                .andExpect(status().isOk());
+
+        Mockito.verify(notificationService, Mockito.times(1)).markAsRead("1");
+    }
+}

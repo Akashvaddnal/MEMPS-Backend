@@ -1,0 +1,155 @@
+package com.mepms.controller;
+
+package com.mepms.controller;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import com.mepms.entity.Department;
+import com.mepms.entity.Equipment;
+import com.mepms.service.DepartmentService;
+
+class DepartmentControllerTest {
+
+    private MockMvc mockMvc;
+
+    @Mock
+    private DepartmentService departmentService;
+
+    @InjectMocks
+    private DepartmentController departmentController;
+
+    private Department department;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        mockMvc = MockMvcBuilders.standaloneSetup(departmentController).build();
+
+        department = new Department();
+        department.setId("1");
+        department.setName("Cardiology");
+        department.setLocation("Floor 1");
+        department.setEquipmentInventory(new HashMap<>());
+    }
+
+    @Test
+    void getAllDepartments() throws Exception {
+        List<Department> departments = Arrays.asList(department);
+        when(departmentService.searchDepartments(anyString(), anyString())).thenReturn(departments);
+
+        mockMvc.perform(get("/api/departments"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].name").value("Cardiology"));
+
+        verify(departmentService, times(1)).searchDepartments(null, null);
+    }
+
+    @Test
+    void getDepartmentById() throws Exception {
+        when(departmentService.getById("1")).thenReturn(java.util.Optional.of(department));
+
+        mockMvc.perform(get("/api/departments/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("Cardiology"));
+
+        verify(departmentService, times(1)).getById("1");
+    }
+
+    @Test
+    void getDepartmentByIdNotFound() throws Exception {
+        when(departmentService.getById("1")).thenReturn(java.util.Optional.empty());
+
+        mockMvc.perform(get("/api/departments/1"))
+                .andExpect(status().isNotFound());
+
+        verify(departmentService, times(1)).getById("1");
+    }
+
+    @Test
+    void createDepartment() throws Exception {
+        when(departmentService.createDepartment(any(Department.class))).thenReturn(department);
+
+        mockMvc.perform(post("/api/departments")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"name\":\"Cardiology\",\"location\":\"Floor 1\"}"))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.name").value("Cardiology"));
+
+        verify(departmentService, times(1)).createDepartment(any(Department.class));
+    }
+
+    @Test
+    void updateDepartment() throws Exception {
+        when(departmentService.updateDepartment(anyString(), any(Department.class))).thenReturn(department);
+
+        mockMvc.perform(put("/api/departments/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"name\":\"Cardiology\",\"location\":\"Floor 1\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("Cardiology"));
+
+        verify(departmentService, times(1)).updateDepartment(eq("1"), any(Department.class));
+    }
+
+    @Test
+    void deleteDepartment() throws Exception {
+        doNothing().when(departmentService).deleteDepartment("1");
+
+        mockMvc.perform(delete("/api/departments/1"))
+                .andExpect(status().isNoContent());
+
+        verify(departmentService, times(1)).deleteDepartment("1");
+    }
+
+    @Test
+    void assignEquipmentToDepartment() throws Exception {
+        Map<String, Integer> inventory = new HashMap<>();
+        inventory.put("equip1", 1);
+        department.setEquipmentInventory(inventory);
+
+        when(departmentService.assignEquipmentToDepartment(anyString(), anyString())).thenReturn(department);
+
+        mockMvc.perform(post("/api/departments/1/assign-equipment/equip1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.equipmentInventory.equip1").value(1));
+
+        verify(departmentService, times(1)).assignEquipmentToDepartment("1", "equip1");
+    }
+
+    @Test
+    void getEquipmentsByDepartment() throws Exception {
+        when(departmentService.getEquipmentsByDepartmentName("Cardiology")).thenReturn(Arrays.asList(new Equipment()));
+
+        mockMvc.perform(get("/api/departments/equipment/department/Cardiology"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$").isArray());
+
+        verify(departmentService, times(1)).getEquipmentsByDepartmentName("Cardiology");
+    }
+}

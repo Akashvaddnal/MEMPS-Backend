@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Hospital-Staff-MS" project="Hospital-Staff-MS" tests="30" started="30" failures="1" errors="2" ignored="0">
+  <testsuite name="com.mepms.MaintenanceRequestControllerTest" time="0.411" displayname="MaintenanceRequestControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.MaintenanceRequestControllerTest]">
+    <testcase name="getMaintenanceRequestById_ShouldReturnRequest" classname="com.mepms.MaintenanceRequestControllerTest" time="0.307" displayname="getMaintenanceRequestById_ShouldReturnRequest()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.MaintenanceRequestControllerTest]/[method:getMaintenanceRequestById_ShouldReturnRequest()]"/>
+    <testcase name="createMaintenanceRequest_ShouldReturnCreatedRequest" classname="com.mepms.MaintenanceRequestControllerTest" time="0.051" displayname="createMaintenanceRequest_ShouldReturnCreatedRequest()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.MaintenanceRequestControllerTest]/[method:createMaintenanceRequest_ShouldReturnCreatedRequest()]"/>
+    <testcase name="deleteMaintenanceRequest_ShouldReturnNoContent" classname="com.mepms.MaintenanceRequestControllerTest" time="0.015" displayname="deleteMaintenanceRequest_ShouldReturnNoContent()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.MaintenanceRequestControllerTest]/[method:deleteMaintenanceRequest_ShouldReturnNoContent()]"/>
+    <testcase name="updateMaintenanceRequest_ShouldReturnUpdatedRequest" classname="com.mepms.MaintenanceRequestControllerTest" time="0.011" displayname="updateMaintenanceRequest_ShouldReturnUpdatedRequest()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.MaintenanceRequestControllerTest]/[method:updateMaintenanceRequest_ShouldReturnUpdatedRequest()]"/>
+    <testcase name="getAllMaintenanceRequests_ShouldReturnAllRequests" classname="com.mepms.MaintenanceRequestControllerTest" time="0.022" displayname="getAllMaintenanceRequests_ShouldReturnAllRequests()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.MaintenanceRequestControllerTest]/[method:getAllMaintenanceRequests_ShouldReturnAllRequests()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.DepartmentControllerTest" time="0.1" displayname="DepartmentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]">
+    <testcase name="getEquipmentsByDepartment_ShouldReturnEquipmentList" classname="com.mepms.DepartmentControllerTest" time="0.028" displayname="getEquipmentsByDepartment_ShouldReturnEquipmentList()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:getEquipmentsByDepartment_ShouldReturnEquipmentList()]"/>
+    <testcase name="getDepartmentById_ShouldReturnDepartment" classname="com.mepms.DepartmentControllerTest" time="0.022" displayname="getDepartmentById_ShouldReturnDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:getDepartmentById_ShouldReturnDepartment()]"/>
+    <testcase name="updateDepartment_ShouldReturnUpdatedDepartment" classname="com.mepms.DepartmentControllerTest" time="0.012" displayname="updateDepartment_ShouldReturnUpdatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:updateDepartment_ShouldReturnUpdatedDepartment()]"/>
+    <testcase name="assignEquipmentToDepartment_ShouldReturnUpdatedDepartment" classname="com.mepms.DepartmentControllerTest" time="0.005" displayname="assignEquipmentToDepartment_ShouldReturnUpdatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:assignEquipmentToDepartment_ShouldReturnUpdatedDepartment()]"/>
+    <testcase name="getDepartmentById_ShouldReturnNotFound" classname="com.mepms.DepartmentControllerTest" time="0.007" displayname="getDepartmentById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:getDepartmentById_ShouldReturnNotFound()]"/>
+    <testcase name="createDepartment_ShouldReturnCreatedDepartment" classname="com.mepms.DepartmentControllerTest" time="0.007" displayname="createDepartment_ShouldReturnCreatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:createDepartment_ShouldReturnCreatedDepartment()]"/>
+    <testcase name="getAllDepartments_ShouldReturnAllDepartments" classname="com.mepms.DepartmentControllerTest" time="0.009" displayname="getAllDepartments_ShouldReturnAllDepartments()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.DepartmentControllerTest]/[method:getAllDepartments_ShouldReturnAllDepartments()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.EquipmentLifeCycleControllerTest" time="0.052" displayname="EquipmentLifeCycleControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentLifeCycleControllerTest]">
+    <testcase name="createLifeCycle_ShouldReturnCreatedLifeCycle" classname="com.mepms.EquipmentLifeCycleControllerTest" time="0.024" displayname="createLifeCycle_ShouldReturnCreatedLifeCycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentLifeCycleControllerTest]/[method:createLifeCycle_ShouldReturnCreatedLifeCycle()]"/>
+    <testcase name="updateLifeCycle_ShouldReturnUpdatedLifeCycle" classname="com.mepms.EquipmentLifeCycleControllerTest" time="0.008" displayname="updateLifeCycle_ShouldReturnUpdatedLifeCycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentLifeCycleControllerTest]/[method:updateLifeCycle_ShouldReturnUpdatedLifeCycle()]"/>
+    <testcase name="getLifeCycleById_ShouldReturnNotFound" classname="com.mepms.EquipmentLifeCycleControllerTest" time="0.004" displayname="getLifeCycleById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentLifeCycleControllerTest]/[method:getLifeCycleById_ShouldReturnNotFound()]"/>
+    <testcase name="getAllLifeCycles_ShouldReturnAllLifeCycles" classname="com.mepms.EquipmentLifeCycleControllerTest" time="0.007" displayname="getAllLifeCycles_ShouldReturnAllLifeCycles()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentLifeCycleControllerTest]/[method:getAllLifeCycles_ShouldReturnAllLifeCycles()]"/>
+    <testcase name="getLifeCycleById_ShouldReturnLifeCycle" classname="com.mepms.EquipmentLifeCycleControllerTest" time="0.004" displayname="getLifeCycleById_ShouldReturnLifeCycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentLifeCycleControllerTest]/[method:getLifeCycleById_ShouldReturnLifeCycle()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.EquipmentControllerTest" time="0.071" displayname="EquipmentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]">
+    <testcase name="getAllEquipment_ShouldReturnAllEquipment" classname="com.mepms.EquipmentControllerTest" time="0.012" displayname="getAllEquipment_ShouldReturnAllEquipment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:getAllEquipment_ShouldReturnAllEquipment()]"/>
+    <testcase name="getEquipmentBySerialNumber_ShouldReturnEquipment" classname="com.mepms.EquipmentControllerTest" time="0.01" displayname="getEquipmentBySerialNumber_ShouldReturnEquipment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:getEquipmentBySerialNumber_ShouldReturnEquipment()]"/>
+    <testcase name="getEquipmentById_ShouldReturnNotFound" classname="com.mepms.EquipmentControllerTest" time="0.016" displayname="getEquipmentById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:getEquipmentById_ShouldReturnNotFound()]">
+      <failure>java.lang.AssertionError: Status expected:&lt;404&gt; but was:&lt;200&gt;&#13;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)&#13;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)&#13;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.mepms.EquipmentControllerTest.getEquipmentById_ShouldReturnNotFound(EquipmentControllerTest.java:85)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="deleteEquipment_ShouldReturnNoContent" classname="com.mepms.EquipmentControllerTest" time="0.006" displayname="deleteEquipment_ShouldReturnNoContent()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:deleteEquipment_ShouldReturnNoContent()]"/>
+    <testcase name="createEquipment_ShouldReturnCreatedEquipment" classname="com.mepms.EquipmentControllerTest" time="0.008" displayname="createEquipment_ShouldReturnCreatedEquipment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:createEquipment_ShouldReturnCreatedEquipment()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.Equipment["purchaseDate"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.EquipmentControllerTest.createEquipment_ShouldReturnCreatedEquipment(EquipmentControllerTest.java:105)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getEquipmentById_ShouldReturnEquipment" classname="com.mepms.EquipmentControllerTest" time="0.007" displayname="getEquipmentById_ShouldReturnEquipment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:getEquipmentById_ShouldReturnEquipment()]"/>
+    <testcase name="updateEquipment_ShouldReturnUpdatedEquipment" classname="com.mepms.EquipmentControllerTest" time="0.005" displayname="updateEquipment_ShouldReturnUpdatedEquipment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentControllerTest]/[method:updateEquipment_ShouldReturnUpdatedEquipment()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.Equipment["purchaseDate"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.EquipmentControllerTest.updateEquipment_ShouldReturnUpdatedEquipment(EquipmentControllerTest.java:118)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.mepms.EquipmentUsageControllerTest" time="0.058" displayname="EquipmentUsageControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentUsageControllerTest]">
+    <testcase name="getEquipmentUsageById_ShouldReturnNotFound" classname="com.mepms.EquipmentUsageControllerTest" time="0.009" displayname="getEquipmentUsageById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentUsageControllerTest]/[method:getEquipmentUsageById_ShouldReturnNotFound()]"/>
+    <testcase name="updateEquipmentUsage_ShouldReturnUpdatedUsage" classname="com.mepms.EquipmentUsageControllerTest" time="0.018" displayname="updateEquipmentUsage_ShouldReturnUpdatedUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentUsageControllerTest]/[method:updateEquipmentUsage_ShouldReturnUpdatedUsage()]"/>
+    <testcase name="createEquipmentUsage_ShouldReturnCreatedUsage" classname="com.mepms.EquipmentUsageControllerTest" time="0.008" displayname="createEquipmentUsage_ShouldReturnCreatedUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentUsageControllerTest]/[method:createEquipmentUsage_ShouldReturnCreatedUsage()]"/>
+    <testcase name="getUsageByEquipmentId_ShouldReturnUsages" classname="com.mepms.EquipmentUsageControllerTest" time="0.011" displayname="getUsageByEquipmentId_ShouldReturnUsages()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentUsageControllerTest]/[method:getUsageByEquipmentId_ShouldReturnUsages()]"/>
+    <testcase name="getEquipmentUsageById_ShouldReturnUsage" classname="com.mepms.EquipmentUsageControllerTest" time="0.006" displayname="getEquipmentUsageById_ShouldReturnUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.EquipmentUsageControllerTest]/[method:getEquipmentUsageById_ShouldReturnUsage()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.HospitalStaffMsApplicationTests" time="0.007" displayname="HospitalStaffMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mepms.HospitalStaffMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.mepms.HospitalStaffMsApplicationTests" time="0.007" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.HospitalStaffMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

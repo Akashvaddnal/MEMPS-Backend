@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="System-Admin-MS" project="System-Admin-MS" tests="18" started="17" failures="0" errors="1" ignored="0">
+  <testsuite name="com.mepms.controllers.AuditLogControllerTest" time="1.067" displayname="AuditLogControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]">
+    <testcase name="testGetLogById_NotFound" classname="com.mepms.controllers.AuditLogControllerTest" time="0.572" displayname="testGetLogById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testGetLogById_NotFound()]"/>
+    <testcase name="testGetAllLogs" classname="com.mepms.controllers.AuditLogControllerTest" time="0.19" displayname="testGetAllLogs()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testGetAllLogs()]"/>
+    <testcase name="testDeleteById" classname="com.mepms.controllers.AuditLogControllerTest" time="0.025" displayname="testDeleteById()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testDeleteById()]"/>
+    <testcase name="testCreateLog" classname="com.mepms.controllers.AuditLogControllerTest" time="0.25" displayname="testCreateLog()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testCreateLog()]"/>
+    <testcase name="testGetLogById_Found" classname="com.mepms.controllers.AuditLogControllerTest" time="0.017" displayname="testGetLogById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testGetLogById_Found()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controllers.RoleControllerTest" time="0.135" displayname="RoleControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]">
+    <testcase name="testGetAllRoles" classname="com.mepms.controllers.RoleControllerTest" time="0.025" displayname="testGetAllRoles()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testGetAllRoles()]"/>
+    <testcase name="testUpdateRole" classname="com.mepms.controllers.RoleControllerTest" time="0.04" displayname="testUpdateRole()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testUpdateRole()]"/>
+    <testcase name="testGetRoleById_NotFound" classname="com.mepms.controllers.RoleControllerTest" time="0.012" displayname="testGetRoleById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testGetRoleById_NotFound()]"/>
+    <testcase name="testCreateRole" classname="com.mepms.controllers.RoleControllerTest" time="0.019" displayname="testCreateRole()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testCreateRole()]"/>
+    <testcase name="testDeleteRole" classname="com.mepms.controllers.RoleControllerTest" time="0.014" displayname="testDeleteRole()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testDeleteRole()]"/>
+    <testcase name="testGetRoleById_Found" classname="com.mepms.controllers.RoleControllerTest" time="0.013" displayname="testGetRoleById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testGetRoleById_Found()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controllers.UserControllerTest" time="0.19" displayname="UserControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]">
+    <testcase name="testGetUserById_NotFound" classname="com.mepms.controllers.UserControllerTest" time="0.032" displayname="testGetUserById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testGetUserById_NotFound()]"/>
+    <testcase name="testGetAllUsers" classname="com.mepms.controllers.UserControllerTest" time="0.038" displayname="testGetAllUsers()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testGetAllUsers()]"/>
+    <testcase name="testUpdateUser" classname="com.mepms.controllers.UserControllerTest" time="0.073" displayname="testUpdateUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testUpdateUser()]"/>
+    <testcase name="testGetUserById_Found" classname="com.mepms.controllers.UserControllerTest" time="0.009" displayname="testGetUserById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testGetUserById_Found()]"/>
+    <testcase name="testCreateUser" classname="com.mepms.controllers.UserControllerTest" time="0.016" displayname="testCreateUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testCreateUser()]"/>
+    <testcase name="testDeleteUser" classname="com.mepms.controllers.UserControllerTest" time="0.015" displayname="testDeleteUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testDeleteUser()]"/>
+  </testsuite>
+  <testsuite name="com.service.mepms.SystemAdminMsApplicationTests" incomplete="true" displayname="SystemAdminMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.service.mepms.SystemAdminMsApplicationTests]">
+    <error>java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration by searching packages upwards from the test. You can use @ContextConfiguration, @SpringBootTest(classes=...) or other Spring Test supported mechanisms to explicitly declare the configuration classes to load. Classes annotated with @TestConfiguration are not considered.&#13;
+	at org.springframework.util.Assert.state(Assert.java:79)&#13;
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.findConfigurationClass(SpringBootTestContextBootstrapper.java:246)&#13;
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:233)&#13;
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.processMergedContextConfiguration(SpringBootTestContextBootstrapper.java:150)&#13;
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:351)&#13;
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:267)&#13;
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:215)&#13;
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:108)&#13;
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:111)&#13;
+	at org.springframework.test.context.TestContextManager.&lt;init&gt;(TestContextManager.java:142)&#13;
+	at org.springframework.test.context.TestContextManager.&lt;init&gt;(TestContextManager.java:126)&#13;
+	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:362)&#13;
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:128)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    <testcase name="contextLoads" classname="com.service.mepms.SystemAdminMsApplicationTests" incomplete="true" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.service.mepms.SystemAdminMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="System-Admin-MS" project="System-Admin-MS" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="com.mepms.controllers.AuditLogControllerTest" time="1.141" displayname="AuditLogControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]">
+    <testcase name="testGetLogById_NotFound" classname="com.mepms.controllers.AuditLogControllerTest" time="0.596" displayname="testGetLogById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testGetLogById_NotFound()]"/>
+    <testcase name="testGetAllLogs" classname="com.mepms.controllers.AuditLogControllerTest" time="0.204" displayname="testGetAllLogs()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testGetAllLogs()]"/>
+    <testcase name="testDeleteById" classname="com.mepms.controllers.AuditLogControllerTest" time="0.022" displayname="testDeleteById()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testDeleteById()]"/>
+    <testcase name="testCreateLog" classname="com.mepms.controllers.AuditLogControllerTest" time="0.29" displayname="testCreateLog()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testCreateLog()]"/>
+    <testcase name="testGetLogById_Found" classname="com.mepms.controllers.AuditLogControllerTest" time="0.018" displayname="testGetLogById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.AuditLogControllerTest]/[method:testGetLogById_Found()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controllers.RoleControllerTest" time="0.144" displayname="RoleControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]">
+    <testcase name="testGetAllRoles" classname="com.mepms.controllers.RoleControllerTest" time="0.034" displayname="testGetAllRoles()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testGetAllRoles()]"/>
+    <testcase name="testUpdateRole" classname="com.mepms.controllers.RoleControllerTest" time="0.04" displayname="testUpdateRole()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testUpdateRole()]"/>
+    <testcase name="testGetRoleById_NotFound" classname="com.mepms.controllers.RoleControllerTest" time="0.016" displayname="testGetRoleById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testGetRoleById_NotFound()]"/>
+    <testcase name="testCreateRole" classname="com.mepms.controllers.RoleControllerTest" time="0.015" displayname="testCreateRole()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testCreateRole()]"/>
+    <testcase name="testDeleteRole" classname="com.mepms.controllers.RoleControllerTest" time="0.015" displayname="testDeleteRole()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testDeleteRole()]"/>
+    <testcase name="testGetRoleById_Found" classname="com.mepms.controllers.RoleControllerTest" time="0.012" displayname="testGetRoleById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.RoleControllerTest]/[method:testGetRoleById_Found()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controllers.UserControllerTest" time="0.233" displayname="UserControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]">
+    <testcase name="testGetUserById_NotFound" classname="com.mepms.controllers.UserControllerTest" time="0.041" displayname="testGetUserById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testGetUserById_NotFound()]"/>
+    <testcase name="testGetAllUsers" classname="com.mepms.controllers.UserControllerTest" time="0.047" displayname="testGetAllUsers()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testGetAllUsers()]"/>
+    <testcase name="testUpdateUser" classname="com.mepms.controllers.UserControllerTest" time="0.087" displayname="testUpdateUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testUpdateUser()]"/>
+    <testcase name="testGetUserById_Found" classname="com.mepms.controllers.UserControllerTest" time="0.015" displayname="testGetUserById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testGetUserById_Found()]"/>
+    <testcase name="testCreateUser" classname="com.mepms.controllers.UserControllerTest" time="0.016" displayname="testCreateUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testCreateUser()]"/>
+    <testcase name="testDeleteUser" classname="com.mepms.controllers.UserControllerTest" time="0.015" displayname="testDeleteUser()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controllers.UserControllerTest]/[method:testDeleteUser()]"/>
+  </testsuite>
+  <testsuite name="com.service.mepms.SystemAdminMsApplicationTests" time="0.017" displayname="SystemAdminMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.service.mepms.SystemAdminMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.service.mepms.SystemAdminMsApplicationTests" time="0.017" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.service.mepms.SystemAdminMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

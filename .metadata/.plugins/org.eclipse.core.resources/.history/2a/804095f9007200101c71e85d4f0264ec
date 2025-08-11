@@ -1,0 +1,30 @@
+package com.mepms.entity;
+
+import java.time.Instant;
+import java.util.Date;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+import lombok.Data;
+
+@Data
+@Document(collection = "equipment_usage")
+public class EquipmentUsage {
+    @Id
+    private String id;
+    @Field("equipment_id")
+    private String equipmentId;
+    @Field("used_by")
+    private String usedBy;
+    @Field("reserved_by")
+    private String reservedBy;
+    @Field("usage_start")
+    private Instant usageStart;
+    @Field("usage_end")
+    private Date usageEnd;
+    private String department;
+    private String purpose;
+    private String status;
+}

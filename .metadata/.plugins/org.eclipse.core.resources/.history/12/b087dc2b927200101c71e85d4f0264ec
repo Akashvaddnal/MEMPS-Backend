@@ -1,0 +1,145 @@
+package com.mepms.controller;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+
+
+import java.util.Arrays;
+import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import com.mepms.entity.Equipment;
+import com.mepms.service.EquipmentService;
+
+class EquipmentControllerTest {
+
+    private MockMvc mockMvc;
+
+    @Mock
+    private EquipmentService equipmentService;
+
+    @InjectMocks
+    private EquipmentController equipmentController;
+
+    private Equipment equipment;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        mockMvc = MockMvcBuilders.standaloneSetup(equipmentController).build();
+
+        equipment = new Equipment();
+        equipment.setId("1");
+        equipment.setName("MRI Machine");
+        equipment.setSerialNumber("MRI123");
+    }
+
+    @Test
+    void getAll() throws Exception {
+        when(equipmentService.getAllEquipment()).thenReturn(Arrays.asList(equipment));
+
+        mockMvc.perform(get("/api/equipment"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].name").value("MRI Machine"));
+
+        verify(equipmentService, times(1)).getAllEquipment();
+    }
+
+    @Test
+    void getById() throws Exception {
+        when(equipmentService.getEquipmentById("1")).thenReturn(Optional.of(equipment));
+
+        mockMvc.perform(get("/api/equipment/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("MRI Machine"));
+
+        verify(equipmentService, times(1)).getEquipmentById("1");
+    }
+
+    @Test
+    void getBySerialNumber() throws Exception {
+        when(equipmentService.getEquipmentBySerialNumber("MRI123")).thenReturn(equipment);
+
+        mockMvc.perform(get("/api/equipment/serial-number/MRI123"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.serialNumber").value("MRI123"));
+
+        verify(equipmentService, times(1)).getEquipmentBySerialNumber("MRI123");
+    }
+
+    @Test
+    void getByCategory() throws Exception {
+        when(equipmentService.getEquipmentsByCategory("Imaging")).thenReturn(Arrays.asList(equipment));
+
+        mockMvc.perform(get("/api/equipment/category/Imaging"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].name").value("MRI Machine"));
+
+        verify(equipmentService, times(1)).getEquipmentsByCategory("Imaging");
+    }
+
+    @Test
+    void create() throws Exception {
+        when(equipmentService.createEquipment(any(Equipment.class))).thenReturn(equipment);
+
+        mockMvc.perform(post("/api/equipment")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"name\":\"MRI Machine\",\"serialNumber\":\"MRI123\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("MRI Machine"));
+
+        verify(equipmentService, times(1)).createEquipment(any(Equipment.class));
+    }
+
+    @Test
+    void update() throws Exception {
+        when(equipmentService.updateEquipment(anyString(), any(Equipment.class))).thenReturn(equipment);
+
+        mockMvc.perform(put("/api/equipment/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"name\":\"MRI Machine\",\"serialNumber\":\"MRI123\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("MRI Machine"));
+
+        verify(equipmentService, times(1)).updateEquipment(eq("1"), any(Equipment.class));
+    }
+
+//    @Test
+//    void delete() throws Exception {
+//        doNothing().when(equipmentService).deleteEquipment("1");
+//
+//        mockMvc.perform(delete("/api/equipment/1"))
+//                .andExpect(status().isNoContent());
+//
+//        verify(equipmentService, times(1)).deleteEquipment("1");
+//    }
+    
+    @Test
+    void delete() throws Exception {
+        doNothing().when(equipmentService).deleteEquipment("1");
+
+        mockMvc.perform(delete("/api/equipment/1"))
+                .andExpect(status().isNoContent());
+
+        verify(equipmentService, times(1)).deleteEquipment("1");
+    }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PurchaseOrderControllerTest" project="Procurement-Officer-MS" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="com.mepms.controller.PurchaseOrderControllerTest" time="1.402" displayname="PurchaseOrderControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.PurchaseOrderControllerTest]">
+    <testcase name="getPurchaseOrdersByVendor_ShouldReturnVendorOrders" classname="com.mepms.controller.PurchaseOrderControllerTest" time="1.34" displayname="getPurchaseOrdersByVendor_ShouldReturnVendorOrders()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.PurchaseOrderControllerTest]/[method:getPurchaseOrdersByVendor_ShouldReturnVendorOrders()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.mepms.service.PurchaseOrderService.getPurchaseOrdersByVendorId(String)" because "this.purchaseOrderService" is null&#13;
+	at com.mepms.controller.PurchaseOrderControllerTest.getPurchaseOrdersByVendor_ShouldReturnVendorOrders(PurchaseOrderControllerTest.java:124)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getPurchaseOrderById_ShouldReturnOrder" classname="com.mepms.controller.PurchaseOrderControllerTest" time="0.014" displayname="getPurchaseOrderById_ShouldReturnOrder()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.PurchaseOrderControllerTest]/[method:getPurchaseOrderById_ShouldReturnOrder()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.mepms.service.PurchaseOrderService.getPurchaseOrderById(String)" because "this.purchaseOrderService" is null&#13;
+	at com.mepms.controller.PurchaseOrderControllerTest.getPurchaseOrderById_ShouldReturnOrder(PurchaseOrderControllerTest.java:85)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getAllPurchaseOrders_ShouldReturnAllOrders" classname="com.mepms.controller.PurchaseOrderControllerTest" time="0.014" displayname="getAllPurchaseOrders_ShouldReturnAllOrders()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.PurchaseOrderControllerTest]/[method:getAllPurchaseOrders_ShouldReturnAllOrders()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.mepms.service.PurchaseOrderService.getAllPurchaseOrders()" because "this.purchaseOrderService" is null&#13;
+	at com.mepms.controller.PurchaseOrderControllerTest.getAllPurchaseOrders_ShouldReturnAllOrders(PurchaseOrderControllerTest.java:72)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="createPurchaseOrder_ShouldReturnCreatedOrder" classname="com.mepms.controller.PurchaseOrderControllerTest" time="0.022" displayname="createPurchaseOrder_ShouldReturnCreatedOrder()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.PurchaseOrderControllerTest]/[method:createPurchaseOrder_ShouldReturnCreatedOrder()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.mepms.service.PurchaseOrderService.createPurchaseOrder(com.mepms.entity.PurchaseOrder)" because "this.purchaseOrderService" is null&#13;
+	at com.mepms.controller.PurchaseOrderControllerTest.createPurchaseOrder_ShouldReturnCreatedOrder(PurchaseOrderControllerTest.java:96)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="updatePurchaseOrder_ShouldReturnUpdatedOrder" classname="com.mepms.controller.PurchaseOrderControllerTest" time="0.01" displayname="updatePurchaseOrder_ShouldReturnUpdatedOrder()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.PurchaseOrderControllerTest]/[method:updatePurchaseOrder_ShouldReturnUpdatedOrder()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.mepms.service.PurchaseOrderService.getPurchaseOrderById(String)" because "this.purchaseOrderService" is null&#13;
+	at com.mepms.controller.PurchaseOrderControllerTest.updatePurchaseOrder_ShouldReturnUpdatedOrder(PurchaseOrderControllerTest.java:108)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

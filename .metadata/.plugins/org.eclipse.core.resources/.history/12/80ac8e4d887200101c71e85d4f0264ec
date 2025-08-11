@@ -1,0 +1,105 @@
+package com.mepms.controller;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mepms.entity.EquipmentLifecycle;
+import com.mepms.service.EquipmentLifecycleService;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import java.util.Date;
+import java.util.Optional;
+
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(EquipmentLifecycleController.class)
+public class EquipmentLifecycleControllerTest extends BaseControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private EquipmentLifecycleService lifecycleService;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    @Override
+    protected Object getController() {
+        return new EquipmentLifecycleController(lifecycleService);
+    }
+
+    private EquipmentLifecycle createMockLifecycle(String id) {
+        EquipmentLifecycle lifecycle = new EquipmentLifecycle();
+        lifecycle.setId(id);
+        lifecycle.setEquipmentId("equip1");
+        lifecycle.setUnitId("unit1");
+        lifecycle.setAcquisitionDate(new Date());
+        lifecycle.setExpectedEndOfLife(new Date(System.currentTimeMillis() + 1000000000));
+        lifecycle.setMaintenanceCount(3);
+        lifecycle.setTotalMaintenanceCost(1500.0);
+        return lifecycle;
+    }
+
+    @Test
+    public void createLifecycle_ShouldReturnCreatedLifecycle() throws Exception {
+        EquipmentLifecycle lifecycle = createMockLifecycle("1");
+        Mockito.when(lifecycleService.createLifecycle(Mockito.any(EquipmentLifecycle.class))).thenReturn(lifecycle);
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/equipment-lifecycle")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(lifecycle)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.equipmentId", is(lifecycle.getEquipmentId())));
+    }
+
+    @Test
+    public void getLifecycleById_ShouldReturnLifecycle() throws Exception {
+        EquipmentLifecycle lifecycle = createMockLifecycle("1");
+        Mockito.when(lifecycleService.getLifecycleById("1")).thenReturn(Optional.of(lifecycle));
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/equipment-lifecycle/1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(lifecycle.getId())));
+    }
+
+    @Test
+    public void getLifecycleByEquipment_ShouldReturnLifecycle() throws Exception {
+        EquipmentLifecycle lifecycle = createMockLifecycle("1");
+        Mockito.when(lifecycleService.getLifecycleByEquipmentId("equip1")).thenReturn(Optional.of(lifecycle));
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/equipment-lifecycle/equipment/equip1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.equipmentId", is("equip1")));
+    }
+
+    @Test
+    public void updateLifecycle_ShouldReturnUpdatedLifecycle() throws Exception {
+        EquipmentLifecycle lifecycle = createMockLifecycle("1");
+        Mockito.when(lifecycleService.updateLifecycle(Mockito.anyString(), Mockito.any(EquipmentLifecycle.class)))
+                .thenReturn(lifecycle);
+
+        mockMvc.perform(MockMvcRequestBuilders.put("/api/equipment-lifecycle/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(lifecycle)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is("1")));
+    }
+
+    @Test
+    public void getTotalMaintenanceCost_ShouldReturnCost() throws Exception {
+        Mockito.when(lifecycleService.getTotalMaintenanceCostByEquipmentId("equip1")).thenReturn(1500.0);
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/equipment-lifecycle/reports/total-maintenance-cost/equip1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().string("1500.0"));
+    }
+}

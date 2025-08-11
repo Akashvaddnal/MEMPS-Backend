@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Inventory-Manager-MS" project="Inventory-Manager-MS" tests="37" started="37" failures="0" errors="10" ignored="0">
+  <testsuite name="com.mepms.controller.DepartmentControllerTest" time="0.992" displayname="DepartmentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]">
+    <testcase name="updateDepartment_ShouldReturnNotFound" classname="com.mepms.controller.DepartmentControllerTest" time="0.639" displayname="updateDepartment_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:updateDepartment_ShouldReturnNotFound()]"/>
+    <testcase name="getDepartmentById_ShouldReturnDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.179" displayname="getDepartmentById_ShouldReturnDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getDepartmentById_ShouldReturnDepartment()]"/>
+    <testcase name="updateDepartment_ShouldReturnUpdatedDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.028" displayname="updateDepartment_ShouldReturnUpdatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:updateDepartment_ShouldReturnUpdatedDepartment()]"/>
+    <testcase name="transferEquipmentUnit_ShouldReturnUpdatedDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.02" displayname="transferEquipmentUnit_ShouldReturnUpdatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:transferEquipmentUnit_ShouldReturnUpdatedDepartment()]"/>
+    <testcase name="assignEquipmentToDepartment_ShouldReturnUpdatedDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.018" displayname="assignEquipmentToDepartment_ShouldReturnUpdatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:assignEquipmentToDepartment_ShouldReturnUpdatedDepartment()]"/>
+    <testcase name="getDepartmentById_ShouldReturnNotFound" classname="com.mepms.controller.DepartmentControllerTest" time="0.017" displayname="getDepartmentById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getDepartmentById_ShouldReturnNotFound()]"/>
+    <testcase name="createDepartment_ShouldReturnCreatedDepartment" classname="com.mepms.controller.DepartmentControllerTest" time="0.024" displayname="createDepartment_ShouldReturnCreatedDepartment()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:createDepartment_ShouldReturnCreatedDepartment()]"/>
+    <testcase name="getAllDepartments_ShouldReturnAllDepartments" classname="com.mepms.controller.DepartmentControllerTest" time="0.044" displayname="getAllDepartments_ShouldReturnAllDepartments()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.DepartmentControllerTest]/[method:getAllDepartments_ShouldReturnAllDepartments()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.EquipmentUnitControllerTest" time="0.166" displayname="EquipmentUnitControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]">
+    <testcase name="getEquipmentUnitById_ShouldReturnNotFound" classname="com.mepms.controller.EquipmentUnitControllerTest" time="0.024" displayname="getEquipmentUnitById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]/[method:getEquipmentUnitById_ShouldReturnNotFound()]"/>
+    <testcase name="getAllEquipmentUnits_ShouldReturnAllUnits" classname="com.mepms.controller.EquipmentUnitControllerTest" time="0.039" displayname="getAllEquipmentUnits_ShouldReturnAllUnits()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]/[method:getAllEquipmentUnits_ShouldReturnAllUnits()]"/>
+    <testcase name="createEquipmentUnit_ShouldReturnCreatedUnit" classname="com.mepms.controller.EquipmentUnitControllerTest" time="0.027" displayname="createEquipmentUnit_ShouldReturnCreatedUnit()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]/[method:createEquipmentUnit_ShouldReturnCreatedUnit()]"/>
+    <testcase name="getEquipmentUnitById_ShouldReturnUnit" classname="com.mepms.controller.EquipmentUnitControllerTest" time="0.019" displayname="getEquipmentUnitById_ShouldReturnUnit()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]/[method:getEquipmentUnitById_ShouldReturnUnit()]"/>
+    <testcase name="findEquipmentUnitsByDepartment_ShouldReturnUnits" classname="com.mepms.controller.EquipmentUnitControllerTest" time="0.019" displayname="findEquipmentUnitsByDepartment_ShouldReturnUnits()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]/[method:findEquipmentUnitsByDepartment_ShouldReturnUnits()]"/>
+    <testcase name="updateEquipmentUnit_ShouldReturnUpdatedUnit" classname="com.mepms.controller.EquipmentUnitControllerTest" time="0.02" displayname="updateEquipmentUnit_ShouldReturnUpdatedUnit()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUnitControllerTest]/[method:updateEquipmentUnit_ShouldReturnUpdatedUnit()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.183" displayname="EquipmentLifeCycleControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]">
+    <testcase name="createLifeCycle_ShouldReturnCreatedLifeCycle" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.049" displayname="createLifeCycle_ShouldReturnCreatedLifeCycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:createLifeCycle_ShouldReturnCreatedLifeCycle()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.EquipmentLifeCycle["acquisitionDate"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.EquipmentLifeCycleControllerTest.createLifeCycle_ShouldReturnCreatedLifeCycle(EquipmentLifeCycleControllerTest.java:54)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="updateLifeCycle_ShouldReturnUpdatedLifeCycle" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.014" displayname="updateLifeCycle_ShouldReturnUpdatedLifeCycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:updateLifeCycle_ShouldReturnUpdatedLifeCycle()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.EquipmentLifeCycle["acquisitionDate"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.EquipmentLifeCycleControllerTest.updateLifeCycle_ShouldReturnUpdatedLifeCycle(EquipmentLifeCycleControllerTest.java:102)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getLifeCycleById_ShouldReturnNotFound" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.033" displayname="getLifeCycleById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getLifeCycleById_ShouldReturnNotFound()]"/>
+    <testcase name="getAllLifeCycles_ShouldReturnAllLifeCycles" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.06" displayname="getAllLifeCycles_ShouldReturnAllLifeCycles()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getAllLifeCycles_ShouldReturnAllLifeCycles()]"/>
+    <testcase name="getLifeCycleById_ShouldReturnLifeCycle" classname="com.mepms.controller.EquipmentLifeCycleControllerTest" time="0.014" displayname="getLifeCycleById_ShouldReturnLifeCycle()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentLifeCycleControllerTest]/[method:getLifeCycleById_ShouldReturnLifeCycle()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.InventoryAuditControllerTest" time="0.105" displayname="InventoryAuditControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.InventoryAuditControllerTest]">
+    <testcase name="getAllInventoryAudits_ShouldReturnAllAudits" classname="com.mepms.controller.InventoryAuditControllerTest" time="0.05" displayname="getAllInventoryAudits_ShouldReturnAllAudits()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.InventoryAuditControllerTest]/[method:getAllInventoryAudits_ShouldReturnAllAudits()]"/>
+    <testcase name="updateInventoryAudit_ShouldReturnUpdatedAudit" classname="com.mepms.controller.InventoryAuditControllerTest" time="0.009" displayname="updateInventoryAudit_ShouldReturnUpdatedAudit()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.InventoryAuditControllerTest]/[method:updateInventoryAudit_ShouldReturnUpdatedAudit()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.InventoryAudit["datePerformed"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.InventoryAuditControllerTest.updateInventoryAudit_ShouldReturnUpdatedAudit(InventoryAuditControllerTest.java:91)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="createInventoryAudit_ShouldReturnCreatedAudit" classname="com.mepms.controller.InventoryAuditControllerTest" time="0.011" displayname="createInventoryAudit_ShouldReturnCreatedAudit()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.InventoryAuditControllerTest]/[method:createInventoryAudit_ShouldReturnCreatedAudit()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.InventoryAudit["datePerformed"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.InventoryAuditControllerTest.createInventoryAudit_ShouldReturnCreatedAudit(InventoryAuditControllerTest.java:52)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getInventoryAuditById_ShouldReturnAudit" classname="com.mepms.controller.InventoryAuditControllerTest" time="0.025" displayname="getInventoryAuditById_ShouldReturnAudit()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.InventoryAuditControllerTest]/[method:getInventoryAuditById_ShouldReturnAudit()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.MaintenanceRequestControllerTest" time="0.104" displayname="MaintenanceRequestControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]">
+    <testcase name="getMaintenanceRequestById_ShouldReturnRequest" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.045" displayname="getMaintenanceRequestById_ShouldReturnRequest()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:getMaintenanceRequestById_ShouldReturnRequest()]"/>
+    <testcase name="createMaintenanceRequest_ShouldReturnCreatedRequest" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.012" displayname="createMaintenanceRequest_ShouldReturnCreatedRequest()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:createMaintenanceRequest_ShouldReturnCreatedRequest()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.MaintenanceRequest["reportedAt"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.MaintenanceRequestControllerTest.createMaintenanceRequest_ShouldReturnCreatedRequest(MaintenanceRequestControllerTest.java:54)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="updateMaintenanceRequest_ShouldReturnUpdatedRequest" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.012" displayname="updateMaintenanceRequest_ShouldReturnUpdatedRequest()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:updateMaintenanceRequest_ShouldReturnUpdatedRequest()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.MaintenanceRequest["reportedAt"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.MaintenanceRequestControllerTest.updateMaintenanceRequest_ShouldReturnUpdatedRequest(MaintenanceRequestControllerTest.java:93)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getAllMaintenanceRequests_ShouldReturnAllRequests" classname="com.mepms.controller.MaintenanceRequestControllerTest" time="0.023" displayname="getAllMaintenanceRequests_ShouldReturnAllRequests()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.MaintenanceRequestControllerTest]/[method:getAllMaintenanceRequests_ShouldReturnAllRequests()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.controller.StockLevelsControllerTest" time="0.079" displayname="StockLevelsControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.StockLevelsControllerTest]">
+    <testcase name="updateStockLevel_ShouldReturnUpdatedStockLevel" classname="com.mepms.controller.StockLevelsControllerTest" time="0.015" displayname="updateStockLevel_ShouldReturnUpdatedStockLevel()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.StockLevelsControllerTest]/[method:updateStockLevel_ShouldReturnUpdatedStockLevel()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.StockLevels["lastChecked"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.StockLevelsControllerTest.updateStockLevel_ShouldReturnUpdatedStockLevel(StockLevelsControllerTest.java:92)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getStockLevelById_ShouldReturnStockLevel" classname="com.mepms.controller.StockLevelsControllerTest" time="0.022" displayname="getStockLevelById_ShouldReturnStockLevel()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.StockLevelsControllerTest]/[method:getStockLevelById_ShouldReturnStockLevel()]"/>
+    <testcase name="getAllStockLevels_ShouldReturnAllStockLevels" classname="com.mepms.controller.StockLevelsControllerTest" time="0.022" displayname="getAllStockLevels_ShouldReturnAllStockLevels()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.StockLevelsControllerTest]/[method:getAllStockLevels_ShouldReturnAllStockLevels()]"/>
+    <testcase name="createStockLevel_ShouldReturnCreatedStockLevel" classname="com.mepms.controller.StockLevelsControllerTest" time="0.013" displayname="createStockLevel_ShouldReturnCreatedStockLevel()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.StockLevelsControllerTest]/[method:createStockLevel_ShouldReturnCreatedStockLevel()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.StockLevels["lastChecked"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.StockLevelsControllerTest.createStockLevel_ShouldReturnCreatedStockLevel(StockLevelsControllerTest.java:53)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.mepms.controller.EquipmentUsageControllerTest" time="0.093" displayname="EquipmentUsageControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]">
+    <testcase name="getEquipmentUsageById_ShouldReturnNotFound" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.02" displayname="getEquipmentUsageById_ShouldReturnNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getEquipmentUsageById_ShouldReturnNotFound()]"/>
+    <testcase name="updateEquipmentUsage_ShouldReturnUpdatedUsage" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.014" displayname="updateEquipmentUsage_ShouldReturnUpdatedUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:updateEquipmentUsage_ShouldReturnUpdatedUsage()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.EquipmentUsage["usageStart"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.EquipmentUsageControllerTest.updateEquipmentUsage_ShouldReturnUpdatedUsage(EquipmentUsageControllerTest.java:103)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="createEquipmentUsage_ShouldReturnCreatedUsage" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.012" displayname="createEquipmentUsage_ShouldReturnCreatedUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:createEquipmentUsage_ShouldReturnCreatedUsage()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.Instant` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (or disable `MapperFeature.REQUIRE_HANDLERS_FOR_JAVA8_TIMES`) (through reference chain: com.mepms.entity.EquipmentUsage["usageStart"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1359)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:34)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4859)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4079)&#13;
+	at com.mepms.controller.EquipmentUsageControllerTest.createEquipmentUsage_ShouldReturnCreatedUsage(EquipmentUsageControllerTest.java:55)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="getUsageByEquipmentId_ShouldReturnUsages" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.025" displayname="getUsageByEquipmentId_ShouldReturnUsages()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getUsageByEquipmentId_ShouldReturnUsages()]"/>
+    <testcase name="getEquipmentUsageById_ShouldReturnUsage" classname="com.mepms.controller.EquipmentUsageControllerTest" time="0.01" displayname="getEquipmentUsageById_ShouldReturnUsage()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.controller.EquipmentUsageControllerTest]/[method:getEquipmentUsageById_ShouldReturnUsage()]"/>
+  </testsuite>
+  <testsuite name="com.mepms.InventoryManagerMsApplicationTests" time="0.014" displayname="InventoryManagerMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.mepms.InventoryManagerMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.mepms.InventoryManagerMsApplicationTests" time="0.014" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.mepms.InventoryManagerMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

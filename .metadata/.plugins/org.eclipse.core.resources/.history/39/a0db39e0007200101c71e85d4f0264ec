@@ -1,0 +1,40 @@
+//package com.mepms.entity;
+//
+//import org.springframework.data.annotation.Id;
+//
+//import lombok.Data;
+//
+//@Data
+//public class StockLevels {
+//	@Id
+//	private String id;
+//	private String equipmentId;
+//	private int currentQuantity;
+//	private int minRequired;
+//	private String lastChecked;
+//	
+//}
+
+package com.mepms.entity;
+
+import java.time.Instant;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
+
+@Data
+@Document(collection = "stock_levels")
+public class StockLevels {
+    @Id
+    private String id;
+    private String equipmentId;     
+    private String equipmentName;
+    private int currentStock;
+    private int minRequired;
+    private Instant lastChecked;
+    private Instant lastUpdated;
+    private String location;
+    private String status;          
+}

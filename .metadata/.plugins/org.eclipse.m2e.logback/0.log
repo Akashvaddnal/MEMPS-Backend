@@ -5216,3 +5216,21 @@ Caused by: java.io.IOException: The pipe has been ended
 2025-08-10 20:51:32,729 [Worker-2646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-08-10 20:51:32,751 [Worker-2646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-08-10 20:51:32,761 [Worker-2646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Hospital-Staff-MS\src\test\resources
+2025-08-11 16:02:10,778 [Worker-2695: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-11 16:02:10,813 [Worker-2695: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-11 16:02:10,818 [Worker-2695: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Hospital-Staff-MS\src\test\resources
+2025-08-11 16:06:45,563 [Worker-2685: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-11 16:06:45,611 [Worker-2685: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-11 16:06:45,623 [Worker-2685: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Inventory-Manager-MS\src\test\resources
+2025-08-11 16:07:04,540 [Worker-2690: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-11 16:07:04,547 [Worker-2690: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-11 16:07:04,551 [Worker-2690: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Inventory-Manager-MS\src\test\resources
+2025-08-11 16:08:21,336 [Worker-2678: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-11 16:08:21,342 [Worker-2678: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-11 16:08:21,346 [Worker-2678: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Inventory-Manager-MS\src\test\resources
+2025-08-11 16:12:19,958 [Worker-2683: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-11 16:12:19,967 [Worker-2683: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-11 16:12:19,968 [Worker-2683: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Hospital-Staff-MS\src\test\resources
+2025-08-11 16:13:05,936 [Worker-2696: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-11 16:13:05,943 [Worker-2696: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-11 16:13:05,947 [Worker-2696: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MEPMS-Capstone Project\MEPMS_Backend\Hospital-Staff-MS\src\test\resources

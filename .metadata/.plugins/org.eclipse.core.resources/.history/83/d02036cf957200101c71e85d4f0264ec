@@ -1,0 +1,238 @@
+package com.mepms;
+
+package com.mepms.controller;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Date;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import com.mepms.controller.AuthController;
+import com.mepms.entity.User;
+import com.mepms.repository.UserRepository;
+import com.mepms.service.AuthService;
+import com.mepms.service.EmailService;
+import com.mepms.util.JwtUtil;
+
+class AuthControllerTest {
+
+    private MockMvc mockMvc;
+
+    @Mock
+    private AuthService authService;
+
+    @Mock
+    private UserRepository userRepo;
+
+    @Mock
+    private EmailService emailService;
+
+    @Mock
+    private JwtUtil jwtUtil;
+
+    @Mock
+    private BCryptPasswordEncoder passwordEncoder;
+
+    @InjectMocks
+    private AuthController authController;
+
+    private User user;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        mockMvc = MockMvcBuilders.standaloneSetup(authController).build();
+
+        user = new User();
+        user.setId("1");
+        user.setEmail("test@example.com");
+        user.setPassword("password");
+        user.setUsername("testuser");
+        user.setEmployeeId("EMP001");
+        user.setDepartment("IT");
+        user.setRoleName("USER");
+        user.setCreatedAt(new Date());
+        user.setUpdatedAt(new Date());
+    }
+
+//    @Test
+//    void register() throws Exception {
+//        when(authService.register(any(User.class))).thenReturn(ResponseEntity.ok("User registered successfully"));
+//
+//        mockMvc.perform(post("/api/auth/register")
+//                .contentType(MediaType.APPLICATION_JSON)
+//                .content("{\"email\":\"test@example.com\",\"password\":\"password\"}"))
+//                .andExpect(status().isOk())
+//                .andExpect(content().string("User registered successfully"));
+//
+//        verify(authService, times(1)).register(any(User.class));
+//    }
+    
+//    @Test
+//    void register() throws Exception {
+//        // Use ResponseEntity<String> explicitly
+//        ResponseEntity<String> responseEntity = ResponseEntity.ok("User registered successfully");
+//        
+//        // Mock with the specific type
+//        when(authService.register(any(User.class))).thenReturn(responseEntity);
+//
+//        mockMvc.perform(post("/api/auth/register")
+//                .contentType(MediaType.APPLICATION_JSON)
+//                .content("{\"email\":\"test@example.com\",\"password\":\"password\"}"))
+//                .andExpect(status().isOk())
+//                .andExpect(content().string("User registered successfully"));
+//
+//        verify(authService, times(1)).register(any(User.class));
+//    }
+    
+    @Test
+    void register() throws Exception {
+        when(authService.register(any(User.class)))
+            .thenReturn((ResponseEntity<String>) ResponseEntity.ok("User registered successfully"));
+
+        mockMvc.perform(post("/api/auth/register")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\",\"password\":\"password\"}"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("User registered successfully"));
+
+        verify(authService, times(1)).register(any(User.class));
+    }
+    
+
+    @Test
+    void login() throws Exception {
+        when(authService.login(anyString(), anyString())).thenReturn(ResponseEntity.ok("Login successful"));
+
+        mockMvc.perform(post("/api/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\",\"password\":\"password\"}"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Login successful"));
+
+        verify(authService, times(1)).login("test@example.com", "password");
+    }
+
+    @Test
+    void getCurrentUser() throws Exception {
+        when(jwtUtil.extractEmail(anyString())).thenReturn("test@example.com");
+        when(authService.findByEmail(anyString())).thenReturn(user);
+
+        mockMvc.perform(get("/api/auth/current")
+                .header("Authorization", "Bearer token"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.email").value("test@example.com"))
+                .andExpect(jsonPath("$.password").doesNotExist());
+
+        verify(jwtUtil, times(1)).extractEmail("token");
+        verify(authService, times(1)).findByEmail("test@example.com");
+    }
+
+    @Test
+    void getCurrentUserNotFound() throws Exception {
+        when(jwtUtil.extractEmail(anyString())).thenReturn("test@example.com");
+        when(authService.findByEmail(anyString())).thenReturn(null);
+
+        mockMvc.perform(get("/api/auth/current")
+                .header("Authorization", "Bearer token"))
+                .andExpect(status().isNotFound());
+
+        verify(jwtUtil, times(1)).extractEmail("token");
+        verify(authService, times(1)).findByEmail("test@example.com");
+    }
+
+    @Test
+    void forgotPasswordInitiate() throws Exception {
+        when(userRepo.findByEmail(anyString())).thenReturn(user);
+        doNothing().when(emailService).sendOtp(anyString(), anyString());
+
+        mockMvc.perform(post("/api/auth/forgot-password-initiate")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\"}"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("OTP sent to your email"));
+
+        verify(userRepo, times(1)).findByEmail("test@example.com");
+        verify(emailService, times(1)).sendOtp("test@example.com", anyString());
+    }
+
+    @Test
+    void forgotPasswordInitiateEmailNotFound() throws Exception {
+        when(userRepo.findByEmail(anyString())).thenReturn(null);
+
+        mockMvc.perform(post("/api/auth/forgot-password-initiate")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\"}"))
+                .andExpect(status().isNotFound())
+                .andExpect(content().string("Email not registered."));
+
+        verify(userRepo, times(1)).findByEmail("test@example.com");
+    }
+
+    @Test
+    void verifyOtp() throws Exception {
+        user.setResetPasswordOtp("123456");
+        user.setResetPasswordOtpExpiry(new Date(System.currentTimeMillis() + 15*60*1000));
+        when(userRepo.findByEmail(anyString())).thenReturn(user);
+
+        mockMvc.perform(post("/api/auth/forgot-password-verify")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\",\"otp\":\"123456\"}"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("OTP valid"));
+
+        verify(userRepo, times(1)).findByEmail("test@example.com");
+    }
+
+    @Test
+    void verifyOtpInvalid() throws Exception {
+        user.setResetPasswordOtp("123456");
+        user.setResetPasswordOtpExpiry(new Date(System.currentTimeMillis() - 1000)); // Expired
+        when(userRepo.findByEmail(anyString())).thenReturn(user);
+
+        mockMvc.perform(post("/api/auth/forgot-password-verify")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\",\"otp\":\"123456\"}"))
+                .andExpect(status().isBadRequest())
+                .andExpect(content().string("Invalid or expired OTP"));
+
+        verify(userRepo, times(1)).findByEmail("test@example.com");
+    }
+
+    @Test
+    void resetPassword() throws Exception {
+        user.setResetPasswordOtp("123456");
+        user.setResetPasswordOtpExpiry(new Date(System.currentTimeMillis() + 15*60*1000));
+        when(userRepo.findByEmail(anyString())).thenReturn(user);
+        when(passwordEncoder.encode(anyString())).thenReturn("encodedPassword");
+
+        mockMvc.perform(post("/api/auth/reset-password")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"test@example.com\",\"newPassword\":\"newPass\",\"otp\":\"123456\"}"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Password reset successful"));
+
+        verify(userRepo, times(1)).findByEmail("test@example.com");
+        verify(userRepo, times(1)).save(user);
+    }
+}

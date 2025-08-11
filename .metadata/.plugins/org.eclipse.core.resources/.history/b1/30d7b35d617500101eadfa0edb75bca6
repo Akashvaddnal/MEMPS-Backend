@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_AJUawHVfEfC-BOCJpGoLHQ">
+  <modelElement href="Login-Auth-MS.uml#_AQ9T2HVfEfC-BOCJpGoLHQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWZ0gHVfEfC-BOCJpGoLHQ" sourceAnchor="0.0,88.0" targetAnchor="0.0,58.0" target="_AWukoHVfEfC-BOCJpGoLHQ" source="_AWabm3VfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AULm8HVfEfC-BOCJpGoLHQ"/>
+    <bendpoints xmi:id="_FzPQoHVfEfC-BOCJpGoLHQ" sourceX="-64" targetX="-654" targetY="572"/>
+    <bendpoints xmi:id="_FzPQoXVfEfC-BOCJpGoLHQ" sourceX="-64" sourceY="-572" targetX="-654"/>
+    <stereotypes xmi:id="_AWZ0gXVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUMOAHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWZ0gnVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkCn4HVfEfC-BOCJpGoLHQ" position="-20.5,250.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWZ0g3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AULm8XVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCA4HVfEfC-BOCJpGoLHQ" position="-20.0,1.5"/>
+      <visibility xmi:id="_AWZ0hHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWZ0hXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWZ0hnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="authService" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_ATylYHVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCn4XVfEfC-BOCJpGoLHQ" position="-79.49999999999989,1.5"/>
+      <visibility xmi:id="_AWZ0h3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWZ0iHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWZ0iXVfEfC-BOCJpGoLHQ" sourceAnchor="183.0,0.0" targetAnchor="119.0,95.0" target="_AWiXYHVfEfC-BOCJpGoLHQ" source="_AWabm3VfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUMOAXVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWZ0inVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUMOA3VfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWZ0i3VfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkCn43VfEfC-BOCJpGoLHQ" position="-20.5,-40.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWZ0jHVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUMOAnVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCn4nVfEfC-BOCJpGoLHQ" position="-20.5,-54.0"/>
+      <visibility xmi:id="_AWZ0jXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWZ0jnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWZ0j3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="userRepo" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_ATylY3VfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCn5HVfEfC-BOCJpGoLHQ" position="7.0,5.5"/>
+      <visibility xmi:id="_AWZ0kHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWZ0kXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWZ0knVfEfC-BOCJpGoLHQ" sourceAnchor="183.0,176.0" targetAnchor="175.0,0.0" target="_AWsvcHVfEfC-BOCJpGoLHQ" source="_AWabm3VfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUMOBHVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWZ0k3VfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUM1EHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWZ0lHVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkCn5nVfEfC-BOCJpGoLHQ" position="-20.5,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWZ0lXVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUMOBXVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCn5XVfEfC-BOCJpGoLHQ" position="5.5,5.0"/>
+      <visibility xmi:id="_AWZ0lnVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWZ0l3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWZ0mHVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="emailService" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_ATylZnVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCn53VfEfC-BOCJpGoLHQ" position="-92.0,-53.5"/>
+      <visibility xmi:id="_AWabkHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWabkXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWabknVfEfC-BOCJpGoLHQ" sourceAnchor="366.0,88.0" targetAnchor="0.0,102.0" target="_AW6x6XVfEfC-BOCJpGoLHQ" source="_AWabm3VfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUM1EXVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWabk3VfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUM1E3VfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWablHVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkCn6XVfEfC-BOCJpGoLHQ" position="-14.5,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWablXVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUM1EnVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkCn6HVfEfC-BOCJpGoLHQ" position="5.0,-50.5"/>
+      <visibility xmi:id="_AWablnVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWabl3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWabmHVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="jwtUtil" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_ATylaXVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO8HVfEfC-BOCJpGoLHQ" position="-53.00000000000023,1.5"/>
+      <visibility xmi:id="_AWabmXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWabmnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWcQwHVfEfC-BOCJpGoLHQ" source="_AWc32XVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUM1FHVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWcQwXVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUM1FnVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWcQwnVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AWcQw3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUM1FXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWcQxHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWcQxXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWcQxnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="sentAt" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_ATzzhnVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWcQx3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWcQyHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWc30HVfEfC-BOCJpGoLHQ" sourceAnchor="88.0,196.0" targetAnchor="78.0,0.0" target="_AWde4HVfEfC-BOCJpGoLHQ" source="_AWc32XVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUM1F3VfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWc30XVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUM1GXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWc30nVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkDO8nVfEfC-BOCJpGoLHQ" position="-18.0,-6.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWc303VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUM1GHVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO8XVfEfC-BOCJpGoLHQ" position="5.5,5.0"/>
+      <visibility xmi:id="_AWc31HVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWc31XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWc31nVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="documents" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT0aknVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO83VfEfC-BOCJpGoLHQ" position="-76.0,-53.5"/>
+      <visibility xmi:id="_AWc313VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc32HVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWkzoHVfEfC-BOCJpGoLHQ" sourceAnchor="0.0,152.0" targetAnchor="506.0,68.0" target="_AWkMkHVfEfC-BOCJpGoLHQ" source="_AWn28HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUNcKnVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWlas3VfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUODMHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWlasHVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkDO-HVfEfC-BOCJpGoLHQ" position="5.5,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWlasXVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUNcK3VfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO93VfEfC-BOCJpGoLHQ" position="-20.0,1.5"/>
+      <visibility xmi:id="_AWmo0XVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWmo0HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWlasnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="emailRepo" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT4E9HVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO-XVfEfC-BOCJpGoLHQ" position="5.0,-50.5"/>
+      <visibility xmi:id="_AWmo03VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWmo0nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWnP4HVfEfC-BOCJpGoLHQ" source="_AWn28HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUODMXVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWnP4XVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUODM3VfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWnP4nVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AWnP43VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUODMnVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWnP5HVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWnP5XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWnP5nVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="mailSender" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT4sAHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWnP53VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWnP6HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWsIYHVfEfC-BOCJpGoLHQ" source="_AWsvcHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUOqQHVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWsIZHVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUOqQnVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWsIYXVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AWsIYnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUOqQXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWsIZnVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWsIZXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWsIY3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="mailSender" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT4sA3VfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWsIaHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWsIZ3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWvywHVfEfC-BOCJpGoLHQ" sourceAnchor="0.0,98.0" targetAnchor="508.0,128.0" target="_AWxA4HVfEfC-BOCJpGoLHQ" source="_AWc32XVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUAAwHVfEfC-BOCJpGoLHQ"/>
+    <nameVisual xmi:id="_AWwZ0XVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkDO9XVfEfC-BOCJpGoLHQ" position="-3.5,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWwZ0nVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="all" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_ARYKlHVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO9HVfEfC-BOCJpGoLHQ" position="-30.5,1.5"/>
+      <visibility xmi:id="_AWwZ1XVfEfC-BOCJpGoLHQ" label="~"/>
+      <cardinality xmi:id="_AWwZ1HVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWwZ03VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUAAwXVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO9nVfEfC-BOCJpGoLHQ" position="5.0,-50.5"/>
+      <visibility xmi:id="_AWwZ13VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWwZ1nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_AWwZ0HVfEfC-BOCJpGoLHQ" sourceAnchor="265.0,0.0" targetAnchor="254.0,256.0" dashed="true" superClass="_AWxA4HVfEfC-BOCJpGoLHQ" subClass="_AWn28HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ATm_MnVfEfC-BOCJpGoLHQ"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWy2EHVfEfC-BOCJpGoLHQ" sourceAnchor="0.0,92.0" targetAnchor="238.0,48.0" target="_AWiXYHVfEfC-BOCJpGoLHQ" source="_AW15YHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUM1GnVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AWzdI3VfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUM1HHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AWzdIHVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkDO-3VfEfC-BOCJpGoLHQ" position="22.5,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AWzdIXVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUM1G3VfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkDO-nVfEfC-BOCJpGoLHQ" position="-19.5,1.5"/>
+      <visibility xmi:id="_AW0EMXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW0EMHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AWzdInVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="userRepository" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT3d4nVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkD2AHVfEfC-BOCJpGoLHQ" position="5.0,-50.50000000000003"/>
+      <visibility xmi:id="_AW0EM3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW0EMnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_AWy2EXVfEfC-BOCJpGoLHQ" sourceAnchor="230.0,0.0" targetAnchor="191.0,116.0" dashed="true" superClass="_AWukoHVfEfC-BOCJpGoLHQ" subClass="_AW15YHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ATjU1XVfEfC-BOCJpGoLHQ"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWzdJHVfEfC-BOCJpGoLHQ" sourceAnchor="230.0,183.0" targetAnchor="195.0,0.0" target="_AW6x6XVfEfC-BOCJpGoLHQ" source="_AW15YHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUM1HXVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AW0rQXVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUNcIHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AW0ENXVfEfC-BOCJpGoLHQ" text="">
+      <visualProperties xmi:id="_AkD2AnVfEfC-BOCJpGoLHQ" position="-20.5,-3.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_AW0ENnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUM1HnVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkD2AXVfEfC-BOCJpGoLHQ" position="5.5,5.5"/>
+      <visibility xmi:id="_AW0rR3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW0rRnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AW0rQHVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="jwtUtil" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT3d5XVfEfC-BOCJpGoLHQ"/>
+      <visualProperties xmi:id="_AkD2A3VfEfC-BOCJpGoLHQ" position="-50.0,-53.5"/>
+      <visibility xmi:id="_AW0rSXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW0rSHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AWzdJXVfEfC-BOCJpGoLHQ" source="_AW15YHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUNcIXVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AW0rRXVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUNcI3VfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AW0rQnVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AW0rQ3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUNcInVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW1SUXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW1SUHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AW0rRHVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="restTemplate" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT3d6HVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW1SU3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW1SUnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AW1SVXVfEfC-BOCJpGoLHQ" source="_AW15YHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUNcJHVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AW1SVnVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUNcJnVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AW1SV3VfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AW1SWHVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUNcJXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW1SWXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW1SWnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AW1SW3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="passwordEncoder" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT3d7XVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW1SXHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW1SXXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AW3ukHVfEfC-BOCJpGoLHQ" source="_AW4VoHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUNcJ3VfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AW3ukXVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUNcKXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AW3uknVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AW3uk3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUNcKHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW3ulHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW3ulXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AW3ulnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="timestamp" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT4E8nVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW3ul3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW3umHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AW5jwHVfEfC-BOCJpGoLHQ" source="_AW5jyXVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUOqRnVfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AW5jwXVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUOqSHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AW5jwnVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AW5jw3VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUOqR3VfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW5jxHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW5jxXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AW5jxnVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="random" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT5TGXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW5jx3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW5jyHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AW6x4HVfEfC-BOCJpGoLHQ" source="_AW6x6XVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_AUOqQ3VfEfC-BOCJpGoLHQ"/>
+    <stereotypes xmi:id="_AW6x4XVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_AUOqRXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AW6x4nVfEfC-BOCJpGoLHQ" text=""/>
+    <sourceRole xmi:id="_AW6x43VfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="">
+      <modelElement href="Login-Auth-MS.uml#_AUOqRHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW6x5HVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW6x5XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AW6x5nVfEfC-BOCJpGoLHQ" aggregationKind="NONE" name="SECRET_KEY" navigable="true">
+      <modelElement href="Login-Auth-MS.uml#_AT5TFXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW6x53VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW6x6HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWU8AHVfEfC-BOCJpGoLHQ" name="LoginAuthMsApplication">
+    <modelElement href="Login-Auth-MS.uml#_AROZkHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWU8AXVfEfC-BOCJpGoLHQ" position="927.0,1619.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWU8AnVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARPAoHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWU8A3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARPnsHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWU8BHVfEfC-BOCJpGoLHQ" label="+"/>
+    <operations xmi:id="_AWU8BXVfEfC-BOCJpGoLHQ" name="main" staticOperation="true">
+      <modelElement href="Login-Auth-MS.uml#_ARPAoXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWU8BnVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ARPAo3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWU8B3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWU8CHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWU8CXVfEfC-BOCJpGoLHQ" name="args">
+        <modelElement href="Login-Auth-MS.uml#_ARPAonVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWU8CnVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_AWU8C3VfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWXYQHVfEfC-BOCJpGoLHQ" name="RestTemplateConfig">
+    <modelElement href="Login-Auth-MS.uml#_ARPntHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWXYQXVfEfC-BOCJpGoLHQ" position="628.0,1619.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWXYQnVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARPntXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWXYQ3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARPnuXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWXYRHVfEfC-BOCJpGoLHQ" label="+"/>
+    <operations xmi:id="_AWXYRXVfEfC-BOCJpGoLHQ" name="restTemplate">
+      <modelElement href="Login-Auth-MS.uml#_ARPntnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWXYRnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARPnt3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWXYR3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWXYSHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWXYSXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATrQoHVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWXYSnVfEfC-BOCJpGoLHQ" name="RestTemplate">
+          <modelElement href="Login-Auth-MS.uml#_ATXHk3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWc32XVfEfC-BOCJpGoLHQ" name="EmailRecord" associationsOut="_AWcQwHVfEfC-BOCJpGoLHQ _AWc30HVfEfC-BOCJpGoLHQ _AWvywHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWc32nVfEfC-BOCJpGoLHQ" position="1414.0,1013.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWc323VfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARRc4XVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWc33HVfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARSD9XVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWc33XVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWc33nVfEfC-BOCJpGoLHQ" name="id">
+      <modelElement href="Login-Auth-MS.uml#_ATzMcnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWc333VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATzzgHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWc34HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc34XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWc34nVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc343VfEfC-BOCJpGoLHQ" name="recipients">
+      <modelElement href="Login-Auth-MS.uml#_ATzzgnVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc35HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc35XVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_AWc35nVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc353VfEfC-BOCJpGoLHQ" name="subject">
+      <modelElement href="Login-Auth-MS.uml#_ATzzhHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc36HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc36XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWc36nVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc363VfEfC-BOCJpGoLHQ" name="content">
+      <modelElement href="Login-Auth-MS.uml#_ATzzhXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc37HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc37XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWc37nVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc373VfEfC-BOCJpGoLHQ" name="sentAt">
+      <modelElement href="Login-Auth-MS.uml#_ATzzhnVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc38HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc38XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWc38nVfEfC-BOCJpGoLHQ" name="LocalDateTime">
+        <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc383VfEfC-BOCJpGoLHQ" name="success">
+      <modelElement href="Login-Auth-MS.uml#_AT0akHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc39HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc39XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWc39nVfEfC-BOCJpGoLHQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc393VfEfC-BOCJpGoLHQ" name="errorMessage">
+      <modelElement href="Login-Auth-MS.uml#_AT0akXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc3-HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc3-XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWc3-nVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWc3-3VfEfC-BOCJpGoLHQ" name="documents">
+      <modelElement href="Login-Auth-MS.uml#_AT0aknVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWc3_HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWc3_XVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_AWc3_nVfEfC-BOCJpGoLHQ" name="DocumentAttachment">
+        <modelElement href="Login-Auth-MS.uml#_ARSD8HVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWde4HVfEfC-BOCJpGoLHQ" name="DocumentAttachment" associationsIn="_AWc30HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARSD8HVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWde4XVfEfC-BOCJpGoLHQ" position="1425.0,1397.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_AWde4nVfEfC-BOCJpGoLHQ" keyword="static"/>
+    <stereotypes xmi:id="_AWde43VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARSD83VfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWde5HVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWde5XVfEfC-BOCJpGoLHQ" name="name">
+      <modelElement href="Login-Auth-MS.uml#_AT0alHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWde5nVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWde53VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWde6HVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWde6XVfEfC-BOCJpGoLHQ" name="type">
+      <modelElement href="Login-Auth-MS.uml#_AT0alXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWde6nVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWde63VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWde7HVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWde7XVfEfC-BOCJpGoLHQ" name="size">
+      <modelElement href="Login-Auth-MS.uml#_AT1BoHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWde7nVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWde73VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWde8HVfEfC-BOCJpGoLHQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWde8XVfEfC-BOCJpGoLHQ" name="data">
+      <modelElement href="Login-Auth-MS.uml#_AT1BoXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWde8nVfEfC-BOCJpGoLHQ" name="Array">
+        <modelElement href="Login-Auth-MS.uml#_AT1Bo3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWde83VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWde9HVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_AWde9XVfEfC-BOCJpGoLHQ" name="byte">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWfUEHVfEfC-BOCJpGoLHQ" name="User">
+    <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWfUEXVfEfC-BOCJpGoLHQ" position="1655.0,979.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWfUEnVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARTSEXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWfUE3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ART5IHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWfUFHVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWfUFXVfEfC-BOCJpGoLHQ" name="id">
+      <modelElement href="Login-Auth-MS.uml#_AT1BpHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUFnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT1osHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUF3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUGHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUGXVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUGnVfEfC-BOCJpGoLHQ" name="employeeId">
+      <modelElement href="Login-Auth-MS.uml#_AT1osnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUG3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT1os3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUHHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUHXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUHnVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUH3VfEfC-BOCJpGoLHQ" name="username">
+      <modelElement href="Login-Auth-MS.uml#_AT1otnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUIHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2PwHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUIXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUInVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUI3VfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUJHVfEfC-BOCJpGoLHQ" name="password">
+      <modelElement href="Login-Auth-MS.uml#_AT2Px3VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUJXVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2PyHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUJnVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUJ3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUKHVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUKXVfEfC-BOCJpGoLHQ" name="email">
+      <modelElement href="Login-Auth-MS.uml#_AT2Pz3VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUKnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2P0HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUK3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfULHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfULXVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfULnVfEfC-BOCJpGoLHQ" name="department">
+      <modelElement href="Login-Auth-MS.uml#_AT2P13VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUL3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2P2HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUMHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUMXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUMnVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUM3VfEfC-BOCJpGoLHQ" name="roleName">
+      <modelElement href="Login-Auth-MS.uml#_AT2P23VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUNHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2P3HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUNXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUNnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUN3VfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUOHVfEfC-BOCJpGoLHQ" name="createdAt">
+      <modelElement href="Login-Auth-MS.uml#_AT2P33VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUOXVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2P4HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUOnVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUO3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUPHVfEfC-BOCJpGoLHQ" name="Date">
+        <modelElement href="Login-Auth-MS.uml#_ATXuoHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUPXVfEfC-BOCJpGoLHQ" name="updatedAt">
+      <modelElement href="Login-Auth-MS.uml#_AT2P43VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWfUPnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT2P5HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWfUP3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUQHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUQXVfEfC-BOCJpGoLHQ" name="Date">
+        <modelElement href="Login-Auth-MS.uml#_ATXuoHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUQnVfEfC-BOCJpGoLHQ" name="resetPasswordOtp">
+      <modelElement href="Login-Auth-MS.uml#_AT220HVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWfUQ3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfURHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfURXVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfURnVfEfC-BOCJpGoLHQ" name="resetPasswordOtpExpiry">
+      <modelElement href="Login-Auth-MS.uml#_AT220XVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWfUR3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUSHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUSXVfEfC-BOCJpGoLHQ" name="Date">
+        <modelElement href="Login-Auth-MS.uml#_ATXuoHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUSnVfEfC-BOCJpGoLHQ" defaultValue="false" name="isActive">
+      <modelElement href="Login-Auth-MS.uml#_AT220nVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWfUS3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUTHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUTXVfEfC-BOCJpGoLHQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWfUTnVfEfC-BOCJpGoLHQ" name="profilePic">
+      <modelElement href="Login-Auth-MS.uml#_AT3d4XVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWfUT3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWfUUHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWfUUXVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_AWiXYHVfEfC-BOCJpGoLHQ" name="UserRepository" associationsIn="_AWZ0iXVfEfC-BOCJpGoLHQ _AWy2EHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARVHR3VfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWiXYXVfEfC-BOCJpGoLHQ" position="175.0,75.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWiXYnVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARVHSHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWiXY3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARVuUXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWiXZHVfEfC-BOCJpGoLHQ" label="+"/>
+    <operations xmi:id="_AWiXZXVfEfC-BOCJpGoLHQ" name="findByEmail">
+      <modelElement href="Login-Auth-MS.uml#_ARVHSXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWiXZnVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ARVuUHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWiXZ3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWiXaHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWiXaXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATiGsHVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWiXanVfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWiXa3VfEfC-BOCJpGoLHQ" name="email">
+        <modelElement href="Login-Auth-MS.uml#_ARVHSnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWiXbHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWiXbXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_AWkMkHVfEfC-BOCJpGoLHQ" name="EmailRecordRepository" associationsIn="_AWkzoHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARUgMHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWkMkXVfEfC-BOCJpGoLHQ" position="28.0,1342.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWkMknVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARUgMXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWkMk3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARVHRXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWkMlHVfEfC-BOCJpGoLHQ" label="+"/>
+    <operations xmi:id="_AWkMlXVfEfC-BOCJpGoLHQ" name="findByRecipientsContaining">
+      <modelElement href="Login-Auth-MS.uml#_ARUgMnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWkMlnVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ARUgNnVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWkMl3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWkMmHVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWkMmXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARUgNHVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWkMmnVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWkMm3VfEfC-BOCJpGoLHQ" name="email">
+        <modelElement href="Login-Auth-MS.uml#_ARUgM3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWkMnHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWkMnXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWkMnnVfEfC-BOCJpGoLHQ" name="findBySuccess">
+      <modelElement href="Login-Auth-MS.uml#_ARVHQHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWkMn3VfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ARVHRHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWkMoHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWkMoXVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWkMonVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARVHQnVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWkMo3VfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWkMpHVfEfC-BOCJpGoLHQ" name="success">
+        <modelElement href="Login-Auth-MS.uml#_ARVHQXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWkMpXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWkMpnVfEfC-BOCJpGoLHQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWkMp3VfEfC-BOCJpGoLHQ" name="findBySentAtBetween">
+      <modelElement href="Login-Auth-MS.uml#_ATuT8HVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWkMqHVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ATuT9XVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWkMqXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWkMqnVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWkMq3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATuT83VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWkMrHVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWkMrXVfEfC-BOCJpGoLHQ" name="from">
+        <modelElement href="Login-Auth-MS.uml#_ATuT8XVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWkMrnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWkMr3VfEfC-BOCJpGoLHQ" name="LocalDateTime">
+          <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWkMsHVfEfC-BOCJpGoLHQ" name="to">
+        <modelElement href="Login-Auth-MS.uml#_ATuT8nVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWkMsXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWkMsnVfEfC-BOCJpGoLHQ" name="LocalDateTime">
+          <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWn28HVfEfC-BOCJpGoLHQ" name="EmailRecordServiceImpl" associationsOut="_AWkzoHVfEfC-BOCJpGoLHQ _AWnP4HVfEfC-BOCJpGoLHQ" generalizations="_AWwZ0HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARZYs3VfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWn28XVfEfC-BOCJpGoLHQ" position="757.0,1258.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWn28nVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARZ_wHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWn283VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARccBXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWn29HVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWn29XVfEfC-BOCJpGoLHQ" name="emailRepo">
+      <modelElement href="Login-Auth-MS.uml#_AT4E9HVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn29nVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT4E9XVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn293VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWn2-HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWn2-XVfEfC-BOCJpGoLHQ" name="EmailRecordRepository">
+        <modelElement href="Login-Auth-MS.uml#_ARUgMHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWn2-nVfEfC-BOCJpGoLHQ" name="mailSender">
+      <modelElement href="Login-Auth-MS.uml#_AT4sAHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn2-3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT4sAXVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn2_HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWn2_XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWn2_nVfEfC-BOCJpGoLHQ" name="JavaMailSender">
+        <modelElement href="Login-Auth-MS.uml#_ATmYJ3VfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AWn2_3VfEfC-BOCJpGoLHQ" name="deleteById">
+      <modelElement href="Login-Auth-MS.uml#_ARZ_wXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3AHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARam0HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3AXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3AnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWn3A3VfEfC-BOCJpGoLHQ" name="id">
+        <modelElement href="Login-Auth-MS.uml#_ARZ_wnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3BHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3BXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3BnVfEfC-BOCJpGoLHQ" name="getById">
+      <modelElement href="Login-Auth-MS.uml#_ARam0nVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3B3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARam1HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3CHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3CXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWn3CnVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATm_PXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3C3VfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWn3DHVfEfC-BOCJpGoLHQ" name="id">
+        <modelElement href="Login-Auth-MS.uml#_ARam03VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3DXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3DnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3D3VfEfC-BOCJpGoLHQ" name="getAll">
+      <modelElement href="Login-Auth-MS.uml#_ARam1nVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3EHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARbN4nVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3EXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3EnVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWn3E3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARbN4HVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3FHVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_AWn3FXVfEfC-BOCJpGoLHQ" name="getByRecipients">
+      <modelElement href="Login-Auth-MS.uml#_ARbN5HVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3FnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARb08HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3F3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3GHVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWn3GXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARbN5nVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3GnVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWn3G3VfEfC-BOCJpGoLHQ" name="recipient">
+        <modelElement href="Login-Auth-MS.uml#_ARbN5XVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3HHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3HXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3HnVfEfC-BOCJpGoLHQ" name="getBySuccess">
+      <modelElement href="Login-Auth-MS.uml#_ARb08nVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3H3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARb09nVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3IHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3IXVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWn3InVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARb09HVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3I3VfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWn3JHVfEfC-BOCJpGoLHQ" name="success">
+        <modelElement href="Login-Auth-MS.uml#_ARb083VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3JXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3JnVfEfC-BOCJpGoLHQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3J3VfEfC-BOCJpGoLHQ" name="sendOtp">
+      <modelElement href="Login-Auth-MS.uml#_ARccAHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3KHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARccA3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3KXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3KnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWn3K3VfEfC-BOCJpGoLHQ" name="to">
+        <modelElement href="Login-Auth-MS.uml#_ARccAXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3LHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3LXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWn3LnVfEfC-BOCJpGoLHQ" name="otp">
+        <modelElement href="Login-Auth-MS.uml#_ARccAnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3L3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3MHVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3MXVfEfC-BOCJpGoLHQ" name="create">
+      <modelElement href="Login-Auth-MS.uml#_ATm_M3VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3MnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATm_NnVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3M3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3NHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWn3NXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATm_NXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3NnVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWn3N3VfEfC-BOCJpGoLHQ" name="emailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ATm_NHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3OHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3OXVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3OnVfEfC-BOCJpGoLHQ" name="update">
+      <modelElement href="Login-Auth-MS.uml#_ATm_OHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3O3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATm_O3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3PHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3PXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWn3PnVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATm_OnVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3P3VfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWn3QHVfEfC-BOCJpGoLHQ" name="emailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ATm_OXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3QXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3QnVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3Q3VfEfC-BOCJpGoLHQ" name="addDocumentToEmail">
+      <modelElement href="Login-Auth-MS.uml#_ATnmQHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3RHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATnmQ3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3RXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3RnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWn3R3VfEfC-BOCJpGoLHQ" name="id">
+        <modelElement href="Login-Auth-MS.uml#_ATnmQXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3SHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3SXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWn3SnVfEfC-BOCJpGoLHQ" name="doc">
+        <modelElement href="Login-Auth-MS.uml#_ATnmQnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3S3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3THVfEfC-BOCJpGoLHQ" name="DocumentAttachment">
+          <modelElement href="Login-Auth-MS.uml#_ATlxEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3TXVfEfC-BOCJpGoLHQ" name="sendEmail">
+      <modelElement href="Login-Auth-MS.uml#_ATnmRXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3TnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATnmR3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3T3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3UHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWn3UXVfEfC-BOCJpGoLHQ" name="emailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ATnmRnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3UnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3U3VfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWn3VHVfEfC-BOCJpGoLHQ" name="getBySentDateRange">
+      <modelElement href="Login-Auth-MS.uml#_ATwwMHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWn3VXVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATxXQHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWn3VnVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWn3V3VfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWn3WHVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATwwM3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWn3WXVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWn3WnVfEfC-BOCJpGoLHQ" name="start">
+        <modelElement href="Login-Auth-MS.uml#_ATwwMXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3W3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3XHVfEfC-BOCJpGoLHQ" name="LocalDateTime">
+          <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWn3XXVfEfC-BOCJpGoLHQ" name="end">
+        <modelElement href="Login-Auth-MS.uml#_ATwwMnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWn3XnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWn3X3VfEfC-BOCJpGoLHQ" name="LocalDateTime">
+          <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWrhUHVfEfC-BOCJpGoLHQ" name="Exception">
+    <modelElement href="Login-Auth-MS.uml#_ATviGHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWrhUXVfEfC-BOCJpGoLHQ" position="1182.0,1620.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWrhUnVfEfC-BOCJpGoLHQ" name="Reference">
+      <modelElement href="Login-Auth-MS.uml#_ATviGXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWrhU3VfEfC-BOCJpGoLHQ" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWsvcHVfEfC-BOCJpGoLHQ" name="EmailService" associationsIn="_AWZ0knVfEfC-BOCJpGoLHQ" associationsOut="_AWsIYHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARdDEHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWsvcXVfEfC-BOCJpGoLHQ" position="119.0,789.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWsvcnVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARdqIHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWsvc3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARdqKnVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWsvdHVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWsvdXVfEfC-BOCJpGoLHQ" name="mailSender">
+      <modelElement href="Login-Auth-MS.uml#_AT4sA3VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWsvdnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT5TEHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWsvd3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWsveHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWsveXVfEfC-BOCJpGoLHQ" name="JavaMailSender">
+        <modelElement href="Login-Auth-MS.uml#_ATmYJ3VfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AWsvenVfEfC-BOCJpGoLHQ" name="sendMail">
+      <modelElement href="Login-Auth-MS.uml#_ARdqIXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWsve3VfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ARdqJXVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWsvfHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWsvfXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWsvfnVfEfC-BOCJpGoLHQ" name="to">
+        <modelElement href="Login-Auth-MS.uml#_ARdqInVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWsvf3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWsvgHVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWsvgXVfEfC-BOCJpGoLHQ" name="subject">
+        <modelElement href="Login-Auth-MS.uml#_ARdqI3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWsvgnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWsvg3VfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWsvhHVfEfC-BOCJpGoLHQ" name="content">
+        <modelElement href="Login-Auth-MS.uml#_ARdqJHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWsvhXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWsvhnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWsvh3VfEfC-BOCJpGoLHQ" name="sendOtp">
+      <modelElement href="Login-Auth-MS.uml#_ARdqJnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWsviHVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ARdqKXVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWsviXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWsvinVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWsvi3VfEfC-BOCJpGoLHQ" name="to">
+        <modelElement href="Login-Auth-MS.uml#_ARdqJ3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWsvjHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWsvjXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWsvjnVfEfC-BOCJpGoLHQ" name="otp">
+        <modelElement href="Login-Auth-MS.uml#_ARdqKHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWsvj3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWsvkHVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_AWukoHVfEfC-BOCJpGoLHQ" name="AuthService" associationsIn="_AWZ0gHVfEfC-BOCJpGoLHQ" subclassedBy="_AWy2EXVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARVuU3VfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWukoXVfEfC-BOCJpGoLHQ" position="701.0,-116.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_AWukonVfEfC-BOCJpGoLHQ" label="+"/>
+    <operations xmi:id="_AWuko3VfEfC-BOCJpGoLHQ" name="login">
+      <modelElement href="Login-Auth-MS.uml#_ARVuVHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWukpHVfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ARVuV3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWukpXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWukpnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWukp3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATu7AnVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWukqHVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWukqXVfEfC-BOCJpGoLHQ" name="email">
+        <modelElement href="Login-Auth-MS.uml#_ARVuVXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWukqnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWukq3VfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWukrHVfEfC-BOCJpGoLHQ" name="password">
+        <modelElement href="Login-Auth-MS.uml#_ARVuVnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWukrXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWukrnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWukr3VfEfC-BOCJpGoLHQ" name="findByEmail">
+      <modelElement href="Login-Auth-MS.uml#_ARVuWHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWuksHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWuksXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWuksnVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATitwHVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWuks3VfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWuktHVfEfC-BOCJpGoLHQ" name="email">
+        <modelElement href="Login-Auth-MS.uml#_ARVuWXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWuktXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWuktnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWukt3VfEfC-BOCJpGoLHQ" name="register">
+      <modelElement href="Login-Auth-MS.uml#_ATiGsXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWukuHVfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATiGs3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWukuXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWukunVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWuku3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATu7AXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWukvHVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWukvXVfEfC-BOCJpGoLHQ" name="user">
+        <modelElement href="Login-Auth-MS.uml#_ATiGsnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWukvnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWukv3VfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AW15YHVfEfC-BOCJpGoLHQ" name="AuthServiceImpl" associationsOut="_AWy2EHVfEfC-BOCJpGoLHQ _AWzdJHVfEfC-BOCJpGoLHQ _AWzdJXVfEfC-BOCJpGoLHQ _AW1SVXVfEfC-BOCJpGoLHQ" generalizations="_AWy2EXVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARWVYHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AW15YXVfEfC-BOCJpGoLHQ" position="661.0,31.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AW15YnVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARWVYXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AW15Y3VfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARW8eXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AW15ZHVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AW15ZXVfEfC-BOCJpGoLHQ" name="userRepository">
+      <modelElement href="Login-Auth-MS.uml#_AT3d4nVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW15ZnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT3d43VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW15Z3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW15aHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW15aXVfEfC-BOCJpGoLHQ" name="UserRepository">
+        <modelElement href="Login-Auth-MS.uml#_ARVHR3VfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW15anVfEfC-BOCJpGoLHQ" name="jwtUtil">
+      <modelElement href="Login-Auth-MS.uml#_AT3d5XVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW15a3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT3d5nVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW15bHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW15bXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW15bnVfEfC-BOCJpGoLHQ" name="JwtUtil">
+        <modelElement href="Login-Auth-MS.uml#_ARdqLHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW15b3VfEfC-BOCJpGoLHQ" name="restTemplate">
+      <modelElement href="Login-Auth-MS.uml#_AT3d6HVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW15cHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_AT3d6XVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW15cXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW15cnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW15c3VfEfC-BOCJpGoLHQ" name="RestTemplate">
+        <modelElement href="Login-Auth-MS.uml#_ATXHk3VfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW15dHVfEfC-BOCJpGoLHQ" defaultValue="&quot;http://localhost:9090/System-Admin-MS/api/audit-logs&quot;" name="auditLogUrl">
+      <modelElement href="Login-Auth-MS.uml#_AT3d63VfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW15dXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW15dnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW15d3VfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW15eHVfEfC-BOCJpGoLHQ" defaultValue="new BCryptPasswordEncoder()" name="passwordEncoder">
+      <modelElement href="Login-Auth-MS.uml#_AT3d7XVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW15eXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW15enVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW15e3VfEfC-BOCJpGoLHQ" name="BCryptPasswordEncoder">
+        <modelElement href="Login-Auth-MS.uml#_ATY8xXVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AW15fHVfEfC-BOCJpGoLHQ" name="login">
+      <modelElement href="Login-Auth-MS.uml#_ARWVYnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW15fXVfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ARW8cHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AW15fnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARW8cXVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW15f3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW15gHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW15gXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATviEXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW15gnVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW15g3VfEfC-BOCJpGoLHQ" name="email">
+        <modelElement href="Login-Auth-MS.uml#_ARWVY3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW15hHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW15hXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AW15hnVfEfC-BOCJpGoLHQ" name="password">
+        <modelElement href="Login-Auth-MS.uml#_ARWVZHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW15h3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW15iHVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AW15iXVfEfC-BOCJpGoLHQ" name="findByEmail">
+      <modelElement href="Login-Auth-MS.uml#_ARW8dXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW15inVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARW8d3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW15i3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW15jHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW15jXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATki9HVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW15jnVfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW15j3VfEfC-BOCJpGoLHQ" name="email">
+        <modelElement href="Login-Auth-MS.uml#_ARW8dnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW15kHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW15kXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AW15knVfEfC-BOCJpGoLHQ" name="register">
+      <modelElement href="Login-Auth-MS.uml#_ATj74HVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW15k3VfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATj74nVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AW15lHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATki8HVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW15lXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW15lnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW15l3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATviEHVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW15mHVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW15mXVfEfC-BOCJpGoLHQ" name="user">
+        <modelElement href="Login-Auth-MS.uml#_ATj74XVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW15mnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW15m3VfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AW4VoHVfEfC-BOCJpGoLHQ" name="AuditLogRequest" associationsOut="_AW3ukHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARW8c3VfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AW4VoXVfEfC-BOCJpGoLHQ" position="33.0,1623.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AW4VonVfEfC-BOCJpGoLHQ" name="StyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARW8dHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AW4Vo3VfEfC-BOCJpGoLHQ" label="~"/>
+    <attributes xmi:id="_AW4VpHVfEfC-BOCJpGoLHQ" name="userId">
+      <modelElement href="Login-Auth-MS.uml#_AT4E8HVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW4VpXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW4VpnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW4Vp3VfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW4VqHVfEfC-BOCJpGoLHQ" name="action">
+      <modelElement href="Login-Auth-MS.uml#_AT4E8XVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW4VqXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW4VqnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW4Vq3VfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW4VrHVfEfC-BOCJpGoLHQ" name="timestamp">
+      <modelElement href="Login-Auth-MS.uml#_AT4E8nVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW4VrXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW4VrnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW4Vr3VfEfC-BOCJpGoLHQ" name="Instant">
+        <modelElement href="Login-Auth-MS.uml#_ATki8nVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW4VsHVfEfC-BOCJpGoLHQ" name="details">
+      <modelElement href="Login-Auth-MS.uml#_AT4E83VfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW4VsXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW4VsnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW4Vs3VfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AW5jyXVfEfC-BOCJpGoLHQ" name="OtpUtil" associationsOut="_AW5jwHVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARe4QHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AW5jynVfEfC-BOCJpGoLHQ" position="255.0,1628.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_AW5jy3VfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AW5jzHVfEfC-BOCJpGoLHQ" defaultValue="new SecureRandom()" name="random" staticAttribute="true">
+      <modelElement href="Login-Auth-MS.uml#_AT5TGXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW5jzXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW5jznVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW5jz3VfEfC-BOCJpGoLHQ" name="SecureRandom">
+        <modelElement href="Login-Auth-MS.uml#_ATpbeXVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AW5j0HVfEfC-BOCJpGoLHQ" name="generateOtp" staticOperation="true">
+      <modelElement href="Login-Auth-MS.uml#_ARe4QXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW5j0XVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW5j0nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW5j03VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARe4Q3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW5j1HVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW5j1XVfEfC-BOCJpGoLHQ" name="length">
+        <modelElement href="Login-Auth-MS.uml#_ARe4QnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW5j1nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW5j13VfEfC-BOCJpGoLHQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AW6x6XVfEfC-BOCJpGoLHQ" name="JwtUtil" associationsIn="_AWabknVfEfC-BOCJpGoLHQ _AWzdJHVfEfC-BOCJpGoLHQ" associationsOut="_AW6x4HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARdqLHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AW6x6nVfEfC-BOCJpGoLHQ" position="697.0,411.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AW6x63VfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_AReRMHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AW6x7HVfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_AReROXVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AW6x7XVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AW6x7nVfEfC-BOCJpGoLHQ" defaultValue="&quot;MEPMSSecretKeyMEPMSSecretKeyMEPMSSecretKeyMEPMSSecretKeyMEPMSSecretKeyMEPMSSecretKey123456&quot;" name="SECRET_KEY_STRING" staticAttribute="true">
+      <modelElement href="Login-Auth-MS.uml#_AT5TEnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW6x73VfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_AT5TFHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW6x8HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW6x8XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW6x8nVfEfC-BOCJpGoLHQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW6x83VfEfC-BOCJpGoLHQ" defaultValue="Keys.hmacShaKeyFor(SECRET_KEY_STRING.getBytes(StandardCharsets.UTF_8))" name="SECRET_KEY">
+      <modelElement href="Login-Auth-MS.uml#_AT5TFXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW6x9HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW6x9XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW6x9nVfEfC-BOCJpGoLHQ" name="Key">
+        <modelElement href="Login-Auth-MS.uml#_ATo0ZnVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AW6x93VfEfC-BOCJpGoLHQ" defaultValue="86400000" name="EXPIRATION_TIME">
+      <modelElement href="Login-Auth-MS.uml#_AT5TF3VfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AW6x-HVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW6x-XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AW6x-nVfEfC-BOCJpGoLHQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AW6x-3VfEfC-BOCJpGoLHQ" name="extractEmail">
+      <modelElement href="Login-Auth-MS.uml#_AReRMXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW6x_HVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_AReRNHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW6x_XVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW6x_nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW6x_3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_AReRM3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW6yAHVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW6yAXVfEfC-BOCJpGoLHQ" name="token">
+        <modelElement href="Login-Auth-MS.uml#_AReRMnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW6yAnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW6yA3VfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AW6yBHVfEfC-BOCJpGoLHQ" name="isTokenExpired">
+      <modelElement href="Login-Auth-MS.uml#_AReRNXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW6yBXVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_AReROHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW6yBnVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AW6yB3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW6yCHVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_AReRN3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW6yCXVfEfC-BOCJpGoLHQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW6yCnVfEfC-BOCJpGoLHQ" name="token">
+        <modelElement href="Login-Auth-MS.uml#_AReRNnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW6yC3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW6yDHVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AW6yDXVfEfC-BOCJpGoLHQ" name="generateToken">
+      <modelElement href="Login-Auth-MS.uml#_ATpbcHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW6yDnVfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ATpbc3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW6yD3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW6yEHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW6yEXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATpbcnVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW6yEnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW6yE3VfEfC-BOCJpGoLHQ" name="user">
+        <modelElement href="Login-Auth-MS.uml#_ATpbcXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW6yFHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW6yFXVfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AW6yFnVfEfC-BOCJpGoLHQ" name="validateToken">
+      <modelElement href="Login-Auth-MS.uml#_ATpbdHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AW6yF3VfEfC-BOCJpGoLHQ" name="StyledElement">
+        <modelElement href="Login-Auth-MS.uml#_ATpbeHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AW6yGHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AW6yGXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AW6yGnVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATpbd3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AW6yG3VfEfC-BOCJpGoLHQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AW6yHHVfEfC-BOCJpGoLHQ" name="token">
+        <modelElement href="Login-Auth-MS.uml#_ATpbdXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW6yHXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW6yHnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AW6yH3VfEfC-BOCJpGoLHQ" name="user">
+        <modelElement href="Login-Auth-MS.uml#_ATpbdnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AW6yIHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AW6yIXVfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AWabm3VfEfC-BOCJpGoLHQ" name="AuthController" associationsOut="_AWZ0gHVfEfC-BOCJpGoLHQ _AWZ0iXVfEfC-BOCJpGoLHQ _AWZ0knVfEfC-BOCJpGoLHQ _AWabknVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARPnu3VfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWabnHVfEfC-BOCJpGoLHQ" position="111.0,425.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_AWabnXVfEfC-BOCJpGoLHQ" name="LegacyStyledElement">
+      <modelElement href="Login-Auth-MS.uml#_ARQOwHVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_AWabnnVfEfC-BOCJpGoLHQ" name="Annotations">
+      <modelElement href="Login-Auth-MS.uml#_ARQ11nVfEfC-BOCJpGoLHQ"/>
+    </stereotypes>
+    <visibility xmi:id="_AWabn3VfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWaboHVfEfC-BOCJpGoLHQ" name="authService">
+      <modelElement href="Login-Auth-MS.uml#_ATylYHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWaboXVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATylYXVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWabonVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWabo3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWabpHVfEfC-BOCJpGoLHQ" name="AuthService">
+        <modelElement href="Login-Auth-MS.uml#_ARVuU3VfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWabpXVfEfC-BOCJpGoLHQ" name="userRepo">
+      <modelElement href="Login-Auth-MS.uml#_ATylY3VfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWabpnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATylZHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWabp3VfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWabqHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWabqXVfEfC-BOCJpGoLHQ" name="UserRepository">
+        <modelElement href="Login-Auth-MS.uml#_ARVHR3VfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWabqnVfEfC-BOCJpGoLHQ" name="emailService">
+      <modelElement href="Login-Auth-MS.uml#_ATylZnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWabq3VfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATylZ3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWabrHVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWabrXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWabrnVfEfC-BOCJpGoLHQ" name="EmailService">
+        <modelElement href="Login-Auth-MS.uml#_ARdDEHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AWabr3VfEfC-BOCJpGoLHQ" name="jwtUtil">
+      <modelElement href="Login-Auth-MS.uml#_ATylaXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWabsHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATzMcHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWabsXVfEfC-BOCJpGoLHQ" label="-"/>
+      <cardinality xmi:id="_AWabsnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AWabs3VfEfC-BOCJpGoLHQ" name="JwtUtil">
+        <modelElement href="Login-Auth-MS.uml#_ARdqLHVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AWabtHVfEfC-BOCJpGoLHQ" name="getCurrentUser">
+      <modelElement href="Login-Auth-MS.uml#_ARQOwXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWabtXVfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ARQOw3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AWabtnVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ARQ103VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWabt3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWabuHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWabuXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATrQo3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWabunVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWabu3VfEfC-BOCJpGoLHQ" name="authHeader">
+        <modelElement href="Login-Auth-MS.uml#_ARQOwnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWabvHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWabvXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWabvnVfEfC-BOCJpGoLHQ" name="register">
+      <modelElement href="Login-Auth-MS.uml#_ATbZAHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWabv3VfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATbZAnVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AWabwHVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATcAEnVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWabwXVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWabwnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWabw3VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATrQoXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWabxHVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWabxXVfEfC-BOCJpGoLHQ" name="user">
+        <modelElement href="Login-Auth-MS.uml#_ATbZAXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWabxnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWabx3VfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWabyHVfEfC-BOCJpGoLHQ" name="login">
+      <modelElement href="Login-Auth-MS.uml#_ATcAFXVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWabyXVfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATcnIHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AWabynVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATcnI3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWaby3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWabzHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWabzXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATrQonVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWabznVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWabz3VfEfC-BOCJpGoLHQ" name="user">
+        <modelElement href="Login-Auth-MS.uml#_ATcAFnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWab0HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWab0XVfEfC-BOCJpGoLHQ" name="User">
+          <modelElement href="Login-Auth-MS.uml#_ARTSEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWab0nVfEfC-BOCJpGoLHQ" name="forgotPasswordInitiate">
+      <modelElement href="Login-Auth-MS.uml#_ATrQpHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWab03VfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATrQpnVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AWab1HVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATr3s3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWab1XVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWab1nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWab13VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATrQp3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWab2HVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWab2XVfEfC-BOCJpGoLHQ" name="req">
+        <modelElement href="Login-Auth-MS.uml#_ATrQpXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWab2nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWab23VfEfC-BOCJpGoLHQ" name="Map">
+          <modelElement href="Login-Auth-MS.uml#_ATYVsXVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWab3HVfEfC-BOCJpGoLHQ" name="verifyOtp">
+      <modelElement href="Login-Auth-MS.uml#_ATr3tnVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWab3XVfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATr3uHVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AWab3nVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATr3vXVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWab33VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWab4HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWab4XVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATr3uXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWab4nVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWab43VfEfC-BOCJpGoLHQ" name="req">
+        <modelElement href="Login-Auth-MS.uml#_ATr3t3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWab5HVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWab5XVfEfC-BOCJpGoLHQ" name="Map">
+          <modelElement href="Login-Auth-MS.uml#_ATYVsXVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWab5nVfEfC-BOCJpGoLHQ" name="resetPassword">
+      <modelElement href="Login-Auth-MS.uml#_ATsewHVfEfC-BOCJpGoLHQ"/>
+      <stereotypes xmi:id="_AWab53VfEfC-BOCJpGoLHQ" name="Generics">
+        <modelElement href="Login-Auth-MS.uml#_ATsewnVfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AWab6HVfEfC-BOCJpGoLHQ" name="Annotations">
+        <modelElement href="Login-Auth-MS.uml#_ATsex3VfEfC-BOCJpGoLHQ"/>
+      </stereotypes>
+      <visibility xmi:id="_AWab6XVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWab6nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWab63VfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATsew3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWab7HVfEfC-BOCJpGoLHQ" name="ResponseEntity">
+          <modelElement href="Login-Auth-MS.uml#_ATY8w3VfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWab7XVfEfC-BOCJpGoLHQ" name="req">
+        <modelElement href="Login-Auth-MS.uml#_ATsewXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWab7nVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWab73VfEfC-BOCJpGoLHQ" name="Map">
+          <modelElement href="Login-Auth-MS.uml#_ATYVsXVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_AWxA4HVfEfC-BOCJpGoLHQ" name="EmailRecordService" associationsIn="_AWvywHVfEfC-BOCJpGoLHQ" subclassedBy="_AWwZ0HVfEfC-BOCJpGoLHQ">
+    <modelElement href="Login-Auth-MS.uml#_ARXjgHVfEfC-BOCJpGoLHQ"/>
+    <visualProperties xmi:id="_AWxA4XVfEfC-BOCJpGoLHQ" position="768.0,983.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_AWxA4nVfEfC-BOCJpGoLHQ" label="+"/>
+    <attributes xmi:id="_AWxA43VfEfC-BOCJpGoLHQ" name="all">
+      <modelElement href="Login-Auth-MS.uml#_ARYKlHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxA5HVfEfC-BOCJpGoLHQ" label="~"/>
+      <cardinality xmi:id="_AWxA5XVfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_AWxA5nVfEfC-BOCJpGoLHQ" name="EmailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AWxA53VfEfC-BOCJpGoLHQ" name="deleteById">
+      <modelElement href="Login-Auth-MS.uml#_ARYKkHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxA6HVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxA6XVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWxA6nVfEfC-BOCJpGoLHQ" name="id">
+        <modelElement href="Login-Auth-MS.uml#_ARYKkXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxA63VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxA7HVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxA7XVfEfC-BOCJpGoLHQ" name="getById">
+      <modelElement href="Login-Auth-MS.uml#_ARYKknVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxA7nVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxA73VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWxA8HVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATlKBnVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWxA8XVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWxA8nVfEfC-BOCJpGoLHQ" name="id">
+        <modelElement href="Login-Auth-MS.uml#_ARYKk3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxA83VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxA9HVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxA9XVfEfC-BOCJpGoLHQ" name="getByRecipients">
+      <modelElement href="Login-Auth-MS.uml#_ARYKlXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxA9nVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxA93VfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWxA-HVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARYKl3VfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWxA-XVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWxA-nVfEfC-BOCJpGoLHQ" name="recipient">
+        <modelElement href="Login-Auth-MS.uml#_ARYKlnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxA-3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxA_HVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxA_XVfEfC-BOCJpGoLHQ" name="getBySuccess">
+      <modelElement href="Login-Auth-MS.uml#_ARYxoHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxA_nVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxA_3VfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWxBAHVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ARYxonVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWxBAXVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWxBAnVfEfC-BOCJpGoLHQ" name="success">
+        <modelElement href="Login-Auth-MS.uml#_ARYxoXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBA3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBBHVfEfC-BOCJpGoLHQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxBBXVfEfC-BOCJpGoLHQ" name="sendOtp">
+      <modelElement href="Login-Auth-MS.uml#_ARZYsHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxBBnVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxBB3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWxBCHVfEfC-BOCJpGoLHQ" name="to">
+        <modelElement href="Login-Auth-MS.uml#_ARZYsXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBCXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBCnVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWxBC3VfEfC-BOCJpGoLHQ" name="otp">
+        <modelElement href="Login-Auth-MS.uml#_ARZYsnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBDHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBDXVfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxBDnVfEfC-BOCJpGoLHQ" name="create">
+      <modelElement href="Login-Auth-MS.uml#_ATlKAHVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxBD3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxBEHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWxBEXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATlKAnVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWxBEnVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWxBE3VfEfC-BOCJpGoLHQ" name="emailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ATlKAXVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBFHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBFXVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxBFnVfEfC-BOCJpGoLHQ" name="update">
+      <modelElement href="Login-Auth-MS.uml#_ATlKA3VfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxBF3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxBGHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AWxBGXVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATlKBXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWxBGnVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWxBG3VfEfC-BOCJpGoLHQ" name="emailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ATlKBHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBHHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBHXVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxBHnVfEfC-BOCJpGoLHQ" name="addDocumentToEmail">
+      <modelElement href="Login-Auth-MS.uml#_ATlxEnVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxBH3VfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxBIHVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWxBIXVfEfC-BOCJpGoLHQ" name="id">
+        <modelElement href="Login-Auth-MS.uml#_ATlxE3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBInVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBI3VfEfC-BOCJpGoLHQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWxBJHVfEfC-BOCJpGoLHQ" name="doc">
+        <modelElement href="Login-Auth-MS.uml#_ATlxFHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBJXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBJnVfEfC-BOCJpGoLHQ" name="DocumentAttachment">
+          <modelElement href="Login-Auth-MS.uml#_ATlxEHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxBJ3VfEfC-BOCJpGoLHQ" name="sendEmail">
+      <modelElement href="Login-Auth-MS.uml#_ATlxFXVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxBKHVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxBKXVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AWxBKnVfEfC-BOCJpGoLHQ" name="emailRecord">
+        <modelElement href="Login-Auth-MS.uml#_ATlxFnVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBK3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBLHVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AWxBLXVfEfC-BOCJpGoLHQ" name="getBySentDateRange">
+      <modelElement href="Login-Auth-MS.uml#_ATviEnVfEfC-BOCJpGoLHQ"/>
+      <visibility xmi:id="_AWxBLnVfEfC-BOCJpGoLHQ" label="+"/>
+      <cardinality xmi:id="_AWxBL3VfEfC-BOCJpGoLHQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_AWxBMHVfEfC-BOCJpGoLHQ">
+        <modelElement href="Login-Auth-MS.uml#_ATviFXVfEfC-BOCJpGoLHQ"/>
+        <type xmi:id="_AWxBMXVfEfC-BOCJpGoLHQ" name="EmailRecord">
+          <modelElement href="Login-Auth-MS.uml#_ARRc4HVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_AWxBMnVfEfC-BOCJpGoLHQ" name="start">
+        <modelElement href="Login-Auth-MS.uml#_ATviE3VfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBM3VfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBNHVfEfC-BOCJpGoLHQ" name="LocalDateTime">
+          <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_AWxBNXVfEfC-BOCJpGoLHQ" name="end">
+        <modelElement href="Login-Auth-MS.uml#_ATviFHVfEfC-BOCJpGoLHQ"/>
+        <cardinality xmi:id="_AWxBNnVfEfC-BOCJpGoLHQ" label="1" max="1" min="1"/>
+        <type xmi:id="_AWxBN3VfEfC-BOCJpGoLHQ" name="LocalDateTime">
+          <modelElement href="Login-Auth-MS.uml#_ATd1QHVfEfC-BOCJpGoLHQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
