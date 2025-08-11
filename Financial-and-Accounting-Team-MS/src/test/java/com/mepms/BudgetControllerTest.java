@@ -1,0 +1,92 @@
+package com.mepms;
+
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.time.LocalDateTime;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.mepms.controllers.BudgetController;
+import com.mepms.entity.Budget;
+import com.mepms.service.BudgetService;
+
+@WebMvcTest(BudgetController.class)
+public class BudgetControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private BudgetService budgetService;
+
+//    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper()
+            .registerModule(new JavaTimeModule())
+            .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+
+    private Budget createMockBudget() {
+        Budget budget = new Budget();
+        budget.setId("1");
+        budget.setAmount(100000.0);
+        budget.setRemaining(75000.0);
+        budget.setSpent(25000.0);
+        budget.setCurrency("USD");
+        budget.setYear(2023);
+        budget.setLastUpdated(LocalDateTime.now());
+        budget.setNotes("Annual budget for 2023");
+        return budget;
+    }
+
+    @Test
+    public void getCurrentBudget_ShouldReturnBudget() throws Exception {
+        Budget budget = createMockBudget();
+        Mockito.when(budgetService.getCurrentYearBudget()).thenReturn(budget);
+
+        mockMvc.perform(get("/api/budget"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.amount", is(budget.getAmount())))
+                .andExpect(jsonPath("$.currency", is(budget.getCurrency())));
+    }
+
+    @Test
+    public void setBudget_ShouldReturnCreatedBudget() throws Exception {
+        Budget budget = createMockBudget();
+        Mockito.when(budgetService.setCurrentYearBudget(
+                Mockito.anyDouble(),
+                Mockito.anyString(),
+                Mockito.anyString()
+        )).thenReturn(budget);
+
+        mockMvc.perform(post("/api/budget")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(budget)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.amount", is(budget.getAmount())));
+    }
+
+    @Test
+    public void updateBudget_ShouldReturnUpdatedBudget() throws Exception {
+        Budget budget = createMockBudget();
+        Mockito.when(budgetService.updateBudget(Mockito.any(Budget.class))).thenReturn(budget);
+
+        mockMvc.perform(put("/api/budget")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(budget)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.amount", is(budget.getAmount())));
+    }
+}

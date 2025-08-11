@@ -1,6 +1,7 @@
 package com.mepms.service.impl;
 
 import com.mepms.entity.EquipmentLifeCycle;
+import com.mepms.entity.EquipmentUsage;
 import com.mepms.repository.EquipmentLifeCycleRepository;
 import com.mepms.service.EquipmentLifeCycleService;
 
@@ -33,6 +34,11 @@ public class EquipmentLifeCycleServiceImpl implements EquipmentLifeCycleService 
     @Override
     public List<EquipmentLifeCycle> findByEquipmentId(String equipmentId) {
         return repository.findByEquipmentId(equipmentId);
+    }
+    
+    @Override
+    public List<EquipmentUsage> findByUnitId(String unitId) {
+    	return repository.findByUnitId(unitId);
     }
     
     @Override

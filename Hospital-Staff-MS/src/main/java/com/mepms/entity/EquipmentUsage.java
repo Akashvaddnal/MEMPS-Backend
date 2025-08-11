@@ -15,6 +15,8 @@ public class EquipmentUsage {
     private String id;
     @Field("equipment_id")
     private String equipmentId;
+    
+    private String unitId;
     @Field("used_by")
     private String usedBy;
     @Field("reserved_by")

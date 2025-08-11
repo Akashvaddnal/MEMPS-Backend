@@ -8,4 +8,5 @@ import com.mepms.entity.PurchaseOrderItem;
 public interface PurchaseOrderItemRepository extends MongoRepository<PurchaseOrderItem, String> {
     List<PurchaseOrderItem> findByPoId(String poId);
     List<PurchaseOrderItem> findByEquipmentId(String equipmentId);
+    List<PurchaseOrderItem> findByPoIdAndEquipmentIdAndQuantity(String poId, String equipmentId, Integer quantity);
 }

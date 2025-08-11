@@ -1,5 +1,6 @@
 package com.mepms.entity;
 
+import java.time.Instant;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
@@ -13,13 +14,14 @@ public class MaintenanceRequest {
     @Id
     private String id;
     private String equipmentId;
+    private String unitId;
     private String reportedBy;
     private String department;
     private String technicianId;
     private String issueDescription;
     private String status; // Pending, In Progress, Resolved, etc.
-    private Date reportedAt;
-    private Date resolvedAt;
+    private Instant reportedAt;
+    private Instant resolvedAt;
     private String maintenanceType; // Preventive, Corrective
     private String maintenanceNotes;
 

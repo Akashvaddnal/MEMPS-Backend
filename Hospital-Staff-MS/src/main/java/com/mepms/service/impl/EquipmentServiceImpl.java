@@ -45,19 +45,7 @@ public class EquipmentServiceImpl implements EquipmentService {
 	        return equipmentRepository.findByStatus(status);
 	    }
 
-//	    @Override
-//	    public List<Equipment> getEquipmentsByVendorId(String vendorId) {
-//	        return equipmentRepository.findByVendorId(vendorId);
-//	    }
-	    
-//	    @Override
-//	    public List<Equipment> getEquipmentsByVendorId(String vendorId) {
-//	        Optional<Vendor> vendor = vendorRepository.findById(vendorId);
-//	        if (vendor.isPresent() && vendor.get().getEquipmentProvided() != null) {
-//	            return equipmentRepository.findBy_idIn(vendor.get().getEquipmentProvided());
-//	        }
-//	        return List.of();
-//	    }
+
 	    
 	    @Override
 	    public List<Equipment> getEquipmentsByIds(List<String> equipmentIds) {

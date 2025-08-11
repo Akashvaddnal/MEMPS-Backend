@@ -2,6 +2,7 @@ package com.mepms.service.impl;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -53,4 +54,81 @@ public class PurchaseOrderItemServiceImpl implements PurchaseOrderItemService {
     public void deleteItem(String id) {
         itemRepository.deleteById(id);
     }
+    
+//    private final PurchaseOrderItemRepository itemRepository;
+
+   
+    // Other service methods ...
+    @Override
+    public PurchaseOrderItem updateItemWithDuplicationCheck(String id, PurchaseOrderItem updatedItem) throws Exception {
+        Optional<PurchaseOrderItem> existingOpt = itemRepository.findById(id);
+        if (existingOpt.isEmpty()) {
+            throw new Exception("PurchaseOrderItem not found with id: " + id);
+        }
+        PurchaseOrderItem existingItem = existingOpt.get();
+
+        // If the same poId & equipmentId & quantity already exists (ignoring current item), no update needed
+        List<PurchaseOrderItem> duplicates = itemRepository.findByPoIdAndEquipmentIdAndQuantity(
+                updatedItem.getPoId(), updatedItem.getEquipmentId(), updatedItem.getQuantity());
+        
+        boolean duplicatesExistExcludingCurrent = duplicates.stream()
+                .anyMatch(item -> !item.getId().equals(id));
+
+        if (duplicatesExistExcludingCurrent) {
+            // Delete all these duplicates (except current item if present)
+            List<String> idsToDelete = duplicates.stream()
+                    .filter(item -> !item.getId().equals(id))
+                    .map(PurchaseOrderItem::getId)
+                    .collect(Collectors.toList());
+
+            idsToDelete.forEach(itemRepository::deleteById);
+
+            // Now update the current item fully with the updated values
+            // Update all relevant fields
+            existingItem.setPoId(updatedItem.getPoId());
+            existingItem.setEquipmentId(updatedItem.getEquipmentId());
+            existingItem.setQuantity(updatedItem.getQuantity());
+            existingItem.setUnitPrice(updatedItem.getUnitPrice());
+            existingItem.setTotal(updatedItem.getTotal());
+
+            return itemRepository.save(existingItem);
+
+        } else if (duplicates.stream().anyMatch(item -> item.getId().equals(id))) {
+            // Exact same item exists with same quantity, no update needed; return existing
+            return existingItem;
+        } else {
+            // No duplicates with same poId, equipmentId, and quantity exist
+
+            // Update current item normally
+            existingItem.setPoId(updatedItem.getPoId());
+            existingItem.setEquipmentId(updatedItem.getEquipmentId());
+            existingItem.setQuantity(updatedItem.getQuantity());
+            existingItem.setUnitPrice(updatedItem.getUnitPrice());
+            existingItem.setTotal(updatedItem.getTotal());
+
+            return itemRepository.save(existingItem);
+        }
+    }
+    
+    @Override
+    public PurchaseOrderItem createItemWithDuplicationCheck(PurchaseOrderItem newItem) {
+        // Check if an item with same poId, equipmentId and quantity already exists
+        List<PurchaseOrderItem> existingItems = itemRepository
+            .findByPoIdAndEquipmentIdAndQuantity(newItem.getPoId(), newItem.getEquipmentId(), newItem.getQuantity());
+
+        if (existingItems != null && !existingItems.isEmpty()) {
+            // You can choose to:
+            // Option A: Return the first existing matching item without creation
+            return existingItems.get(0);
+
+            // Option B: Or update existing item if logic requires
+            // PurchaseOrderItem existingItem = existingItems.get(0);
+            // // perform any updates if needed, else just return
+            // return existingItem;
+        }
+
+        // If no duplicate found, create the item
+        return itemRepository.save(newItem);
+    }
+
 }

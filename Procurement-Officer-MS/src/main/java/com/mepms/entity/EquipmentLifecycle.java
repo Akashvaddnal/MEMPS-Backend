@@ -14,6 +14,8 @@ public class EquipmentLifecycle {
     private String id;
 
     private String equipmentId;
+    private String unitId;
+    
     private Date acquisitionDate;
     private Date expectedEndOfLife;
     private Integer maintenanceCount;

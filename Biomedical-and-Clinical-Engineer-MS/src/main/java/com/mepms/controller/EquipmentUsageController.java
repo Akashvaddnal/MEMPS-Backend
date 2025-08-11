@@ -35,6 +35,11 @@ public class EquipmentUsageController {
     public List<EquipmentUsage> getByEquipmentId(@PathVariable String equipmentId) {
         return service.findByEquipmentId(equipmentId);
     }
+    
+    @GetMapping("/unitid/{unitId}")
+    public List<EquipmentUsage> getByUnitId(@PathVariable String unitId) {
+    	return service.findByUnitId(unitId);
+    }
 
     @GetMapping("/usedby/{usedBy}")
     public List<EquipmentUsage> getByUsedBy(@PathVariable String usedBy) {

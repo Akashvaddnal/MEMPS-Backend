@@ -1,6 +1,7 @@
 package com.mepms.entity;
 
 
+import java.time.Instant;
 import java.util.Date;
 import java.util.Map;
 
@@ -24,8 +25,8 @@ public class Department {
     // Map of Equipment ID to count
     private Map<String, Integer> equipmentInventory;
 
-    private Date createdAt;
-    private Date updatedAt;
+    private Instant createdAt;
+    private Instant updatedAt;
 
     // Getters and setters
     

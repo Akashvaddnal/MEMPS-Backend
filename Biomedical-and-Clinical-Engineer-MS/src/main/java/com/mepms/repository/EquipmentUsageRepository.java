@@ -10,4 +10,5 @@ public interface EquipmentUsageRepository extends MongoRepository<EquipmentUsage
     List<EquipmentUsage> findByEquipmentId(String equipmentId);
     List<EquipmentUsage> findByUsedBy(String usedBy);
     List<EquipmentUsage> findByReservedBy(String reservedBy);
+    List<EquipmentUsage> findByUnitId(String unitId);
 }

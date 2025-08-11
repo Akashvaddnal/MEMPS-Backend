@@ -17,23 +17,25 @@
 
 package com.mepms.entity;
 
-import lombok.Data;
+import java.time.Instant;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
+import lombok.Data;
 
 @Data
 @Document(collection = "stock_levels")
 public class StockLevels {
     @Id
     private String id;
-    private String equipmentId;     // Store as String; convert to ObjectId in DB if needed
+    private String equipmentId;     
+    private String unitId;
     private String equipmentName;
     private int currentStock;
     private int minRequired;
-    private Date lastChecked;
-    private Date lastUpdated;
+    private Instant lastChecked;
+    private Instant lastUpdated;
     private String location;
-    private String status;          // "Normal", "Low", "Critical"
+    private String status;          
 }

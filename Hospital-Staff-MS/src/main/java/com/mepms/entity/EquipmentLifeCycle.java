@@ -13,6 +13,9 @@ public class EquipmentLifeCycle {
     private String id;
     @Field("equipment_id")
     private String equipmentId;
+    
+    private String unitId;
+    
     @Field("acquisition_date")
     private java.util.Date acquisitionDate;
     @Field("expected_end_of_life")

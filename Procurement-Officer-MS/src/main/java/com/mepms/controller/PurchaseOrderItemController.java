@@ -40,12 +40,21 @@ public class PurchaseOrderItemController {
 
     @PostMapping
     public PurchaseOrderItem create(@RequestBody PurchaseOrderItem item) {
-        return itemService.createItem(item);
+//        return itemService.createItem(item);
+    	
+    	return itemService.createItemWithDuplicationCheck(item);
     }
 
     @PutMapping("/{id}")
     public PurchaseOrderItem update(@PathVariable String id, @RequestBody PurchaseOrderItem item) {
-        return itemService.updateItem(id, item);
+//        return itemService.updateItem(id, item);
+    	try {
+			return itemService.updateItemWithDuplicationCheck(id, item);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	return null;
     }
 
     @DeleteMapping("/{id}")

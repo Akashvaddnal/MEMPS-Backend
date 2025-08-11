@@ -26,6 +26,7 @@ public class Department {
 
     private Date createdAt;
     private Date updatedAt;
+    private String image;
 
     // Getters and setters
     

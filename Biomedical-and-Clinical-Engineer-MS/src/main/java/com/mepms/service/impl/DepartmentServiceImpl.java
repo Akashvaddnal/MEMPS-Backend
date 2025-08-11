@@ -1,5 +1,6 @@
 package com.mepms.service.impl;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -44,8 +45,8 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public Department createDepartment(Department department) {
-        department.setCreatedAt(new Date());
-        department.setUpdatedAt(new Date());
+        department.setCreatedAt(Instant.now());
+        department.setUpdatedAt(Instant.now());
         if (department.getEquipmentInventory() == null) {
             department.setEquipmentInventory(new HashMap<>());
         }
@@ -60,7 +61,7 @@ public class DepartmentServiceImpl implements DepartmentService {
             dep.setContactPerson(department.getContactPerson());
             dep.setPhone(department.getPhone());
             dep.setEmail(department.getEmail());
-            dep.setUpdatedAt(new Date());
+            dep.setUpdatedAt(Instant.now());
             // Not updating equipmentInventory here for safety, use assignEquipment API
             return departmentRepository.save(dep);
         }).orElseThrow(() -> new NoSuchElementException("Department not found"));
@@ -110,7 +111,7 @@ public class DepartmentServiceImpl implements DepartmentService {
         }
 
         deptEquipInventory.put(equipmentId, deptEquipInventory.getOrDefault(equipmentId, 0) + 1);
-        department.setUpdatedAt(new Date());
+        department.setUpdatedAt(Instant.now());
 
         return departmentRepository.save(department);
     }

@@ -20,6 +20,8 @@ public class PurchaseOrderItem {
     @Field("equipment_id")
     private String equipmentId;
     
+    private String unitId;
+    
     private Integer quantity;
     @Field("unit_price")
     private Double unitPrice;

@@ -53,7 +53,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public ResponseEntity<?> login(String email, String password) {
+    public ResponseEntity<String> login(String email, String password) {
         User user = userRepository.findByEmail(email);
         System.out.println("User found: " + user);
         boolean var=passwordEncoder.matches(password, user.getPassword());

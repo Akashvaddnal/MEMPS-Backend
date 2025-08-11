@@ -38,6 +38,7 @@ public class UserServiceImpl implements UserService {
 	    java.util.Date now = new java.util.Date();
 	    user.setCreatedAt(now);
 	    user.setUpdatedAt(now);
+	    
 	    return userRepository.save(user);
 	}
 

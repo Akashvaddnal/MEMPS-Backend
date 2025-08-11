@@ -81,4 +81,17 @@ public class DepartmentController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", "Unexpected error"));
         }
     }
+    
+    @PostMapping("/departments/{fromDeptId}/transfer/{equipmentId}/to/{toDeptId}")
+    public ResponseEntity<?> transferEquipmentUnit(@PathVariable String fromDeptId,
+                                                   @PathVariable String toDeptId,
+                                                   @PathVariable String equipmentId) {
+        try {
+            Department updatedDept = departmentService.transferEquipmentUnit(equipmentId, fromDeptId, toDeptId);
+            return ResponseEntity.ok(updatedDept);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
+    }
+
 }

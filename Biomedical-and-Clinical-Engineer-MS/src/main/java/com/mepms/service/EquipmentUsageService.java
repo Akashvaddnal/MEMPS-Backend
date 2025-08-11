@@ -10,6 +10,7 @@ public interface EquipmentUsageService {
     List<EquipmentUsage> findAll();
     List<EquipmentUsage> findByEquipmentId(String equipmentId);
     List<EquipmentUsage> findByUsedBy(String usedBy);
+    List<EquipmentUsage> findByUnitId(String unitId);
     List<EquipmentUsage> findByReservedBy(String reservedBy);
     void deleteById(String id);
     EquipmentUsage updateEquipmentUsage(String id, EquipmentUsage updatedUsage);

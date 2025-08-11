@@ -76,7 +76,13 @@ public class EquipmentServiceImpl implements EquipmentService {
 
     @Override
     public Equipment updateEquipment(String id, Equipment equipment) {
+    	
+    	Equipment existingequipment=getEquipmentById(id).orElse(null);
         equipment.set_id(id);
+        if(equipment.getCreatedAt()==null) {
+        	equipment.setCreatedAt(existingequipment.getCreatedAt());
+        }
+        
         return equipmentRepository.save(equipment);
     }
 

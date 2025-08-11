@@ -13,4 +13,6 @@ public interface PurchaseOrderItemService {
     PurchaseOrderItem createItem(PurchaseOrderItem item);
     PurchaseOrderItem updateItem(String id, PurchaseOrderItem item);
     void deleteItem(String id);
+    PurchaseOrderItem updateItemWithDuplicationCheck(String id, PurchaseOrderItem updatedItem) throws Exception ;
+    PurchaseOrderItem createItemWithDuplicationCheck(PurchaseOrderItem newItem);
 }

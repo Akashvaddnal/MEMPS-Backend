@@ -21,4 +21,5 @@ public interface DepartmentService {
     Department assignEquipmentToDepartment(String deptId, String equipmentId) throws Exception;
 
     List<Department> searchDepartments(String name, String location);
+    Department transferEquipmentUnit(String equipmentId, String fromDeptId, String toDeptId) throws Exception;
 }

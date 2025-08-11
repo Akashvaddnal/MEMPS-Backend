@@ -120,6 +120,7 @@ public class EquipmentController {
 
     @PostMapping
     public Equipment create(@RequestBody Equipment equipment) {
+    	equipment.set_id(null);
         return equipmentService.createEquipment(equipment);
     }
 

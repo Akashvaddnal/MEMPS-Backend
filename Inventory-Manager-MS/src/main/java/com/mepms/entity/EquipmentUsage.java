@@ -1,6 +1,6 @@
 package com.mepms.entity;
 
-import java.util.Date;
+import java.time.Instant;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,14 +15,16 @@ public class EquipmentUsage {
     private String id;
     @Field("equipment_id")
     private String equipmentId;
+    
+    private String unitId;
     @Field("used_by")
     private String usedBy;
     @Field("reserved_by")
     private String reservedBy;
     @Field("usage_start")
-    private Date usageStart;
+    private Instant usageStart;
     @Field("usage_end")
-    private Date usageEnd;
+    private Instant usageEnd;
     private String purpose;
     private String status;
     private String department;

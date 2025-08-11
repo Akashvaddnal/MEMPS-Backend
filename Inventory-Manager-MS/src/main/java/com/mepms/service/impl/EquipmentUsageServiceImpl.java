@@ -49,11 +49,34 @@ public class EquipmentUsageServiceImpl implements EquipmentUsageService {
     public void deleteById(String id) {
         repository.deleteById(id);
     }
+    
+//    @Override
+//    public EquipmentUsage updateEquipmentUsage(String id, EquipmentUsage updatedUsage) {
+//        EquipmentUsage usage = repository.findById(id).orElseThrow(() -> new RuntimeException("EquipmentUsage not found with id: " + id));
+//        updatedUsage.setId(id);
+//        return repository.save(updatedUsage);
+//    }
+    
     @Override
     public EquipmentUsage updateEquipmentUsage(String id, EquipmentUsage updatedUsage) {
-        EquipmentUsage usage = repository.findById(id).orElseThrow(() -> new RuntimeException("EquipmentUsage not found with id: " + id));
-        updatedUsage.setId(id);
-        return repository.save(updatedUsage);
+        // Check if record exists
+        EquipmentUsage existingUsage = findById(id)
+                .orElseThrow(() -> new RuntimeException("EquipmentUsage not found with id: " + id));
+
+        // Update only non-null fields
+        if (updatedUsage.getEquipmentId() != null) existingUsage.setEquipmentId(updatedUsage.getEquipmentId());
+        if (updatedUsage.getUnitId() != null) existingUsage.setUnitId(updatedUsage.getUnitId());
+        if (updatedUsage.getUsedBy() != null) existingUsage.setUsedBy(updatedUsage.getUsedBy());
+        if (updatedUsage.getReservedBy() != null) existingUsage.setReservedBy(updatedUsage.getReservedBy());
+        if (updatedUsage.getUsageStart() != null) existingUsage.setUsageStart(updatedUsage.getUsageStart());
+        if (updatedUsage.getUsageEnd() != null) existingUsage.setUsageEnd(updatedUsage.getUsageEnd());
+        if (updatedUsage.getPurpose() != null) existingUsage.setPurpose(updatedUsage.getPurpose());
+        if (updatedUsage.getStatus() != null) existingUsage.setStatus(updatedUsage.getStatus());
+        if (updatedUsage.getDepartment() != null) existingUsage.setDepartment(updatedUsage.getDepartment());
+
+        // Save the updated entity
+        return repository.save(existingUsage);
     }
+
 
 }

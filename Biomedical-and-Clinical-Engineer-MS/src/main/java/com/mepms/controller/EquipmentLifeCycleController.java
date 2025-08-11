@@ -1,6 +1,7 @@
 package com.mepms.controller;
 
 import com.mepms.entity.EquipmentLifeCycle;
+import com.mepms.entity.EquipmentUsage;
 import com.mepms.service.EquipmentLifeCycleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +36,12 @@ public class EquipmentLifeCycleController {
     public List<EquipmentLifeCycle> getByEquipmentId(@PathVariable String equipmentId) {
         return service.findByEquipmentId(equipmentId);
     }
-
+    
+    @GetMapping("/unitid/{unitId}")
+    public List<EquipmentUsage> getByUnitId(@PathVariable String unitId) {
+    	return service.findByUnitId(unitId);
+    }
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable String id) {
         service.deleteById(id);

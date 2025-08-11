@@ -1,5 +1,7 @@
 package com.mepms.entity;
 
+import java.time.Instant;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -13,19 +15,26 @@ public class EquipmentLifeCycle {
     private String id;
     @Field("equipment_id")
     private String equipmentId;
+    
+    private String unitId;
+    
     @Field("acquisition_date")
-    private java.util.Date acquisitionDate;
+    private Instant acquisitionDate;
     @Field("expected_end_of_life")
-    private java.util.Date expectedEndOfLife;
+    private Instant expectedEndOfLife;
     @Field("maintenance_count")
     private int maintenanceCount;
     @Field("total_maintenance_cost")
     private double totalMaintenanceCost;
     @Field("warranty_expiry")
-    private java.util.Date warrantyExpirationDate;
+    private Instant warrantyExpirationDate;
     
     @Field("last_maintenance_date")
-    private java.util.Date lastMaintenanceDate;
+    private Instant lastMaintenanceDate;
     
-    private java.util.Date nextMaintenanceDate;
+    private Instant nextMaintenanceDate;
+    
+    private String mainteneceDoneBy;
+    
+    private String status;
 }

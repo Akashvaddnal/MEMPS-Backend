@@ -14,6 +14,8 @@ public class MaintenanceRequest {
     @Id
     private String id;
     private String equipmentId;
+    private String unitId;
+    
     private String reportedBy;
     private String department;
     private String technicianId;

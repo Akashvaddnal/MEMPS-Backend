@@ -1,5 +1,6 @@
 package com.mepms.entity;
 
+import java.time.Instant;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
@@ -15,12 +16,15 @@ public class EquipmentUsage {
     private String id;
     @Field("equipment_id")
     private String equipmentId;
+    
+    private String unitId;
+    
     @Field("used_by")
     private String usedBy;
     @Field("reserved_by")
     private String reservedBy;
     @Field("usage_start")
-    private Date usageStart;
+    private Instant usageStart;
     @Field("usage_end")
     private Date usageEnd;
     private String department;

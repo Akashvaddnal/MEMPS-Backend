@@ -1,0 +1,134 @@
+package com.mepms;
+
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.time.Instant;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.mepms.controller.EquipmentController;
+import com.mepms.entity.Equipment;
+import com.mepms.service.EquipmentService;
+
+@WebMvcTest(EquipmentController.class)
+public class EquipmentControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private EquipmentService equipmentService;
+
+//    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper()
+            .registerModule(new JavaTimeModule())
+            .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+
+    private Equipment createMockEquipment(String id, String name) {
+        Equipment equipment = new Equipment();
+        equipment.setId(id);
+        equipment.setName(name);
+        equipment.setModel("Model X");
+        equipment.setSerialNumber("SN" + id);
+        equipment.setCategory("Test");
+        equipment.setStatus("Active");
+        equipment.setPurchaseDate(Instant.now());
+        equipment.setWarrantyEndDate(Instant.now().plusSeconds(31536000));
+        return equipment;
+    }
+
+    @Test
+    public void getAllEquipment_ShouldReturnAllEquipment() throws Exception {
+        Equipment equipment1 = createMockEquipment("1", "Equipment 1");
+        Equipment equipment2 = createMockEquipment("2", "Equipment 2");
+        List<Equipment> equipmentList = Arrays.asList(equipment1, equipment2);
+
+        Mockito.when(equipmentService.getAllEquipment()).thenReturn(equipmentList);
+
+        mockMvc.perform(get("/api/equipment"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].name", is(equipment1.getName())))
+                .andExpect(jsonPath("$[1].name", is(equipment2.getName())));
+    }
+
+    @Test
+    public void getEquipmentById_ShouldReturnEquipment() throws Exception {
+        Equipment equipment = createMockEquipment("1", "Equipment 1");
+        Mockito.when(equipmentService.getEquipmentById("1")).thenReturn(Optional.of(equipment));
+
+        mockMvc.perform(get("/api/equipment/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(equipment.getName())));
+    }
+
+    @Test
+    public void getEquipmentById_ShouldReturnNotFound() throws Exception {
+        Mockito.when(equipmentService.getEquipmentById("99")).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/equipment/999"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void getEquipmentBySerialNumber_ShouldReturnEquipment() throws Exception {
+        Equipment equipment = createMockEquipment("1", "Equipment 1");
+        Mockito.when(equipmentService.getEquipmentBySerialNumber("SN1")).thenReturn(equipment);
+
+        mockMvc.perform(get("/api/equipment/serial-number/SN1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.serialNumber", is(equipment.getSerialNumber())));
+    }
+
+    @Test
+    public void createEquipment_ShouldReturnCreatedEquipment() throws Exception {
+        Equipment equipment = createMockEquipment("1", "New Equipment");
+        Mockito.when(equipmentService.createEquipment(Mockito.any(Equipment.class))).thenReturn(equipment);
+
+        mockMvc.perform(post("/api/equipment")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(equipment)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(equipment.getName())));
+    }
+
+    @Test
+    public void updateEquipment_ShouldReturnUpdatedEquipment() throws Exception {
+        Equipment equipment = createMockEquipment("1", "Updated Equipment");
+        Mockito.when(equipmentService.updateEquipment(Mockito.anyString(), Mockito.any(Equipment.class)))
+                .thenReturn(equipment);
+
+        mockMvc.perform(put("/api/equipment/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(equipment)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(equipment.getName())));
+    }
+
+    @Test
+    public void deleteEquipment_ShouldReturnNoContent() throws Exception {
+        mockMvc.perform(delete("/api/equipment/1"))
+                .andExpect(status().isNoContent());
+
+        Mockito.verify(equipmentService, Mockito.times(1)).deleteEquipment("1");
+    }
+}

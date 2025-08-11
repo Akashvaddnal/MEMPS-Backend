@@ -4,7 +4,6 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -15,9 +14,11 @@ public class StockLevel {
     @Id
     private String id;
     
-    @Field("equipment_id")
+    
     private String equipmentId;
     private String equipmentName;
+    
+    private String unitId;
     
     @NotNull(message = "CurrentQuantity value is required")
     private Integer currentStock;
